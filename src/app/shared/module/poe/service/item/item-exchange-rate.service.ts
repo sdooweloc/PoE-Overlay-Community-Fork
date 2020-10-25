@@ -5,7 +5,7 @@ import {
   ItemCategoryValue,
   ItemCategoryValuesProvider,
 } from '../../provider/item-category-values.provider'
-import { Currency, Item, Language, ItemCategory } from '../../type'
+import { Currency, Item, Language, ItemCategory, ItemGemQualityType } from '../../type'
 import { BaseItemTypesService } from '../base-item-types/base-item-types.service'
 import { ClientStringService } from '../client-string/client-string.service'
 import { ContextService } from '../context.service'
@@ -186,6 +186,13 @@ export class ItemExchangeRateService {
         case ItemCategory.Map:
           if (item.blighted) {
             name = this.clientString.translate('InfectedMap').replace('{0}', name)
+          }
+          break
+        case ItemCategory.Gem:
+        case ItemCategory.GemActivegem:
+        case ItemCategory.GemSupportGem:
+          if (item.properties?.gemQualityType) {
+            name = this.clientString.translate('GemAlternateQuality' + item.properties.gemQualityType + 'Affix').replace('{0}', name)
           }
           break
       }

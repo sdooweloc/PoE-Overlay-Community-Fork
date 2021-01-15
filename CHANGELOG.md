@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.6 (2020-01-15)
+
+- Updated assets to support 3.13.0 (Ritual League)
+- Added support for the Epic Games Store PoE Client
+- Fixed Chaos Orb currency not having/showing an exchange rate
+- Changed how cache validity & expiration works internally (makes it easier to debug and test features that cache results)
+
 ## 0.7.5 (2020-12-27)
 
 - Added support for Alternate Quality Gems (price checking and exchange rate look-ups)

@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.7.6 (2020-01-15)
+## 0.7.6 (2021-01-15)
 
 - Updated assets to support 3.13.0 (Ritual League)
 - Added support for the Epic Games Store PoE Client

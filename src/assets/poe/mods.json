@@ -644,6 +644,12 @@
 					"min": 9,
 					"max": 12
 				}
+			],
+			"InfluenceMaven_": [
+				{
+					"min": 11,
+					"max": 12
+				}
 			]
 		},
 		"additional_dexterity": {
@@ -1332,6 +1338,12 @@
 					"min": 9,
 					"max": 12
 				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 11,
+					"max": 12
+				}
 			]
 		},
 		"additional_intelligence": {
@@ -1731,6 +1743,12 @@
 					"max": 40
 				}
 			],
+			"Unique__27": [
+				{
+					"min": 20,
+					"max": 30
+				}
+			],
 			"Crafted": [
 				{
 					"min": 25,
@@ -1970,6 +1988,12 @@
 			"BodyInfluence2___": [
 				{
 					"min": 9,
+					"max": 12
+				}
+			],
+			"InfluenceMaven_": [
+				{
+					"min": 11,
 					"max": 12
 				}
 			]
@@ -3525,6 +3549,12 @@
 					"max": 65
 				}
 			],
+			"Unique__110": [
+				{
+					"min": 50,
+					"max": 70
+				}
+			],
 			"LifeCrafted1__": [
 				{
 					"min": 55,
@@ -4805,6 +4835,12 @@
 					"max": 20
 				}
 			],
+			"MaximumManaUnique__8": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
 			"MaximumManaImplicitAtlasRing_": [
 				{
 					"min": 8,
@@ -4887,6 +4923,18 @@
 				{
 					"min": 12,
 					"max": 15
+				}
+			],
+			"MaximumManaBodyUberMaven__": [
+				{
+					"min": 16,
+					"max": 18
+				}
+			],
+			"MaximumManaInfluenceMaven": [
+				{
+					"min": 16,
+					"max": 18
 				}
 			]
 		},
@@ -5092,6 +5140,12 @@
 			"Unique__9": [
 				{
 					"min": 50,
+					"max": 70
+				}
+			],
+			"Unique__10": [
+				{
+					"min": 60,
 					"max": 70
 				}
 			],
@@ -12147,8 +12201,8 @@
 			],
 			"UniqueOneHandAxe5": [
 				{
-					"min": 10,
-					"max": 10
+					"min": 0,
+					"max": 0
 				}
 			],
 			"StrDexMasterCrafted1": [
@@ -12233,8 +12287,8 @@
 			],
 			"PermyriadUniqueOneHandAxe5": [
 				{
-					"min": 200,
-					"max": 200
+					"min": 0,
+					"max": 0
 				}
 			],
 			"PermyriadUnique__4": [
@@ -12703,6 +12757,12 @@
 				{
 					"min": 16,
 					"max": 20
+				}
+			],
+			"InfluenceMaven_": [
+				{
+					"min": 21,
+					"max": 30
 				}
 			]
 		},
@@ -13847,8 +13907,8 @@
 			],
 			"LocalIncreasedPhysicalDamagePercentUniqueOneHandAxe5": [
 				{
-					"min": 90,
-					"max": 110
+					"min": 130,
+					"max": 150
 				}
 			],
 			"LocalIncreasedPhysicalDamagePercentUniqueTwoHandSword7": [
@@ -14245,6 +14305,12 @@
 				{
 					"min": 230,
 					"max": 260
+				}
+			],
+			"LocalIncreasedPhysicalDamagePercentUnique__43": [
+				{
+					"min": 200,
+					"max": 250
 				}
 			],
 			"V2LocalIncreasedPhysicalDamageBowCorrupted1": [
@@ -14860,6 +14926,7 @@
 			"MonsterVollMapBossDesecrate": [],
 			"MonsterCoverInSpidersDaemon": [],
 			"MonsterReviveSpecificMonsterDaemon": [],
+			"WickermanStandaloneBeamDaemon": [],
 			"TotemDaemon": [],
 			"MonsterDexMissionBossRhoa_": [],
 			"LightningStormDaemon": [],
@@ -15148,6 +15215,7 @@
 			"BlightCannibalBossDaemon": [],
 			"MonsterAfflictionFlameblastOnDeath": [],
 			"ExileMovementVelocityPerTenLevels": [],
+			"MavenBuffedMapBoss": [],
 			"": []
 		},
 		"maximum_energy_shield_+%": {
@@ -16877,6 +16945,12 @@
 					"max": 200
 				}
 			],
+			"LocalIncreasedArmourAndEvasionUnique__18": [
+				{
+					"min": 200,
+					"max": 300
+				}
+			],
 			"ArmourAndEvasionPercentCrafted": [
 				{
 					"min": 70,
@@ -17215,6 +17289,24 @@
 					"max": 400
 				}
 			],
+			"LocalIncreasedArmourAndEnergyShieldUnique__23_": [
+				{
+					"min": 70,
+					"max": 130
+				}
+			],
+			"LocalIncreasedArmourAndEnergyShieldUnique__24": [
+				{
+					"min": 120,
+					"max": 160
+				}
+			],
+			"LocalIncreasedArmourAndEnergyShieldUnique__25": [
+				{
+					"min": 150,
+					"max": 200
+				}
+			],
 			"ArmourAndEnergyShieldPercentCrafted_": [
 				{
 					"min": 70,
@@ -17551,6 +17643,12 @@
 				{
 					"min": 100,
 					"max": 140
+				}
+			],
+			"LocalIncreasedEvasionAndEnergyShieldUnique__32_": [
+				{
+					"min": 160,
+					"max": 220
 				}
 			],
 			"EvasionAndEnergyShieldPercentCrafted": [
@@ -18599,12 +18697,12 @@
 			],
 			"LocalAddedUnique__3": [
 				{
-					"min": 350,
-					"max": 400
+					"min": 315,
+					"max": 360
 				},
 				{
-					"min": 500,
-					"max": 600
+					"min": 450,
+					"max": 540
 				}
 			],
 			"LocalAddedUnique__4": [
@@ -19991,6 +20089,12 @@
 					"max": 500
 				}
 			],
+			"Unique__5_": [
+				{
+					"min": 600,
+					"max": 700
+				}
+			],
 			"Evasion1": [
 				{
 					"min": 1344,
@@ -20153,6 +20257,18 @@
 				{
 					"min": 180,
 					"max": 200
+				}
+			],
+			"Unique__6_": [
+				{
+					"min": 800,
+					"max": 1200
+				}
+			],
+			"Unique__7": [
+				{
+					"min": 600,
+					"max": 700
 				}
 			],
 			"AbyssFlatArmourJewel1": [
@@ -21343,6 +21459,18 @@
 				{
 					"min": 5,
 					"max": 5
+				}
+			],
+			"Unique__45": [
+				{
+					"min": 30,
+					"max": 30
+				}
+			],
+			"Unique__46": [
+				{
+					"min": 8,
+					"max": 12
 				}
 			],
 			"ReducedUnique__1": [
@@ -22551,6 +22679,12 @@
 				{
 					"min": 36,
 					"max": 40
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 31,
+					"max": 38
 				}
 			]
 		},
@@ -24245,6 +24379,12 @@
 				{
 					"min": 22,
 					"max": 25
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 31,
+					"max": 45
 				}
 			]
 		},
@@ -28057,8 +28197,8 @@
 			],
 			"LocalUniqueOneHandAxe5": [
 				{
-					"min": 10,
-					"max": 15
+					"min": 0,
+					"max": 0
 				}
 			],
 			"LocalUniqueTwoHandSword8": [
@@ -29783,6 +29923,12 @@
 					"max": 4200
 				}
 			],
+			"Unique__2__": [
+				{
+					"min": 3000,
+					"max": 4200
+				}
+			],
 			"AbyssFlatJewel1": [
 				{
 					"min": 120,
@@ -30125,6 +30271,24 @@
 				{
 					"min": 6,
 					"max": 6
+				}
+			],
+			"LifeRegenerationRatePercentUberMaven": [
+				{
+					"min": 126,
+					"max": 180
+				}
+			],
+			"LifeRegenerationPercentBodyInfluenceMaven": [
+				{
+					"min": 126,
+					"max": 180
+				}
+			],
+			"LifeRegenerationPercentInfluenceMaven": [
+				{
+					"min": 96,
+					"max": 120
 				}
 			]
 		},
@@ -31244,6 +31408,12 @@
 					"min": 91,
 					"max": 100
 				}
+			],
+			"GlobalCriticalStrikeChanceInfluenceMaven": [
+				{
+					"min": 31,
+					"max": 60
+				}
 			]
 		},
 		"old_dagger_implicit_critical_strike_chance_+30%": {
@@ -32047,6 +32217,12 @@
 					"max": 40
 				}
 			],
+			"FireResistUnique__26": [
+				{
+					"min": 40,
+					"max": 60
+				}
+			],
 			"Crafted": [
 				{
 					"min": 27,
@@ -32637,6 +32813,12 @@
 					"max": 30
 				}
 			],
+			"ColdResistUnique__33": [
+				{
+					"min": 40,
+					"max": 60
+				}
+			],
 			"Crafted": [
 				{
 					"min": 27,
@@ -33117,6 +33299,12 @@
 				{
 					"min": 75,
 					"max": 75
+				}
+			],
+			"LightningResistUnique__24": [
+				{
+					"min": 40,
+					"max": 60
 				}
 			],
 			"LigtningResistanceCrafted": [
@@ -34467,6 +34655,18 @@
 					"max": 20
 				}
 			],
+			"Unique__21": [
+				{
+					"min": 15,
+					"max": 25
+				}
+			],
+			"Unique__22_": [
+				{
+					"min": -15,
+					"max": -10
+				}
+			],
 			"DemigodsImplicit": [
 				{
 					"min": 15,
@@ -35025,6 +35225,12 @@
 				{
 					"min": 20,
 					"max": 22
+				}
+			],
+			"InfluenceMaven__": [
+				{
+					"min": 21,
+					"max": 24
 				}
 			]
 		},
@@ -36522,6 +36728,12 @@
 					"min": 27,
 					"max": 30
 				}
+			],
+			"PhysicalAddedAsExtraFireBootsInfluenceMaven___": [
+				{
+					"min": 9,
+					"max": 11
+				}
 			]
 		},
 		"physical_damage_%_to_add_as_cold": {
@@ -36770,6 +36982,12 @@
 					"min": 27,
 					"max": 30
 				}
+			],
+			"PhysicalAddedAsExtraColdBootsInfluenceMaven": [
+				{
+					"min": 9,
+					"max": 11
+				}
 			]
 		},
 		"physical_damage_%_to_add_as_lightning": {
@@ -36957,6 +37175,12 @@
 				{
 					"min": 27,
 					"max": 30
+				}
+			],
+			"PhysicalAddedAsExtraLightningBootsInfluenceMaven": [
+				{
+					"min": 9,
+					"max": 11
 				}
 			]
 		},
@@ -39191,6 +39415,12 @@
 					"max": 10
 				}
 			],
+			"MaximumLifeUnique__22": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			],
 			"MaximumLifeImplicitAtlasRing": [
 				{
 					"min": 5,
@@ -39333,6 +39563,18 @@
 				{
 					"min": 7,
 					"max": 10
+				}
+			],
+			"MaximumLifeUberMaven": [
+				{
+					"min": 13,
+					"max": 15
+				}
+			],
+			"MaximumLifeBodyInfluenceMaven__": [
+				{
+					"min": 13,
+					"max": 15
 				}
 			]
 		},
@@ -40711,6 +40953,12 @@
 					"max": 8
 				}
 			],
+			"LocalUnique__10": [
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
 			"GemLevelCorruption": [
 				{
 					"min": 1,
@@ -41473,6 +41721,12 @@
 				{
 					"min": 10,
 					"max": 10
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 46,
+					"max": 60
 				}
 			]
 		},
@@ -42927,6 +43181,12 @@
 					"max": 0
 				}
 			],
+			"OfferingEffectUnique__1": [
+				{
+					"min": 0,
+					"max": 0
+				}
+			],
 			"MonsterAfflictionMagicRewardLightningBolt": [
 				{
 					"min": 1,
@@ -44113,6 +44373,12 @@
 					"max": 50
 				}
 			],
+			"Unique__6": [
+				{
+					"min": 15,
+					"max": 25
+				}
+			],
 			"Essence2": [
 				{
 					"min": 7,
@@ -44281,6 +44547,12 @@
 				{
 					"min": -10,
 					"max": -10
+				}
+			],
+			"Unique__5_": [
+				{
+					"min": -40,
+					"max": -20
 				}
 			],
 			"Essence2": [
@@ -45113,6 +45385,12 @@
 					"max": 50
 				}
 			],
+			"RitualMonsterGainsEnduranceChargeOnHit": [
+				{
+					"min": 100,
+					"max": 100
+				}
+			],
 			"GladiatorBossEliteGetEnduranceChargeOnHit": [
 				{
 					"min": 100,
@@ -45149,6 +45427,12 @@
 				{
 					"min": 50,
 					"max": 50
+				}
+			],
+			"RitualMonsterGainsFrenzyChargeOnHit": [
+				{
+					"min": 100,
+					"max": 100
 				}
 			],
 			"HauntedMonsterBuccaneer": [
@@ -45205,6 +45489,12 @@
 				{
 					"min": 50,
 					"max": 50
+				}
+			],
+			"RitualMonsterGainsPowerChargeOnHit___": [
+				{
+					"min": 100,
+					"max": 100
 				}
 			],
 			"HauntedMonsterBootlegger": [
@@ -45289,6 +45579,12 @@
 				{
 					"min": -2,
 					"max": -2
+				}
+			],
+			"MonsterOneThird": [
+				{
+					"min": -67,
+					"max": -67
 				}
 			]
 		},
@@ -45487,6 +45783,12 @@
 				{
 					"min": 10,
 					"max": 10
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 46,
+					"max": 60
 				}
 			]
 		},
@@ -52893,6 +53195,24 @@
 					"max": 2
 				}
 			],
+			"MapWorldsMaven": [
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
 			"Delve": [
 				{
 					"min": 5,
@@ -53021,6 +53341,24 @@
 					"max": 1
 				}
 			],
+			"MapWorldsMaven_": [
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
 			"Delve": [
 				{
 					"min": 5,
@@ -53071,6 +53409,24 @@
 				{
 					"min": 6,
 					"max": 6
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"MapWorldsMaven": [
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 1,
@@ -53239,6 +53595,24 @@
 				{
 					"min": 4,
 					"max": 4
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 1,
@@ -53461,6 +53835,28 @@
 					"max": 30
 				}
 			],
+			"3MapWorldsMaven___": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 25,
+					"max": 30
+				}
+			],
 			"Delve_": [
 				{
 					"min": 5,
@@ -53519,6 +53915,24 @@
 				{
 					"min": 7,
 					"max": 7
+				},
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"WorldsMaven": [
+				{
+					"min": 19,
+					"max": 19
+				},
+				{
+					"min": 11,
+					"max": 11
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 2,
@@ -53697,6 +54111,24 @@
 				{
 					"min": 5,
 					"max": 5
+				},
+				{
+					"min": 100,
+					"max": 100
+				}
+			],
+			"3MapWorldsMaven__": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 100,
@@ -54069,6 +54501,28 @@
 				{
 					"min": 6,
 					"max": 6
+				},
+				{
+					"min": 360,
+					"max": 400
+				},
+				{
+					"min": 41,
+					"max": 45
+				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 360,
@@ -54463,6 +54917,24 @@
 					"max": 40
 				}
 			],
+			"3MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 40,
+					"max": 40
+				}
+			],
 			"Delve": [
 				{
 					"min": 5,
@@ -54621,6 +55093,24 @@
 				{
 					"min": 5,
 					"max": 5
+				},
+				{
+					"min": 40,
+					"max": 49
+				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 40,
@@ -55089,6 +55579,24 @@
 					"max": 25
 				}
 			],
+			"3MapWorldsMaven": [
+				{
+					"min": 19,
+					"max": 19
+				},
+				{
+					"min": 11,
+					"max": 11
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 22,
+					"max": 25
+				}
+			],
 			"Unique__4_": [
 				{
 					"min": 100,
@@ -55343,6 +55851,24 @@
 					"max": 110
 				}
 			],
+			"3MapWorldsMaven_": [
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 90,
+					"max": 110
+				}
+			],
 			"Delve": [
 				{
 					"min": 5,
@@ -55579,6 +56105,24 @@
 					"max": 110
 				}
 			],
+			"3MapWorldsMaven": [
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 90,
+					"max": 110
+				}
+			],
 			"Delve": [
 				{
 					"min": 5,
@@ -55809,6 +56353,24 @@
 				{
 					"min": 6,
 					"max": 6
+				},
+				{
+					"min": 90,
+					"max": 110
+				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 90,
@@ -56061,6 +56623,32 @@
 				{
 					"min": 7,
 					"max": 7
+				},
+				{
+					"min": 25,
+					"max": 30
+				},
+				{
+					"min": 35,
+					"max": 45
+				},
+				{
+					"min": 35,
+					"max": 45
+				}
+			],
+			"3MapWorldsMaven_": [
+				{
+					"min": 19,
+					"max": 19
+				},
+				{
+					"min": 11,
+					"max": 11
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 25,
@@ -56460,6 +57048,24 @@
 					"min": 18,
 					"max": 18
 				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 18,
+					"max": 18
+				}
 			]
 		},
 		"map_item_drop_quantity_+% map_item_drop_rarity_+% map_monsters_reflect_%_elemental_damage": {
@@ -56555,6 +57161,24 @@
 				{
 					"min": 4,
 					"max": 4
+				},
+				{
+					"min": 18,
+					"max": 18
+				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 18,
@@ -56726,6 +57350,24 @@
 					"min": -60,
 					"max": -60
 				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": -60,
+					"max": -60
+				}
 			]
 		},
 		"map_item_drop_quantity_+% map_item_drop_rarity_+% map_pack_size_+% map_base_ground_fire_damage_to_deal_per_10_seconds map_ground_effect_patches_per_100_tiles map_ground_effect_radius": {
@@ -56793,6 +57435,32 @@
 				{
 					"min": 4,
 					"max": 4
+				},
+				{
+					"min": 16000,
+					"max": 16000
+				},
+				{
+					"min": 28,
+					"max": 28
+				},
+				{
+					"min": 18,
+					"max": 18
+				}
+			],
+			"MapBurningGround3MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 16000,
@@ -57069,6 +57737,32 @@
 					"max": 18
 				}
 			],
+			"MapChilledGroundSuffix3MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 30,
+					"max": 30
+				},
+				{
+					"min": 28,
+					"max": 28
+				},
+				{
+					"min": 18,
+					"max": 18
+				}
+			],
 			"MapChilledGroundDelve": [
 				{
 					"min": 5,
@@ -57291,6 +57985,32 @@
 				{
 					"min": 4,
 					"max": 4
+				},
+				{
+					"min": 50,
+					"max": 50
+				},
+				{
+					"min": 28,
+					"max": 28
+				},
+				{
+					"min": 18,
+					"max": 18
+				}
+			],
+			"MapShockedGround3MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 50,
@@ -57541,6 +58261,32 @@
 					"max": 18
 				}
 			],
+			"MapDesecratedGround3MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 14000,
+					"max": 14000
+				},
+				{
+					"min": 28,
+					"max": 28
+				},
+				{
+					"min": 18,
+					"max": 18
+				}
+			],
 			"MapDesecratedGroundDelve": [
 				{
 					"min": 5,
@@ -57734,6 +58480,24 @@
 					"min": 15,
 					"max": 15
 				}
+			],
+			"MapPlayerCurseElementalWeakness2MapWorldsMaven__": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 15,
+					"max": 15
+				}
 			]
 		},
 		"map_item_drop_quantity_+% map_item_drop_rarity_+% map_pack_size_+% map_player_has_level_X_vulnerability": {
@@ -57767,6 +58531,24 @@
 				{
 					"min": 5,
 					"max": 5
+				},
+				{
+					"min": 15,
+					"max": 15
+				}
+			],
+			"MapPlayerCurseVulnerability2MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 15,
@@ -57902,6 +58684,24 @@
 					"min": 15,
 					"max": 15
 				}
+			],
+			"MapPlayerCurseEnfeeblement2MapWorldsMaven_": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 15,
+					"max": 15
+				}
 			]
 		},
 		"map_item_drop_quantity_+% map_item_drop_rarity_+% map_player_has_level_X_temporal_chains map_pack_size_+%": {
@@ -57973,6 +58773,24 @@
 				{
 					"min": 5,
 					"max": 5
+				},
+				{
+					"min": 15,
+					"max": 15
+				}
+			],
+			"MapPlayerCurseTemporalChains2MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 15,
@@ -58280,6 +59098,24 @@
 					"min": -12,
 					"max": -9
 				}
+			],
+			"2MapWorldsMaven": [
+				{
+					"min": 19,
+					"max": 19
+				},
+				{
+					"min": 11,
+					"max": 11
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": -12,
+					"max": -9
+				}
 			]
 		},
 		"map_item_drop_quantity_+% map_item_drop_rarity_+% map_pack_size_+% map_boss_damage_+% map_boss_attack_and_cast_speed_+%": {
@@ -58339,6 +59175,28 @@
 				{
 					"min": 6,
 					"max": 6
+				},
+				{
+					"min": 25,
+					"max": 25
+				},
+				{
+					"min": 30,
+					"max": 30
+				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 25,
@@ -58472,6 +59330,28 @@
 					"min": 70,
 					"max": 70
 				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 35,
+					"max": 35
+				},
+				{
+					"min": 70,
+					"max": 70
+				}
 			]
 		},
 		"map_item_drop_quantity_+% map_item_drop_rarity_+% map_pack_size_+% map_boss_maximum_life_+% map_packs_are_mechanical_totems": {
@@ -58575,6 +59455,28 @@
 				{
 					"min": 6,
 					"max": 6
+				},
+				{
+					"min": 100,
+					"max": 100
+				},
+				{
+					"min": 100,
+					"max": 100
+				}
+			],
+			"MapWorldsMaven": [
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 100,
@@ -58707,6 +59609,24 @@
 				{
 					"min": 4,
 					"max": 4
+				},
+				{
+					"min": 70,
+					"max": 70
+				}
+			],
+			"MapWorldsMaven_": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 70,
@@ -58993,6 +59913,24 @@
 				{
 					"min": 4,
 					"max": 4
+				},
+				{
+					"min": 36,
+					"max": 40
+				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 36,
@@ -59300,6 +60238,24 @@
 					"min": -50,
 					"max": -50
 				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": -50,
+					"max": -50
+				}
 			]
 		},
 		"map_item_drop_quantity_+% map_item_drop_rarity_+% map_monsters_curse_effect_on_self_+%_final": {
@@ -59423,6 +60379,24 @@
 				{
 					"min": 5,
 					"max": 5
+				},
+				{
+					"min": -60,
+					"max": -60
+				}
+			],
+			"MapMonstersCurseEffectOnSelfFinal3MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": -60,
@@ -59605,6 +60579,24 @@
 					"max": 20
 				}
 			],
+			"2MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 20,
+					"max": 20
+				}
+			],
 			"Delve": [
 				{
 					"min": 5,
@@ -59748,6 +60740,24 @@
 					"min": 1,
 					"max": 1
 				}
+			],
+			"AbominationMapWorldsMaven": [
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
 			]
 		},
 		"map_item_drop_quantity_+% map_item_drop_rarity_+% map_monsters_movement_speed_cannot_be_reduced_below_base map_monsters_cannot_be_taunted": {
@@ -59801,6 +60811,28 @@
 				{
 					"min": 4,
 					"max": 4
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 1,
@@ -59899,6 +60931,24 @@
 				{
 					"min": 4,
 					"max": 4
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 1,
@@ -60073,6 +61123,28 @@
 				{
 					"min": 5,
 					"max": 5
+				},
+				{
+					"min": 25,
+					"max": 25
+				},
+				{
+					"min": 40,
+					"max": 40
+				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 25,
@@ -60315,6 +61387,24 @@
 					"max": 50
 				}
 			],
+			"3MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 50,
+					"max": 50
+				}
+			],
 			"Unique__1": [
 				{
 					"min": 0,
@@ -60498,6 +61588,24 @@
 					"min": 1,
 					"max": 1
 				}
+			],
+			"MapWorldsMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
 			]
 		},
 		"map_item_drop_quantity_+% map_item_drop_rarity_+% map_pack_size_+% map_players_block_chance_+% map_players_armour_+%_final": {
@@ -60623,6 +61731,28 @@
 				{
 					"min": 5,
 					"max": 5
+				},
+				{
+					"min": -40,
+					"max": -40
+				},
+				{
+					"min": -30,
+					"max": -30
+				}
+			],
+			"3MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": -40,
@@ -60779,6 +61909,28 @@
 				{
 					"min": 5,
 					"max": 5
+				},
+				{
+					"min": -1,
+					"max": -1
+				},
+				{
+					"min": 50,
+					"max": 50
+				}
+			],
+			"MapPlayersEvasionAndUnluckyDodge3MapWorldsMaven_": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": -1,
@@ -61096,6 +62248,24 @@
 					"min": -25,
 					"max": -25
 				}
+			],
+			"MapPlayersLessAoERadius3MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": -25,
+					"max": -25
+				}
 			]
 		},
 		"map_item_drop_quantity_+% map_item_drop_rarity_+% map_pack_size_+% map_monsters_add_frenzy_charge_on_hit_%": {
@@ -61111,6 +62281,24 @@
 				{
 					"min": 5,
 					"max": 5
+				},
+				{
+					"min": 100,
+					"max": 100
+				}
+			],
+			"MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 100,
@@ -61203,6 +62391,24 @@
 				{
 					"min": 5,
 					"max": 5
+				},
+				{
+					"min": 100,
+					"max": 100
+				}
+			],
+			"MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 100,
@@ -61313,6 +62519,24 @@
 				{
 					"min": 5,
 					"max": 5
+				},
+				{
+					"min": 100,
+					"max": 100
+				}
+			],
+			"MapWorldsMaven": [
+				{
+					"min": 13,
+					"max": 13
+				},
+				{
+					"min": 8,
+					"max": 8
+				},
+				{
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 100,
@@ -61698,6 +62922,12 @@
 					"min": 3,
 					"max": 3
 				}
+			],
+			"anceInfluenceMaven": [
+				{
+					"min": 3,
+					"max": 3
+				}
 			]
 		},
 		"base_maximum_fire_damage_resistance_%": {
@@ -61784,6 +63014,12 @@
 					"min": 3,
 					"max": 3
 				}
+			],
+			"anceInfluenceMaven": [
+				{
+					"min": 3,
+					"max": 3
+				}
 			]
 		},
 		"base_maximum_lightning_damage_resistance_%": {
@@ -61860,6 +63096,12 @@
 				}
 			],
 			"HighInfluence3_": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			],
+			"InfluenceMaven": [
 				{
 					"min": 3,
 					"max": 3
@@ -62292,6 +63534,26 @@
 				}
 			]
 		},
+		"stance_movement_speed_+%_final main_hand_base_maximum_attack_distance off_hand_base_maximum_attack_distance physical_damage_%_to_add_as_fire": {
+			"VilentaEnrageMap": [
+				{
+					"min": 50,
+					"max": 50
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 100,
+					"max": 100
+				}
+			]
+		},
 		"stance_movement_speed_+%_final main_hand_base_maximum_attack_distance off_hand_base_maximum_attack_distance attack_speed_+% active_skill_area_of_effect_radius_+%_final": {
 			"ThaneEnrage": [
 				{
@@ -62585,6 +63847,12 @@
 				{
 					"min": 25,
 					"max": 25
+				}
+			],
+			"Unique__6": [
+				{
+					"min": 10,
+					"max": 15
 				}
 			],
 			"UniqueOneHandSword4": [
@@ -64056,6 +65324,20 @@
 					"min": 1,
 					"max": 1
 				}
+			],
+			"GlobalRaiseSpectreGemLevelUberMaven": [
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 2,
+					"max": 2
+				}
 			]
 		},
 		"base_number_of_zombies_allowed number_of_skeletons_allowed_per_2_old base_number_of_spectres_allowed": {
@@ -64655,6 +65937,12 @@
 					"max": -90
 				}
 			],
+			"IgniteDurationUnique__3_": [
+				{
+					"min": -50,
+					"max": -50
+				}
+			],
 			"IgniteDurationJewel": [
 				{
 					"min": 3,
@@ -64787,6 +66075,12 @@
 				{
 					"min": 11,
 					"max": 15
+				}
+			],
+			"PhysTakenAsFireHelmetInfluenceMaven": [
+				{
+					"min": 11,
+					"max": 13
 				}
 			]
 		},
@@ -64939,6 +66233,12 @@
 				{
 					"min": 10,
 					"max": 10
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 46,
+					"max": 60
 				}
 			]
 		},
@@ -66002,6 +67302,12 @@
 					"min": 8,
 					"max": 10
 				}
+			],
+			"BodyInfluenceMaven": [
+				{
+					"min": 26,
+					"max": 30
+				}
 			]
 		},
 		"minions_have_non_curse_aura_effect_+%_from_parent_skills": {
@@ -66460,6 +67766,36 @@
 					"min": 150,
 					"max": 150
 				}
+			],
+			"1": [
+				{
+					"min": 4,
+					"max": 7
+				}
+			],
+			"2__": [
+				{
+					"min": 8,
+					"max": 11
+				}
+			],
+			"3__": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			],
+			"Corrupted": [
+				{
+					"min": 4,
+					"max": 4
+				}
+			],
+			"Maven": [
+				{
+					"min": 35,
+					"max": 40
+				}
 			]
 		},
 		"local_life_leech_is_instant": {
@@ -66601,6 +67937,12 @@
 				{
 					"min": -5,
 					"max": -4
+				}
+			],
+			"ReducedManaReservationInfluenceMaven": [
+				{
+					"min": -7,
+					"max": -6
 				}
 			]
 		},
@@ -67419,6 +68761,12 @@
 				{
 					"min": 50,
 					"max": 50
+				}
+			],
+			"Unique__1": [
+				{
+					"min": -20,
+					"max": -20
 				}
 			],
 			"UniqueStaff5": [
@@ -68414,6 +69762,24 @@
 					"min": 200,
 					"max": 200
 				}
+			],
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"2": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"Maven_": [
+				{
+					"min": 2,
+					"max": 2
+				}
 			]
 		},
 		"cannot_increase_rarity_of_dropped_items": {
@@ -68789,8 +70155,8 @@
 			],
 			"IncreasedMeleeWeaponRangeUber1": [
 				{
-					"min": 1,
-					"max": 1
+					"min": 2,
+					"max": 2
 				}
 			],
 			"SynthesisImplicitWeaponRange1": [
@@ -68803,6 +70169,18 @@
 				{
 					"min": 2,
 					"max": 2
+				}
+			],
+			"IncreasedMeleeWeaponRangeUberMaven": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"MeleeWeaponRangeInfluenceMaven": [
+				{
+					"min": 3,
+					"max": 4
 				}
 			]
 		},
@@ -70322,6 +71700,12 @@
 					"min": 36,
 					"max": 40
 				}
+			],
+			"InfluenceMaven__": [
+				{
+					"min": 31,
+					"max": 38
+				}
 			]
 		},
 		"keystone_iron_reflexes": {
@@ -70977,6 +72361,12 @@
 				{
 					"min": 5,
 					"max": 10
+				}
+			],
+			"DamageTakenFromManaBeforeLifeUberMaven__": [
+				{
+					"min": 11,
+					"max": 15
 				}
 			]
 		},
@@ -71859,6 +73249,12 @@
 				{
 					"min": 11,
 					"max": 15
+				}
+			],
+			"PhysTakenAsLightningHelmInfluenceMaven": [
+				{
+					"min": 11,
+					"max": 13
 				}
 			],
 			"PhysicalDamageTakenAsLightningDescentTwoHandSword1": [
@@ -74469,6 +75865,12 @@
 				{
 					"min": 27,
 					"max": 30
+				}
+			],
+			"DamageOverTimeInfluenceMaven": [
+				{
+					"min": 31,
+					"max": 38
 				}
 			]
 		},
@@ -77126,6 +78528,12 @@
 					"min": 2,
 					"max": 2
 				}
+			],
+			"AdditionalInfluenceMaven__": [
+				{
+					"min": 3,
+					"max": 5
+				}
 			]
 		},
 		"curse_on_hit_level_assassins_mark": {
@@ -77339,6 +78747,12 @@
 				{
 					"min": 15,
 					"max": 15
+				}
+			],
+			"UberMaven__": [
+				{
+					"min": 20,
+					"max": 20
 				}
 			]
 		},
@@ -78952,6 +80366,12 @@
 					"min": 20,
 					"max": 40
 				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 41,
+					"max": 60
+				}
 			]
 		},
 		"attack_additional_critical_strike_chance_permyriad": {
@@ -78989,6 +80409,18 @@
 				{
 					"min": 110,
 					"max": 150
+				}
+			],
+			"UberMaven": [
+				{
+					"min": 160,
+					"max": 200
+				}
+			],
+			"AdditionalCritWithAttacksInfluenceMaven": [
+				{
+					"min": 160,
+					"max": 200
 				}
 			]
 		},
@@ -79218,6 +80650,18 @@
 					"min": 110,
 					"max": 150
 				}
+			],
+			"UberMaven": [
+				{
+					"min": 160,
+					"max": 200
+				}
+			],
+			"AdditionalCritWithSpellsInfluenceMaven": [
+				{
+					"min": 160,
+					"max": 200
+				}
 			]
 		},
 		"avoid_maim_%_chance": {
@@ -79299,6 +80743,12 @@
 				{
 					"min": 11,
 					"max": 15
+				}
+			],
+			"PhysTakenAsColdHelmetInfluenceMaven": [
+				{
+					"min": 11,
+					"max": 13
 				}
 			]
 		},
@@ -79481,6 +80931,12 @@
 				{
 					"min": 1,
 					"max": 1
+				}
+			],
+			"SupportedByFortifyUberMaven_": [
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -80317,6 +81773,42 @@
 				{
 					"min": 75,
 					"max": 75
+				}
+			],
+			"RitualFragment": [
+				{
+					"min": 5,
+					"max": 5
+				}
+			],
+			"1_": [
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
+			"2___": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"3": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"Corrupted": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"Maven": [
+				{
+					"min": 12,
+					"max": 12
 				}
 			]
 		},
@@ -81357,8 +82849,8 @@
 			],
 			"ReducedLifeLeechRateUniqueOneHandAxe5": [
 				{
-					"min": -50,
-					"max": -50
+					"min": 0,
+					"max": 0
 				}
 			],
 			"ReducedLifeLeechRateUniqueJewel19": [
@@ -81691,6 +83183,26 @@
 				{
 					"min": 41,
 					"max": 48
+				}
+			],
+			"UberMaven": [
+				{
+					"min": 29,
+					"max": 39
+				},
+				{
+					"min": 49,
+					"max": 61
+				}
+			],
+			"InfluenceMaven_": [
+				{
+					"min": 29,
+					"max": 39
+				},
+				{
+					"min": 49,
+					"max": 61
 				}
 			]
 		},
@@ -82471,16 +83983,6 @@
 					"max": 6
 				}
 			],
-			"SpellAddedFireDamageUnique__5": [
-				{
-					"min": 230,
-					"max": 250
-				},
-				{
-					"min": 300,
-					"max": 350
-				}
-			],
 			"SpellAddedFireDamageUnique__6_": [
 				{
 					"min": 7,
@@ -82859,6 +84361,26 @@
 				{
 					"min": 51,
 					"max": 59
+				}
+			],
+			"Maven": [
+				{
+					"min": 35,
+					"max": 49
+				},
+				{
+					"min": 60,
+					"max": 73
+				}
+			],
+			"SpellAddedFireDamageInfluenceMaven": [
+				{
+					"min": 35,
+					"max": 49
+				},
+				{
+					"min": 60,
+					"max": 73
 				}
 			]
 		},
@@ -83441,6 +84963,26 @@
 				{
 					"min": 41,
 					"max": 48
+				}
+			],
+			"Maven": [
+				{
+					"min": 29,
+					"max": 39
+				},
+				{
+					"min": 49,
+					"max": 61
+				}
+			],
+			"SpellAddedColdDamageInfluenceMaven": [
+				{
+					"min": 29,
+					"max": 39
+				},
+				{
+					"min": 49,
+					"max": 61
 				}
 			]
 		},
@@ -84034,6 +85576,26 @@
 					"min": 88,
 					"max": 93
 				}
+			],
+			"Maven": [
+				{
+					"min": 2,
+					"max": 8
+				},
+				{
+					"min": 101,
+					"max": 121
+				}
+			],
+			"SpellAddedLightningDamageInfluenceMaven_": [
+				{
+					"min": 2,
+					"max": 8
+				},
+				{
+					"min": 101,
+					"max": 121
+				}
 			]
 		},
 		"trap_damage_+% mine_damage_+%": {
@@ -84295,6 +85857,18 @@
 				{
 					"min": 10,
 					"max": 10
+				}
+			],
+			"InfluenceMaven__": [
+				{
+					"min": 31,
+					"max": 50
+				}
+			],
+			"ChanceToUberMaven": [
+				{
+					"min": 36,
+					"max": 50
 				}
 			]
 		},
@@ -84687,8 +86261,8 @@
 			],
 			"MapExtraShrinesCrafted_": [
 				{
-					"min": 2,
-					"max": 2
+					"min": 4,
+					"max": 4
 				},
 				{
 					"min": 5,
@@ -86400,7 +87974,7 @@
 				}
 			]
 		},
-		"base_movement_velocity_+% attack_speed_+% base_cast_speed_+% damage_+% cant_touch_this": {
+		"base_movement_velocity_+% attack_speed_+% base_cast_speed_+% damage_+% cant_touch_this monster_is_touched_by_ghost": {
 			"Touched": [
 				{
 					"min": 50,
@@ -86417,6 +87991,10 @@
 				{
 					"min": 20,
 					"max": 20
+				},
+				{
+					"min": 1,
+					"max": 1
 				},
 				{
 					"min": 1,
@@ -87917,6 +89495,12 @@
 				{
 					"min": 5,
 					"max": 7
+				}
+			],
+			"ChanceToAvoidElementalAilmentsUberMaven": [
+				{
+					"min": 36,
+					"max": 50
 				}
 			]
 		},
@@ -91234,6 +92818,32 @@
 		},
 		"monster_no_map_drops": {
 			"": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"keystone_battlemage": {
+			"SpellAddedFireDamageUnique__5": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"SpellAddedPhysicalDamageUnique__1_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"BattlemageKeystoneUnique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"BattlemageKeystoneUnique__2_": [
 				{
 					"min": 1,
 					"max": 1
@@ -97500,6 +99110,20 @@
 				}
 			]
 		},
+		"water_sphere_damage_+%": {
+			"EnchantmentWaterSphereDamage1": [
+				{
+					"min": 25,
+					"max": 25
+				}
+			],
+			"EnchantmentWaterSphereDamage2": [
+				{
+					"min": 40,
+					"max": 40
+				}
+			]
+		},
 		"purge_damage_+%": {
 			"EnchantmentWaveOfConvictionDamage1": [
 				{
@@ -100731,8 +102355,8 @@
 		"immortal_call_duration_+%": {
 			"EnchantmentImmortalCallDuration1_": [
 				{
-					"min": 34,
-					"max": 34
+					"min": 24,
+					"max": 24
 				}
 			],
 			"EnchantmentImmortalCallDuration2": [
@@ -103120,6 +104744,34 @@
 				}
 			]
 		},
+		"hydro_sphere_pulse_frequency_+%": {
+			"EnchantmentWaterSpherePulseFrequency1_": [
+				{
+					"min": 20,
+					"max": 20
+				}
+			],
+			"EnchantmentWaterSpherePulseFrequency2__": [
+				{
+					"min": 30,
+					"max": 30
+				}
+			]
+		},
+		"water_sphere_cold_lightning_exposure_%": {
+			"EnchantmentWaterSphereExposureAmount1": [
+				{
+					"min": -4,
+					"max": -4
+				}
+			],
+			"EnchantmentWaterSphereExposureAmount2": [
+				{
+					"min": -6,
+					"max": -6
+				}
+			]
+		},
 		"war_banner_aura_effect_+%": {
 			"EnchantmentWarBannerEffect1": [
 				{
@@ -103951,14 +105603,14 @@
 		"snapping_adder_%_chance_to_retain_projectile_on_release": {
 			"EnchantmentSnappingAdderChanceToRetainProjectileOnRelease1": [
 				{
-					"min": 20,
-					"max": 20
+					"min": 15,
+					"max": 15
 				}
 			],
 			"EnchantmentSnappingAdderChanceToRetainProjectileOnRelease2_": [
 				{
-					"min": 35,
-					"max": 35
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -105157,6 +106809,20 @@
 				{
 					"min": -75,
 					"max": -75
+				}
+			]
+		},
+		"stun_threshold_+%": {
+			"Unique__1_": [
+				{
+					"min": 20,
+					"max": 20
+				}
+			],
+			"RaiseZombieStunThreshold": [
+				{
+					"min": 30,
+					"max": 30
 				}
 			]
 		},
@@ -106436,14 +108102,6 @@
 				}
 			]
 		},
-		"stun_threshold_+%": {
-			"RaiseZombieStunThreshold": [
-				{
-					"min": 30,
-					"max": 30
-				}
-			]
-		},
 		"local_implicit_stat_magnitude_+%": {
 			"LocalDoubleImplicitMods": [
 				{
@@ -107551,6 +109209,12 @@
 					"max": 22
 				}
 			],
+			"SocketedGemsSupportedByBlasphemyUnique__2__": [
+				{
+					"min": 20,
+					"max": 20
+				}
+			],
 			"SupportedByBlasphemyUnique": [
 				{
 					"min": 20,
@@ -107563,6 +109227,12 @@
 				{
 					"min": -12,
 					"max": -12
+				}
+			],
+			"ReducedReservationForSocketedCurseGemsUnique__2": [
+				{
+					"min": -50,
+					"max": -50
 				}
 			]
 		},
@@ -108146,7 +109816,7 @@
 				}
 			]
 		},
-		"local_display_trigger_level_x_icicle_nova_on_kill_vs_frozen_enemy": {
+		"local_display_trigger_level_x_icicle_nova_on_hit_vs_frozen_enemy": {
 			"GrantsLevel20IcicleNovaTriggerUnique__1": [
 				{
 					"min": 20,
@@ -111415,8 +113085,8 @@
 					"max": 20
 				},
 				{
-					"min": 1,
-					"max": 1
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 9,
@@ -111433,8 +113103,8 @@
 					"max": 25
 				},
 				{
-					"min": 1,
-					"max": 1
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 12,
@@ -111451,12 +113121,30 @@
 					"max": 30
 				},
 				{
-					"min": 1,
-					"max": 1
+					"min": 0,
+					"max": 0
 				},
 				{
 					"min": 15,
 					"max": 15
+				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 35,
+					"max": 35
+				},
+				{
+					"min": 0,
+					"max": 0
+				},
+				{
+					"min": 18,
+					"max": 18
 				}
 			]
 		},
@@ -111493,6 +113181,20 @@
 				{
 					"min": 3,
 					"max": 3
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"Maven_": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 4,
+					"max": 4
 				},
 				{
 					"min": 1,
@@ -111794,6 +113496,20 @@
 					"min": 12,
 					"max": 12
 				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 14,
+					"max": 14
+				}
 			]
 		},
 		"sextant_uses_remaining map_contains_additional_packs_of_cold_monsters map_players_and_monsters_cold_damage_taken_+%": {
@@ -111837,6 +113553,20 @@
 				{
 					"min": 12,
 					"max": 12
+				}
+			],
+			"Maven_": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 14,
+					"max": 14
 				}
 			]
 		},
@@ -111882,6 +113612,20 @@
 					"min": 12,
 					"max": 12
 				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 14,
+					"max": 14
+				}
 			]
 		},
 		"sextant_uses_remaining map_contains_additional_packs_of_physical_monsters map_players_and_monsters_physical_damage_taken_+%": {
@@ -111926,6 +113670,20 @@
 					"min": 12,
 					"max": 12
 				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 14,
+					"max": 14
+				}
 			]
 		},
 		"sextant_uses_remaining map_contains_additional_packs_of_chaos_monsters map_players_and_monsters_chaos_damage_taken_+%": {
@@ -111969,6 +113727,20 @@
 				{
 					"min": 12,
 					"max": 12
+				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 14,
+					"max": 14
 				}
 			]
 		},
@@ -112031,6 +113803,16 @@
 				{
 					"min": 3,
 					"max": 3
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"Maven_": [
+				{
+					"min": 15,
+					"max": 15
 				},
 				{
 					"min": 1,
@@ -112163,6 +113945,24 @@
 					"max": 1
 				}
 			],
+			"MapAtlasContainsZanaMissionMaven_": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 7,
+					"max": 7
+				},
+				{
+					"min": 7,
+					"max": 7
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
 			"MapAtlasContainsEinharMission__": [
 				{
 					"min": 3,
@@ -112185,6 +113985,24 @@
 				{
 					"min": 3,
 					"max": 3
+				},
+				{
+					"min": 2,
+					"max": 2
+				},
+				{
+					"min": 2,
+					"max": 2
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"MapAtlasContainsEinharMissionMaven": [
+				{
+					"min": 15,
+					"max": 15
 				},
 				{
 					"min": 2,
@@ -112235,6 +114053,24 @@
 					"max": 1
 				}
 			],
+			"MapAtlasContainsAlvaMissionMaven__": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 3,
+					"max": 3
+				},
+				{
+					"min": 3,
+					"max": 3
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
 			"MapAtlasContainsNikoMission": [
 				{
 					"min": 3,
@@ -112249,8 +114085,8 @@
 					"max": 5
 				},
 				{
-					"min": 0,
-					"max": 0
+					"min": 1,
+					"max": 1
 				}
 			],
 			"MapAtlasContainsNikoMission2": [
@@ -112267,8 +114103,26 @@
 					"max": 5
 				},
 				{
-					"min": 0,
-					"max": 0
+					"min": 1,
+					"max": 1
+				}
+			],
+			"MapAtlasContainsNikoMissionMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 5,
+					"max": 5
+				},
+				{
+					"min": 5,
+					"max": 5
+				},
+				{
+					"min": 1,
+					"max": 1
 				}
 			],
 			"MapAtlasContainsJunMission": [
@@ -112293,6 +114147,24 @@
 				{
 					"min": 3,
 					"max": 3
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"MapAtlasContainsJunMissionMaven_": [
+				{
+					"min": 15,
+					"max": 15
 				},
 				{
 					"min": 6,
@@ -112352,6 +114224,28 @@
 					"min": 1,
 					"max": 1
 				}
+			],
+			"Maven_": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 3,
+					"max": 3
+				},
+				{
+					"min": 2,
+					"max": 2
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
 			]
 		},
 		"sextant_uses_remaining map_corrupted_bosses_drop_x_additional_vaal_items map_items_drop_corrupted_%": {
@@ -112375,8 +114269,22 @@
 					"max": 3
 				},
 				{
-					"min": 1,
-					"max": 1
+					"min": 2,
+					"max": 2
+				},
+				{
+					"min": 5,
+					"max": 5
+				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 3,
+					"max": 3
 				},
 				{
 					"min": 5,
@@ -112413,6 +114321,16 @@
 				{
 					"min": 30,
 					"max": 30
+				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 35,
+					"max": 35
 				}
 			]
 		},
@@ -112498,6 +114416,24 @@
 					"min": 5,
 					"max": 5
 				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 6,
+					"max": 6
+				},
+				{
+					"min": 6,
+					"max": 6
+				}
 			]
 		},
 		"sextant_uses_remaining map_players_cannot_take_reflected_damage map_contains_x_additional_packs_with_mirrored_rare_monsters": {
@@ -112541,6 +114477,20 @@
 				{
 					"min": 5,
 					"max": 5
+				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 6,
+					"max": 6
 				}
 			]
 		},
@@ -112602,6 +114552,20 @@
 					"min": 10,
 					"max": 10
 				}
+			],
+			"MapAtlasClustersOfWealthyBarrelsMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 45,
+					"max": 45
+				},
+				{
+					"min": 10,
+					"max": 10
+				}
 			]
 		},
 		"sextant_uses_remaining map_area_contains_x_additional_clusters_of_volatile_barrels map_bonus_barrel_%": {
@@ -112641,6 +114605,20 @@
 				{
 					"min": 35,
 					"max": 35
+				},
+				{
+					"min": 10,
+					"max": 10
+				}
+			],
+			"MapAtlasClustersOfVolatileBarrelsMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 45,
+					"max": 45
 				},
 				{
 					"min": 10,
@@ -112690,6 +114668,20 @@
 					"min": 10,
 					"max": 10
 				}
+			],
+			"MapAtlasClustersOfBloodwormBarrelsMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 45,
+					"max": 45
+				},
+				{
+					"min": 10,
+					"max": 10
+				}
 			]
 		},
 		"sextant_uses_remaining map_area_contains_x_additional_clusters_of_parasite_barrels map_bonus_barrel_%": {
@@ -112729,6 +114721,20 @@
 				{
 					"min": 35,
 					"max": 35
+				},
+				{
+					"min": 10,
+					"max": 10
+				}
+			],
+			"MapAtlasClustersOfParasiteBarrelsMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 45,
+					"max": 45
 				},
 				{
 					"min": 10,
@@ -112778,6 +114784,20 @@
 					"min": 10,
 					"max": 10
 				}
+			],
+			"MapAtlasClustersOfBeaconBarrelsMaven_": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 45,
+					"max": 45
+				},
+				{
+					"min": 10,
+					"max": 10
+				}
 			]
 		},
 		"sextant_uses_remaining map_strongbox_monsters_item_quantity_+% map_strongbox_monsters_attack_speed_+% map_strongbox_monsters_movement_velocity_+% map_num_extra_strongboxes map_extra_content_weighting": {
@@ -112797,6 +114817,32 @@
 				{
 					"min": 25,
 					"max": 25
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"Maven___": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 600,
+					"max": 600
+				},
+				{
+					"min": 30,
+					"max": 30
+				},
+				{
+					"min": 30,
+					"max": 30
 				},
 				{
 					"min": 1,
@@ -112862,6 +114908,24 @@
 					"min": 8,
 					"max": 8
 				}
+			],
+			"Maven___": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 14,
+					"max": 14
+				},
+				{
+					"min": 7,
+					"max": 7
+				},
+				{
+					"min": 10,
+					"max": 10
+				}
 			]
 		},
 		"sextant_uses_remaining map_contains_x_additional_packs_on_their_own_team": {
@@ -112869,6 +114933,16 @@
 				{
 					"min": 3,
 					"max": 3
+				},
+				{
+					"min": 12,
+					"max": 12
+				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
 				},
 				{
 					"min": 12,
@@ -112905,6 +114979,16 @@
 				{
 					"min": 8,
 					"max": 8
+				}
+			],
+			"Maven__": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 10
 				}
 			]
 		},
@@ -112950,6 +115034,20 @@
 					"min": 8,
 					"max": 8
 				}
+			],
+			"Maven_": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 10,
+					"max": 10
+				}
 			]
 		},
 		"sextant_uses_remaining map_boss_accompanied_by_bodyguards map_on_complete_drop_x_additional_maps": {
@@ -112979,6 +115077,20 @@
 				{
 					"min": 2,
 					"max": 2
+				}
+			],
+			"Maven__": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 3,
+					"max": 3
 				}
 			]
 		},
@@ -113034,6 +115146,24 @@
 					"min": 1,
 					"max": 1
 				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 3,
+					"max": 3
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
 			]
 		},
 		"sextant_uses_remaining map_spawn_abysses map_num_extra_abysses map_extra_content_weighting": {
@@ -113067,6 +115197,24 @@
 				{
 					"min": 2,
 					"max": 2
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 3,
+					"max": 3
 				},
 				{
 					"min": 1,
@@ -113178,6 +115326,28 @@
 					"min": 1,
 					"max": 1
 				}
+			],
+			"MapAtlasGloomShrineEffectAndDurationMaven_": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 50,
+					"max": 50
+				},
+				{
+					"min": 2,
+					"max": 2
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
 			]
 		},
 		"sextant_uses_remaining map_player_shrine_effect_duration_+% map_num_extra_shrines map_num_extra_resonating_shrines map_extra_content_weighting": {
@@ -113215,6 +115385,28 @@
 				{
 					"min": 1,
 					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"MapAtlasResonatingShrineEffectAndDurationMaven_____": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 50,
+					"max": 50
+				},
+				{
+					"min": 2,
+					"max": 2
 				},
 				{
 					"min": 1,
@@ -113791,6 +115983,12 @@
 				{
 					"min": 36,
 					"max": 40
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 31,
+					"max": 38
 				}
 			]
 		},
@@ -116530,6 +118728,24 @@
 					"min": 100,
 					"max": 100
 				}
+			],
+			"1": [
+				{
+					"min": 2,
+					"max": 3
+				}
+			],
+			"2_": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 20
+				}
 			]
 		},
 		"map_area_contains_map_chest local_extra_max_charges leaguestone_prefix_minimum_area_level": {
@@ -116839,6 +119055,24 @@
 				{
 					"min": 75,
 					"max": 75
+				}
+			],
+			"1_": [
+				{
+					"min": 25,
+					"max": 35
+				}
+			],
+			"2___": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"Maven_": [
+				{
+					"min": 130,
+					"max": 150
 				}
 			]
 		},
@@ -117198,6 +119432,18 @@
 					"min": 30,
 					"max": 50
 				}
+			],
+			"1_": [
+				{
+					"min": 35,
+					"max": 50
+				}
+			],
+			"Maven": [
+				{
+					"min": 130,
+					"max": 150
+				}
 			]
 		},
 		"map_tormented_spirits_movement_speed_+%": {
@@ -117263,6 +119509,18 @@
 				{
 					"min": 5,
 					"max": 5
+				}
+			],
+			"Flat1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"FlatMaven_": [
+				{
+					"min": 3,
+					"max": 3
 				}
 			]
 		},
@@ -117688,6 +119946,18 @@
 				}
 			],
 			"MapAreaContainsAdditionalRarePacks2": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			],
+			"Flat1_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"FlatMaven": [
 				{
 					"min": 3,
 					"max": 3
@@ -118146,6 +120416,18 @@
 				}
 			],
 			"Unique__2": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"ImmuneToShockedGroundUberMaven": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"UnaffectedByShockedGroundInfluenceMaven": [
 				{
 					"min": 1,
 					"max": 1
@@ -119981,6 +122263,24 @@
 				{
 					"min": 16,
 					"max": 20
+				}
+			],
+			"IncreasedBootsUberMaven_": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"InfluenceMaven_": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"Monster___": [
+				{
+					"min": 50,
+					"max": 50
 				}
 			]
 		},
@@ -124683,16 +126983,6 @@
 					"max": 122
 				}
 			],
-			"Unique__1_": [
-				{
-					"min": 376,
-					"max": 400
-				},
-				{
-					"min": 568,
-					"max": 600
-				}
-			],
 			"Influence1__": [
 				{
 					"min": 17,
@@ -124721,6 +127011,26 @@
 				{
 					"min": 51,
 					"max": 59
+				}
+			],
+			"UberMaven": [
+				{
+					"min": 35,
+					"max": 49
+				},
+				{
+					"min": 60,
+					"max": 73
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 35,
+					"max": 49
+				},
+				{
+					"min": 60,
+					"max": 73
 				}
 			]
 		},
@@ -127540,6 +129850,16 @@
 					"min": 15,
 					"max": 15
 				}
+			],
+			"IncreasedDurationBootsUberMaven": [
+				{
+					"min": 10,
+					"max": 15
+				},
+				{
+					"min": 20,
+					"max": 20
+				}
 			]
 		},
 		"base_avoid_projectiles_%_chance": {
@@ -127598,6 +129918,16 @@
 					"min": 22,
 					"max": 22
 				}
+			],
+			"TotemDamageSpellUberMaven_": [
+				{
+					"min": 31,
+					"max": 35
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"summon_totem_cast_speed_+% local_display_socketed_gems_get_spell_totem_level": {
@@ -127629,6 +129959,16 @@
 				{
 					"min": 22,
 					"max": 22
+				}
+			],
+			"TotemSpeedSpellUberMaven": [
+				{
+					"min": 17,
+					"max": 20
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -127662,6 +130002,16 @@
 					"min": 22,
 					"max": 22
 				}
+			],
+			"TotemDamageAttackUberMaven": [
+				{
+					"min": 31,
+					"max": 35
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"summon_totem_cast_speed_+% local_display_socketed_gems_supported_by_level_x_ranged_attack_totem": {
@@ -127694,6 +130044,16 @@
 					"min": 22,
 					"max": 22
 				}
+			],
+			"TotemSpeedAttackUberMaven": [
+				{
+					"min": 17,
+					"max": 20
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"local_display_grants_skill_decoy_totem_level": {
@@ -127701,6 +130061,12 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"GrantsDecoyTotemSkillUberMaven_": [
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -127733,6 +130099,16 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"UberMaven": [
+				{
+					"min": 13,
+					"max": 14
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -127786,6 +130162,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"IncreasedCastSpeedUberMaven_": [
+				{
+					"min": 13,
+					"max": 14
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"base_projectile_speed_+% local_display_socketed_gems_get_faster_projectiles_level": {
@@ -127818,6 +130204,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"UberMaven": [
+				{
+					"min": 26,
+					"max": 30
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"projectile_damage_+% local_display_socketed_gems_supported_by_level_x_slower_projectiles": {
@@ -127849,6 +130245,16 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"UberMaven_": [
+				{
+					"min": 23,
+					"max": 25
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -127900,6 +130306,18 @@
 					"min": 31,
 					"max": 35
 				}
+			],
+			"ChanceToUberMaven_": [
+				{
+					"min": 31,
+					"max": 60
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 31,
+					"max": 60
+				}
 			]
 		},
 		"number_of_additional_traps_to_throw local_display_socketed_gems_get_trap_level": {
@@ -127931,6 +130349,16 @@
 				{
 					"min": 22,
 					"max": 22
+				}
+			],
+			"AdditionalTrapsThrownSupportedUberMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -127964,6 +130392,16 @@
 					"min": 22,
 					"max": 22
 				}
+			],
+			"TrapDamageUberMaven_": [
+				{
+					"min": 31,
+					"max": 35
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"trap_damage_+% local_display_socketed_gems_supported_by_level_x_trap_cooldown": {
@@ -127995,6 +130433,16 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"TrapDamageCooldownUberMaven": [
+				{
+					"min": 31,
+					"max": 35
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -128028,6 +130476,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"TrapSpeedCooldownUberMaven_": [
+				{
+					"min": 17,
+					"max": 20
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"trap_damage_+% local_display_socketed_gems_supported_by_level_x_trap_and_mine_damage": {
@@ -128060,6 +130518,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"TrapDamageMineUberMaven": [
+				{
+					"min": 31,
+					"max": 35
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"base_poison_damage_+% local_display_socketed_gems_supported_by_level_x_poison": {
@@ -128091,6 +130559,16 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"SupportedUberMaven": [
+				{
+					"min": 31,
+					"max": 35
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -128144,6 +130622,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"PoisonDurationSupportedUberMaven": [
+				{
+					"min": 17,
+					"max": 20
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"bleeding_damage_+% local_display_socketed_gems_supported_by_level_x_chance_to_bleed": {
@@ -128175,6 +130663,16 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"UberMaven": [
+				{
+					"min": 31,
+					"max": 35
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -128208,6 +130706,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"IncreasedAccuracySupportedUberMaven": [
+				{
+					"min": 16,
+					"max": 20
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"global_chance_to_blind_on_hit_% local_display_socketed_gems_get_blind_level": {
@@ -128240,6 +130748,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"SupportedUberMaven": [
+				{
+					"min": 9,
+					"max": 10
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"local_display_socketed_spells_critical_strike_multiplier_+": {
@@ -128260,6 +130778,12 @@
 					"min": 70,
 					"max": 70
 				}
+			],
+			"SocketedSpellCriticalMultiplierUberMaven": [
+				{
+					"min": 90,
+					"max": 90
+				}
 			]
 		},
 		"local_display_socketed_attacks_critical_strike_multiplier_+": {
@@ -128279,6 +130803,12 @@
 				{
 					"min": 70,
 					"max": 70
+				}
+			],
+			"SocketedAttackCriticalMultiplierUberMaven": [
+				{
+					"min": 90,
+					"max": 90
 				}
 			]
 		},
@@ -128312,6 +130842,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"SupportedUberMaven": [
+				{
+					"min": 23,
+					"max": 25
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"base_skill_area_of_effect_+% local_display_socketed_gems_get_increased_area_level": {
@@ -128343,6 +130883,16 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"SupportedUberMaven": [
+				{
+					"min": 13,
+					"max": 15
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -128376,6 +130926,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"SupportedUberMaven___": [
+				{
+					"min": 23,
+					"max": 25
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"minion_maximum_life_+% local_display_socketed_gems_supported_by_x_increased_minion_life_level": {
@@ -128407,6 +130967,16 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"SupportedUberMaven_": [
+				{
+					"min": 23,
+					"max": 25
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -128440,6 +131010,16 @@
 					"min": 22,
 					"max": 22
 				}
+			],
+			"AdditionalMinesPlacedSupportedUberMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"mine_damage_+% local_display_socketed_gems_get_remote_mine_level": {
@@ -128471,6 +131051,16 @@
 				{
 					"min": 22,
 					"max": 22
+				}
+			],
+			"MineDamageUberMaven": [
+				{
+					"min": 31,
+					"max": 35
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -128504,6 +131094,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"MineDamageTrapUberMaven": [
+				{
+					"min": 31,
+					"max": 35
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"cold_ailment_effect_+% local_display_socketed_gems_supported_by_x_hypothermia": {
@@ -128535,6 +131135,16 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"IncreasedChillEffectSupportedUberMaven": [
+				{
+					"min": 17,
+					"max": 20
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -128568,6 +131178,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"IncreasedShockEffectSupportedUberMaven": [
+				{
+					"min": 17,
+					"max": 20
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"ignite_duration_+% local_display_socketed_gems_supported_by_level_x_immolate": {
@@ -128599,6 +131219,16 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"IgniteDurationSupportedUberMaven": [
+				{
+					"min": 17,
+					"max": 20
+				},
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -128632,6 +131262,16 @@
 					"min": 20,
 					"max": 20
 				}
+			],
+			"IncreasedBurningDamageSupportedUberMaven": [
+				{
+					"min": 31,
+					"max": 35
+				},
+				{
+					"min": 25,
+					"max": 25
+				}
 			]
 		},
 		"local_display_socketed_gems_supported_by_level_x_reduced_duration": {
@@ -128639,6 +131279,12 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"ByLessDurationUberMaven": [
+				{
+					"min": 25,
+					"max": 25
 				}
 			]
 		},
@@ -128660,6 +131306,12 @@
 					"min": 300,
 					"max": 300
 				}
+			],
+			"SocketedSpellCriticalStrikeChanceUberMaven": [
+				{
+					"min": 400,
+					"max": 400
+				}
 			]
 		},
 		"local_display_socketed_attacks_additional_critical_strike_chance": {
@@ -128679,6 +131331,12 @@
 				{
 					"min": 300,
 					"max": 300
+				}
+			],
+			"SocketedAttackCriticalStrikeChanceUberMaven": [
+				{
+					"min": 400,
+					"max": 400
 				}
 			]
 		},
@@ -128702,6 +131360,16 @@
 					"min": 9,
 					"max": 9
 				}
+			],
+			"EnemyPhysicalDamageTakenAuraUberMaven": [
+				{
+					"min": 12,
+					"max": 12
+				},
+				{
+					"min": 12,
+					"max": 12
+				}
 			]
 		},
 		"local_display_nearby_enemy_elemental_damage_taken_+% elemental_damage_taken_+%": {
@@ -128713,6 +131381,16 @@
 				{
 					"min": 6,
 					"max": 6
+				}
+			],
+			"EnemyElementalDamageTakenAuraUberMaven_": [
+				{
+					"min": 9,
+					"max": 9
+				},
+				{
+					"min": 9,
+					"max": 9
 				}
 			]
 		},
@@ -128824,6 +131502,16 @@
 					"min": 13,
 					"max": 18
 				}
+			],
+			"ByItemRarityUberMaven__": [
+				{
+					"min": 20,
+					"max": 20
+				},
+				{
+					"min": 19,
+					"max": 25
+				}
 			]
 		},
 		"non_chaos_damage_to_add_as_chaos_damage_%": {
@@ -128919,6 +131607,12 @@
 				{
 					"min": 40,
 					"max": 40
+				}
+			],
+			"MaximumLifeLeechRateInfluenceMaven": [
+				{
+					"min": 20,
+					"max": 20
 				}
 			]
 		},
@@ -136514,6 +139208,36 @@
 					"min": 50,
 					"max": 50
 				}
+			],
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"2": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"3_": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			],
+			"Corrupted": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"Maven": [
+				{
+					"min": 8,
+					"max": 8
+				}
 			]
 		},
 		"map_monsters_damage_+%": {
@@ -136880,6 +139604,30 @@
 					"min": 30,
 					"max": 30
 				}
+			],
+			"Percent1__": [
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
+			"Percent2_": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"Percent3": [
+				{
+					"min": 5,
+					"max": 5
+				}
+			],
+			"PercentMaven_": [
+				{
+					"min": 12,
+					"max": 15
+				}
 			]
 		},
 		"map_incursion_tormented_spirit_random_possess": {
@@ -137057,6 +139805,30 @@
 				{
 					"min": 10,
 					"max": 10
+				}
+			],
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"2": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"3": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			],
+			"Maven": [
+				{
+					"min": 5,
+					"max": 5
 				}
 			]
 		},
@@ -138614,6 +141386,16 @@
 					"min": -9,
 					"max": -9
 				}
+			],
+			"EnemyFireResistanceAuraInfluenceMaven": [
+				{
+					"min": -12,
+					"max": -12
+				},
+				{
+					"min": -12,
+					"max": -12
+				}
 			]
 		},
 		"local_display_nearby_enemy_cold_damage_resistance_% base_cold_damage_resistance_%": {
@@ -138636,6 +141418,16 @@
 					"min": -9,
 					"max": -9
 				}
+			],
+			"EnemyColdResistanceAuraInfluenceMaven": [
+				{
+					"min": -12,
+					"max": -12
+				},
+				{
+					"min": -12,
+					"max": -12
+				}
 			]
 		},
 		"local_display_nearby_enemy_lightning_damage_resistance_% base_lightning_damage_resistance_%": {
@@ -138657,6 +141449,16 @@
 				{
 					"min": -9,
 					"max": -9
+				}
+			],
+			"EnemyLightningResistanceAuraInfluenceMaven": [
+				{
+					"min": -12,
+					"max": -12
+				},
+				{
+					"min": -12,
+					"max": -12
 				}
 			]
 		},
@@ -138759,6 +141561,16 @@
 				{
 					"min": -9,
 					"max": -9
+				}
+			],
+			"EnemyChaosResistanceAuraInfluenceMaven": [
+				{
+					"min": -12,
+					"max": -12
+				},
+				{
+					"min": -12,
+					"max": -12
 				}
 			]
 		},
@@ -141436,6 +144248,18 @@
 					"min": 21,
 					"max": 25
 				}
+			],
+			"ChaosNonAilmentUberMaven": [
+				{
+					"min": 17,
+					"max": 24
+				}
+			],
+			"ChaosInfluenceMaven": [
+				{
+					"min": 17,
+					"max": 23
+				}
 			]
 		},
 		"cold_dot_multiplier_+": {
@@ -141660,6 +144484,18 @@
 					"min": 13,
 					"max": 16
 				}
+			],
+			"ColdUberMaven": [
+				{
+					"min": 17,
+					"max": 24
+				}
+			],
+			"ColdInfluenceMaven_": [
+				{
+					"min": 17,
+					"max": 23
+				}
 			]
 		},
 		"fire_dot_multiplier_+": {
@@ -141789,6 +144625,12 @@
 					"max": 25
 				}
 			],
+			"FireUnique__3": [
+				{
+					"min": 8,
+					"max": 12
+				}
+			],
 			"FireInfluence1_": [
 				{
 					"min": 8,
@@ -141811,6 +144653,18 @@
 				{
 					"min": 21,
 					"max": 25
+				}
+			],
+			"FireUberMaven": [
+				{
+					"min": 17,
+					"max": 24
+				}
+			],
+			"FireInfluenceMaven": [
+				{
+					"min": 17,
+					"max": 23
 				}
 			]
 		},
@@ -146234,6 +149088,12 @@
 					"min": 13,
 					"max": 15
 				}
+			],
+			"Unique__1__": [
+				{
+					"min": 20,
+					"max": 25
+				}
 			]
 		},
 		"lightning_and_chaos_damage_resistance_%": {
@@ -146638,7 +149498,7 @@
 				}
 			]
 		},
-		"non_damaging_ailment_effect_+%_on_self": {
+		"shocked_chilled_effect_on_self_+%": {
 			"EinharMasterReduced1": [
 				{
 					"min": -20,
@@ -147315,6 +150175,18 @@
 				{
 					"min": 21,
 					"max": 25
+				}
+			],
+			"PhysicalUberMaven_": [
+				{
+					"min": 17,
+					"max": 24
+				}
+			],
+			"PhysicalInfluenceMaven": [
+				{
+					"min": 17,
+					"max": 23
 				}
 			]
 		},
@@ -148883,6 +151755,12 @@
 				{
 					"min": 15,
 					"max": 25
+				}
+			],
+			"MaximumEnergyShieldLeechRateInfluenceMaven_": [
+				{
+					"min": 20,
+					"max": 20
 				}
 			]
 		},
@@ -150830,6 +153708,28 @@
 					"min": 1,
 					"max": 1
 				}
+			],
+			"AndBossAdditionalCurrencyShardsMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 76,
+					"max": 76
+				},
+				{
+					"min": 38,
+					"max": 38
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
 			]
 		},
 		"tormented_betrayer_spawn_monster_on_death_variation": {
@@ -150922,6 +153822,20 @@
 					"min": 100,
 					"max": 100
 				}
+			],
+			"MapAtlasVaalSoulsOnKillAndExtraVaalPacksMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 100,
+					"max": 100
+				}
 			]
 		},
 		"sextant_uses_remaining map_contains_additional_packs_of_vaal_monsters map_vaal_monster_items_drop_corrupted_%": {
@@ -150966,6 +153880,20 @@
 					"min": 25,
 					"max": 25
 				}
+			],
+			"MapAtlasCorruptedDropWithExtraVaalPacksMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 30,
+					"max": 30
+				}
 			]
 		},
 		"sextant_uses_remaining map_beyond_chance_% map_beyond_portal_spawn_additional_demon_%_chance map_extra_content_weighting": {
@@ -150977,6 +153905,24 @@
 				{
 					"min": 6,
 					"max": 6
+				},
+				{
+					"min": 33,
+					"max": 33
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"AndExtraBeyondDemonChanceMaven_____": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 8,
+					"max": 8
 				},
 				{
 					"min": 33,
@@ -151048,11 +153994,49 @@
 				}
 			]
 		},
+		"sextant_uses_remaining map_contains_additional_tormented_betrayers map_possessed_monsters_drop_winged_scarab_chance_% map_extra_content_weighting": {
+			"edBetrayerAndWingedScarabDropChanceMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 100,
+					"max": 100
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
 		"sextant_uses_remaining map_contains_additional_tormented_heretics map_possessed_monsters_drop_map_chance_% map_extra_content_weighting": {
 			"edHereticAndMapDropChance": [
 				{
 					"min": 3,
 					"max": 3
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 100,
+					"max": 100
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"edHereticAndMapDropChanceMaven__": [
+				{
+					"min": 15,
+					"max": 15
 				},
 				{
 					"min": 1,
@@ -151266,6 +154250,18 @@
 					"min": 1,
 					"max": 1
 				}
+			],
+			"ImmuneToDesecratedGroundUberMaven": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"UnaffectedByDesecratedGroundInfluenceMaven": [
+				{
+					"min": 1,
+					"max": 1
+				}
 			]
 		},
 		"keystone_quiet_might": {
@@ -151414,6 +154410,28 @@
 					"min": 1,
 					"max": 1
 				}
+			],
+			"MapAtlasUniqueStrongboxChanceWithExtraVaalPacksMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 50,
+					"max": 50
+				},
+				{
+					"min": 50,
+					"max": 50
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
 			]
 		},
 		"number_of_monsters_to_summon summoned_monster_rarity chest_delay_drops_until_daemons_finish chest_display_guarded_by_hooded_architect": {
@@ -151493,6 +154511,20 @@
 				{
 					"min": 8,
 					"max": 8
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"MapAtlasNoSoulGainPreventionWithExtraVaalPacksMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 10
 				},
 				{
 					"min": 1,
@@ -152916,6 +155948,24 @@
 					"min": 1,
 					"max": 1
 				}
+			],
+			"Maven_": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
 			]
 		},
 		"is_blight_fire_monster": {
@@ -153822,6 +156872,14 @@
 				}
 			]
 		},
+		"blight_scout_tower_additional_minions_+": {
+			"BlightEnchantmentScoutTowerExtraMinion": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
 		"map_pack_size_+% map_monsters_movement_speed_+%": {
 			"1_": [
 				{
@@ -153875,8 +156933,8 @@
 					"max": 5
 				},
 				{
-					"min": 2,
-					"max": 2
+					"min": 5,
+					"max": 5
 				}
 			],
 			"8": [
@@ -153885,8 +156943,8 @@
 					"max": 5
 				},
 				{
-					"min": 3,
-					"max": 3
+					"min": 10,
+					"max": 10
 				}
 			],
 			"11": [
@@ -153895,8 +156953,8 @@
 					"max": 5
 				},
 				{
-					"min": 5,
-					"max": 5
+					"min": 15,
+					"max": 15
 				}
 			]
 		},
@@ -154098,26 +157156,6 @@
 				}
 			]
 		},
-		"offering_spells_effect_+%": {
-			"Unique__1": [
-				{
-					"min": -25,
-					"max": -25
-				}
-			],
-			"Influence1_": [
-				{
-					"min": 16,
-					"max": 20
-				}
-			],
-			"Influence2": [
-				{
-					"min": 21,
-					"max": 25
-				}
-			]
-		},
 		"max_chance_to_block_attacks_if_not_blocked_recently": {
 			"Unique__1": [
 				{
@@ -154296,6 +157334,30 @@
 					"min": 20,
 					"max": 30
 				}
+			],
+			"1": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"2__": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			],
+			"3_": [
+				{
+					"min": 4,
+					"max": 4
+				}
+			],
+			"Maven": [
+				{
+					"min": 10,
+					"max": 10
+				}
 			]
 		},
 		"map_number_of_additional_prefixes": {
@@ -154320,6 +157382,12 @@
 					"min": 4,
 					"max": 7
 				}
+			],
+			"AtlasTreeAdditionalElderMonsters_": [
+				{
+					"min": 9,
+					"max": 15
+				}
 			]
 		},
 		"map_watchstone_additional_packs_of_shaper_monsters": {
@@ -154327,6 +157395,12 @@
 				{
 					"min": 4,
 					"max": 7
+				}
+			],
+			"AtlasTreeAdditionalShaperMonsters": [
+				{
+					"min": 9,
+					"max": 15
 				}
 			]
 		},
@@ -154368,6 +157442,12 @@
 				}
 			],
 			"Unique__7": [
+				{
+					"min": 15,
+					"max": 15
+				}
+			],
+			"Unique__8____": [
 				{
 					"min": 15,
 					"max": 15
@@ -154618,6 +157698,16 @@
 					"min": 31,
 					"max": 35
 				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 36,
+					"max": 50
+				},
+				{
+					"min": 36,
+					"max": 50
+				}
 			]
 		},
 		"tailwind_if_have_crit_recently": {
@@ -154648,6 +157738,16 @@
 					"min": 9,
 					"max": 11
 				}
+			],
+			"CritRecentlyInfluenceMaven": [
+				{
+					"min": 9,
+					"max": 12
+				},
+				{
+					"min": 13,
+					"max": 16
+				}
 			]
 		},
 		"minimum_added_fire_damage_if_have_crit_recently maximum_added_fire_damage_if_have_crit_recently": {
@@ -154669,6 +157769,16 @@
 				{
 					"min": 26,
 					"max": 35
+				}
+			],
+			"CritRecentlyInfluenceMaven_": [
+				{
+					"min": 26,
+					"max": 30
+				},
+				{
+					"min": 36,
+					"max": 45
 				}
 			]
 		},
@@ -154692,6 +157802,16 @@
 					"min": 26,
 					"max": 35
 				}
+			],
+			"CritRecentlyInfluenceMaven_": [
+				{
+					"min": 26,
+					"max": 30
+				},
+				{
+					"min": 36,
+					"max": 45
+				}
 			]
 		},
 		"minimum_added_lightning_damage_if_have_crit_recently maximum_added_lightning_damage_if_have_crit_recently": {
@@ -154714,6 +157834,16 @@
 					"min": 48,
 					"max": 60
 				}
+			],
+			"CritRecentlyInfluenceMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 61,
+					"max": 90
+				}
 			]
 		},
 		"chance_to_intimidate_on_hit_%": {
@@ -154721,6 +157851,12 @@
 				{
 					"min": 7,
 					"max": 10
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 100,
+					"max": 100
 				}
 			]
 		},
@@ -154742,6 +157878,12 @@
 					"min": 12,
 					"max": 15
 				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 100,
+					"max": 100
+				}
 			]
 		},
 		"melee_attack_number_of_spirit_strikes": {
@@ -154749,6 +157891,12 @@
 				{
 					"min": 1,
 					"max": 1
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 2,
+					"max": 2
 				}
 			]
 		},
@@ -154897,6 +158045,32 @@
 				{
 					"min": 900,
 					"max": 900
+				}
+			],
+			"RegenerateLifeOverMaven": [
+				{
+					"min": 1500,
+					"max": 1500
+				}
+			]
+		},
+		"offering_spells_effect_+%": {
+			"Influence1_": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"Influence2": [
+				{
+					"min": 21,
+					"max": 25
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 26,
+					"max": 35
 				}
 			]
 		},
@@ -156561,6 +159735,12 @@
 				{
 					"min": 2,
 					"max": 4
+				}
+			],
+			"Cortex": [
+				{
+					"min": 4,
+					"max": 6
 				}
 			],
 			"CortexReplica": [
@@ -159322,6 +162502,20 @@
 					"min": 1,
 					"max": 1
 				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
 			]
 		},
 		"local_affliction_jewel_small_nodes_grant_maximum_life": {
@@ -161768,7 +164962,7 @@
 				}
 			]
 		},
-		"map_harvest_league map_set_league_category": {
+		"map_harvest_league map_set_league_category map_extra_content_weighting": {
 			"MapCrafted": [
 				{
 					"min": 1,
@@ -161777,6 +164971,10 @@
 				{
 					"min": 34,
 					"max": 34
+				},
+				{
+					"min": 1,
+					"max": 1
 				}
 			]
 		},
@@ -162084,7 +165282,7 @@
 			"Unique__1": [
 				{
 					"min": 1,
-					"max": 133
+					"max": 134
 				},
 				{
 					"min": 15,
@@ -162094,7 +165292,7 @@
 			"Unique__3": [
 				{
 					"min": 1,
-					"max": 133
+					"max": 134
 				},
 				{
 					"min": 1,
@@ -162106,7 +165304,7 @@
 			"Unique__2": [
 				{
 					"min": 1,
-					"max": 133
+					"max": 134
 				},
 				{
 					"min": 15,
@@ -162116,7 +165314,7 @@
 			"Unique__4_": [
 				{
 					"min": 1,
-					"max": 133
+					"max": 134
 				},
 				{
 					"min": 25,
@@ -169025,8 +172223,8 @@
 		"heist_alert_level_gained_per_10_sec heist_contract_alert_level_+%_final heist_contract_lockdown_timer_+% heist_monster_spawner_alive_limit_+% map_item_drop_quantity_+% map_item_drop_rarity_+%": {
 			"1": [
 				{
-					"min": 5,
-					"max": 5
+					"min": 20,
+					"max": 20
 				},
 				{
 					"min": 0,
@@ -176749,14 +179947,14 @@
 		"steel_steal_reflect_damage_+%": {
 			"Unique__1": [
 				{
-					"min": 40,
-					"max": 50
+					"min": 20,
+					"max": 25
 				}
 			],
 			"Unique__2": [
 				{
-					"min": 40,
-					"max": 50
+					"min": 20,
+					"max": 25
 				}
 			]
 		},
@@ -177477,16 +180675,16 @@
 		"cold_damage_+%_per_missing_cold_resistance": {
 			"Unique__1": [
 				{
-					"min": 3,
-					"max": 5
+					"min": 15,
+					"max": 20
 				}
 			]
 		},
 		"fire_damage_+%_per_missing_fire_resistance": {
 			"Unique__1": [
 				{
-					"min": 3,
-					"max": 5
+					"min": 15,
+					"max": 20
 				}
 			]
 		},
@@ -178306,6 +181504,5802 @@
 				}
 			]
 		},
+		"map_ritual_league": {
+			"Map": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"local_unique_hungry_loop_number_of_gems_to_consume local_unique_hungry_loop_has_consumed_gem local_display_socketed_gems_supported_by_level_x_trinity": {
+			"SupportedByTrinity": [
+				{
+					"min": -1,
+					"max": -1
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 20,
+					"max": 20
+				}
+			]
+		},
+		"lose_%_of_life_on_crit": {
+			"Unique__1": [
+				{
+					"min": 10,
+					"max": 15
+				}
+			]
+		},
+		"lose_%_of_es_on_crit": {
+			"Unique__1": [
+				{
+					"min": 10,
+					"max": 15
+				}
+			]
+		},
+		"dot_multiplier_+_if_crit_in_past_8_seconds": {
+			"IfCrit8SecondsUnique__1_": [
+				{
+					"min": 40,
+					"max": 60
+				}
+			]
+		},
+		"life_regeneration_rate_per_minute_%_if_crit_in_past_8_seconds": {
+			"LifeRegenerationIfCrit8SecondsUnique__1": [
+				{
+					"min": 120,
+					"max": 150
+				}
+			]
+		},
+		"armour_+%_per_50_str": {
+			"ArmourPerStrengthUnique__1_": [
+				{
+					"min": -10,
+					"max": -10
+				}
+			]
+		},
+		"enemies_you_ignite_take_chaos_damage_from_ignite_instead use_unique_blackflame_ignite_effect": {
+			"Unique__1": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"enemies_you_ignite_wither_does_not_expire": {
+			"Unique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"local_display_grants_skill_vampiric_icon_level": {
+			"GrantsVampiricIconSkillUnique__1": [
+				{
+					"min": 20,
+					"max": 20
+				}
+			]
+		},
+		"local_bleeding_ailment_dot_multiplier_+": {
+			"LocalBleedDamageOverTimeMultiplierUnique__1": [
+				{
+					"min": 25,
+					"max": 35
+				}
+			]
+		},
+		"gain_sacrificial_zeal_on_skill_use_%_cost_as_damage_per_minute": {
+			"OnSkillUseUnique__1_": [
+				{
+					"min": 9000,
+					"max": 9000
+				}
+			]
+		},
+		"overwhelm_phys_reduction_%_while_have_sacrificial_zeal": {
+			"SacrificialZealUnique__1": [
+				{
+					"min": 10,
+					"max": 15
+				}
+			]
+		},
+		"hexproof_if_right_ring_is_magic_item": {
+			"Unique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"self_take_no_extra_damage_from_critical_strikes_if_left_ring_is_magic_item": {
+			"Unique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"enemy_extra_damage_rolls_if_magic_ring_equipped": {
+			"Unique__1": [
+				{
+					"min": -1,
+					"max": -1
+				}
+			]
+		},
+		"map_essence_monsters_have_an_additional_essence_%_chance": {
+			"1": [
+				{
+					"min": 4,
+					"max": 6
+				}
+			],
+			"2": [
+				{
+					"min": 7,
+					"max": 10
+				}
+			],
+			"3": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"Maven_": [
+				{
+					"min": 40,
+					"max": 50
+				}
+			]
+		},
+		"map_replace_legion_splinter_with_legion_fragment_chance_permyriad": {
+			"1": [
+				{
+					"min": 2,
+					"max": 3
+				}
+			],
+			"2_": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"3": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"4": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			],
+			"Maven": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"map_items_drop_fully_linked_chance_permillage": {
+			"WatchstoneFullyLinkedChance1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"WatchstoneFullyLinkedChance2": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"WatchstoneFullyLinkedChance3_": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			],
+			"WatchstoneFullyLinkedChanceMaven": [
+				{
+					"min": 8,
+					"max": 8
+				}
+			]
+		},
+		"map_equipment_drops_with_maximum_sockets_permillage_chance": {
+			"WatchstoneMaximumSocketsChance1_": [
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
+			"WatchstoneMaximumSocketsChance2": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneMaximumSocketsChance3": [
+				{
+					"min": 5,
+					"max": 5
+				}
+			],
+			"WatchstoneMaximumSocketsChanceMaven": [
+				{
+					"min": 12,
+					"max": 12
+				}
+			]
+		},
+		"map_equipment_drops_with_lucky_links": {
+			"WatchstoneLuckyLinks1_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"map_equipment_drops_with_+2_sockets_permillage_chance": {
+			"WatchstonePlusTwoSocketsChance1_": [
+				{
+					"min": 2,
+					"max": 4
+				}
+			],
+			"WatchstonePlusTwoSocketsChance2": [
+				{
+					"min": 5,
+					"max": 7
+				}
+			],
+			"WatchstonePlusTwoSocketsChance3_": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			]
+		},
+		"map_equipment_drops_with_1_white_socket_permyriad_chance": {
+			"WatchstoneWhiteSocketChance1__": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"WatchstoneWhiteSocketChance2": [
+				{
+					"min": 21,
+					"max": 25
+				}
+			],
+			"WatchstoneWhiteSocketChance3": [
+				{
+					"min": 26,
+					"max": 35
+				}
+			],
+			"WatchstoneWhiteSocketChanceMaven_": [
+				{
+					"min": 70,
+					"max": 80
+				}
+			]
+		},
+		"map_weapons_drop_20%_quality_%_chance": {
+			"WatchstoneWeaponQualityChance1_": [
+				{
+					"min": 2,
+					"max": 3
+				}
+			],
+			"WatchstoneWeaponQualityChance2": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"WatchstoneWeaponQualityChance3_": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"WatchstoneWeaponQualityChanceMaven_": [
+				{
+					"min": 14,
+					"max": 16
+				}
+			]
+		},
+		"map_armours_drop_20%_quality_%_chance": {
+			"WatchstoneArmourQualityChance1": [
+				{
+					"min": 2,
+					"max": 3
+				}
+			],
+			"WatchstoneArmourQualityChance2": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"WatchstoneArmourQualityChance3": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"WatchstoneArmourQualityChanceMaven": [
+				{
+					"min": 14,
+					"max": 16
+				}
+			]
+		},
+		"map_gems_drop_20%_quality_%_chance": {
+			"WatchstoneGemQualityChance1_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"WatchstoneGemQualityChanceMaven": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"map_flasks_drop_with_max_quality_chance_%": {
+			"WatchstoneFlaskQualityChance1": [
+				{
+					"min": 2,
+					"max": 3
+				}
+			],
+			"WatchstoneFlaskQualityChance2__": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"WatchstoneFlaskQualityChance3": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"WatchstoneFlaskQualityChanceMaven_": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			]
+		},
+		"map_boss_drops_additional_currency_items": {
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"Maven": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"map_rare_maps_drop_corrupted_chance_%": {
+			"1": [
+				{
+					"min": 4,
+					"max": 6
+				}
+			],
+			"2": [
+				{
+					"min": 7,
+					"max": 10
+				}
+			],
+			"3_": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"Maven_": [
+				{
+					"min": 30,
+					"max": 40
+				}
+			]
+		},
+		"map_influenced_item_drop_chance_+%": {
+			"1": [
+				{
+					"min": 5,
+					"max": 15
+				}
+			],
+			"2_": [
+				{
+					"min": 16,
+					"max": 30
+				}
+			],
+			"3_": [
+				{
+					"min": 31,
+					"max": 50
+				}
+			],
+			"Maven_": [
+				{
+					"min": 140,
+					"max": 160
+				}
+			]
+		},
+		"map_chest_item_quantity_+%": {
+			"WatchstoneChestItemQuantity1": [
+				{
+					"min": 10,
+					"max": 15
+				}
+			],
+			"WatchstoneChestItemQuantity2": [
+				{
+					"min": 16,
+					"max": 25
+				}
+			],
+			"WatchstoneChestItemQuantity3": [
+				{
+					"min": 26,
+					"max": 35
+				}
+			],
+			"WatchstoneChestItemQuantityMaven_": [
+				{
+					"min": 80,
+					"max": 100
+				}
+			]
+		},
+		"influence_monster_chance_to_drop_rare_weapon_%": {
+			"WatchstoneInfluenceMonsterWeaponChance1_": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneInfluenceMonsterWeaponChance2_": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"WatchstoneInfluenceMonsterWeaponChance3__": [
+				{
+					"min": 7,
+					"max": 8
+				}
+			],
+			"WatchstoneInfluenceMonsterWeaponChanceMaven_": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			]
+		},
+		"influence_monster_chance_to_drop_rare_armour_%": {
+			"WatchstoneInfluenceMonsterArmourChance1__": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneInfluenceMonsterArmourChance2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"WatchstoneInfluenceMonsterArmourChance3": [
+				{
+					"min": 7,
+					"max": 8
+				}
+			],
+			"WatchstoneInfluenceMonsterArmourChanceMaven": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			]
+		},
+		"influence_monster_chance_to_drop_rare_jewellery_%": {
+			"WatchstoneInfluenceMonsterJewelleryChance1_": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneInfluenceMonsterJewelleryChance2__": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"WatchstoneInfluenceMonsterJewelleryChance3": [
+				{
+					"min": 7,
+					"max": 8
+				}
+			],
+			"WatchstoneInfluenceMonsterJewelleryChanceMaven_": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			]
+		},
+		"influence_monster_chance_to_drop_currency_item_%": {
+			"WatchstoneInfluenceMonsterCurrencyChance1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"WatchstoneInfluenceMonsterCurrencyChance2_": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"WatchstoneInfluenceMonsterCurrencyChance3": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			],
+			"WatchstoneInfluenceMonsterCurrencyChanceMaven_": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"influence_monster_chance_to_drop_quality_gem_%": {
+			"WatchstoneInfluenceMonsterGemChance1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"WatchstoneInfluenceMonsterGemChance2_": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"WatchstoneInfluenceMonsterGemChance3_": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			],
+			"WatchstoneInfluenceMonsterGemChanceMaven": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"magic_monster_chance_to_drop_rare_weapon_permillage": {
+			"WatchstoneMagicMonsterWeaponChance1_": [
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"WatchstoneMagicMonsterWeaponChance2": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"WatchstoneMagicMonsterWeaponChance3": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"WatchstoneMagicMonsterWeaponChanceMaven_": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			]
+		},
+		"magic_monster_chance_to_drop_rare_armour_permillage": {
+			"WatchstoneMagicMonsterArmourChance1_": [
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"WatchstoneMagicMonsterArmourChance2__": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"WatchstoneMagicMonsterArmourChance3": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"WatchstoneMagicMonsterArmourChanceMaven": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			]
+		},
+		"magic_monster_chance_to_drop_rare_jewellery_permillage": {
+			"WatchstoneMagicMonsterJewelleryChance1": [
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"WatchstoneMagicMonsterJewelleryChance2": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"WatchstoneMagicMonsterJewelleryChance3__": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"WatchstoneMagicMonsterJewelleryChanceMaven__": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			]
+		},
+		"magic_monster_chance_to_drop_currency_item_permillage": {
+			"WatchstoneMagicMonsterCurrencyChance1": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"WatchstoneMagicMonsterCurrencyChance2": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"WatchstoneMagicMonsterCurrencyChance3_": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			],
+			"WatchstoneMagicMonsterCurrencyChanceMaven": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"magic_monster_chance_to_drop_quality_gem_permillage": {
+			"WatchstoneMagicMonsterGemChance1__": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"WatchstoneMagicMonsterGemChance2": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"WatchstoneMagicMonsterGemChance3": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			],
+			"WatchstoneMagicMonsterGemChanceMaven": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"rare_monster_chance_to_drop_rare_weapon_%": {
+			"WatchstoneRareMonsterWeaponChance1_": [
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"WatchstoneRareMonsterWeaponChance2": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"WatchstoneRareMonsterWeaponChance3": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"WatchstoneRareMonsterWeaponChanceMaven": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			]
+		},
+		"rare_monster_chance_to_drop_rare_armour_%": {
+			"WatchstoneRareMonsterArmourChance1": [
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"WatchstoneRareMonsterArmourChance2___": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"WatchstoneRareMonsterArmourChance3": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"WatchstoneRareMonsterArmourChanceMaven": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			]
+		},
+		"rare_monster_chance_to_drop_rare_jewellery_%": {
+			"WatchstoneRareMonsterJewelleryChance1_": [
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"WatchstoneRareMonsterJewelleryChance2______": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"WatchstoneRareMonsterJewelleryChance3": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"WatchstoneRareMonsterJewelleryChanceMaven": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			]
+		},
+		"rare_monster_chance_to_drop_currency_item_%": {
+			"WatchstoneRareMonsterCurrencyChance1": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"WatchstoneRareMonsterCurrencyChance2_": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"WatchstoneRareMonsterCurrencyChance3__": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			],
+			"WatchstoneRareMonsterCurrencyChanceMaven_": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"rare_monster_chance_to_drop_quality_gem_%": {
+			"WatchstoneRareMonsterGemChance1": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"WatchstoneRareMonsterGemChance2": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"WatchstoneRareMonsterGemChance3": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			],
+			"WatchstoneRareMonsterGemChanceMaven_": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"map_legion_monoliths_chance_for_karui_+%": {
+			"WatchstoneKaruiLegionChance1": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneKaruiLegionChance2": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneKaruiLegionChance3__": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneKaruiLegionChance4__": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneKaruiLegionChanceMaven_____": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_legion_monoliths_chance_for_eternal_empire_+%": {
+			"WatchstoneEmpireLegionChance1": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneEmpireLegionChance2": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneEmpireLegionChance3": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneEmpireLegionChance4_": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneEmpireLegionChanceMaven": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_legion_monoliths_chance_for_vaal_+%": {
+			"WatchstoneVaalLegionChance1": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneVaalLegionChance2": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneVaalLegionChance3_": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneVaalLegionChance4_": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneVaalLegionChanceMaven": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_legion_monoliths_chance_for_templar_+%": {
+			"WatchstoneTemplarLegionChance1": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneTemplarLegionChance2_": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneTemplarLegionChance3": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneTemplarLegionChance4": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneTemplarLegionChanceMaven": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_legion_monoliths_chance_for_maraketh_+%": {
+			"WatchstoneMarakethLegionChance1": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneMarakethLegionChance2___": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneMarakethLegionChance3": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneMarakethLegionChance4": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneMarakethLegionChanceMaven_": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_breach_chance_to_be_xoph_+%": {
+			"WatchstoneFireBreachChance1": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneFireBreachChance2": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneFireBreachChance3": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneFireBreachChance4": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneFireBreachChanceMaven__": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_breach_chance_to_be_tul_+%": {
+			"WatchstoneColdBreachChance1__": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneColdBreachChance2_": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneColdBreachChance3": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneColdBreachChance4___": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneColdBreachChanceMaven": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_breach_chance_to_be_esh_+%": {
+			"WatchstoneLightningBreachChance1": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneLightningBreachChance2_": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneLightningBreachChance3": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneLightningBreachChance4": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneLightningBreachChanceMaven": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_breach_chance_to_be_uul_netol_+%": {
+			"WatchstonePhysicalBreachChance1_": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstonePhysicalBreachChance2_": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstonePhysicalBreachChance3": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstonePhysicalBreachChance4": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstonePhysicalBreachChanceMaven": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_chance_for_breaches_to_be_chayula_+%": {
+			"WatchstoneChaosBreachChance1_": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneChaosBreachChance2": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneChaosBreachChance3___": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneChaosBreachChance4": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneChaosBreachChanceMaven": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_blight_oils_chance_to_drop_a_tier_higher_%": {
+			"1__": [
+				{
+					"min": 5,
+					"max": 8
+				}
+			],
+			"2__": [
+				{
+					"min": 9,
+					"max": 12
+				}
+			],
+			"3_": [
+				{
+					"min": 13,
+					"max": 16
+				}
+			],
+			"Maven": [
+				{
+					"min": 40,
+					"max": 50
+				}
+			]
+		},
+		"map_breach_splinters_drop_as_stones_permyriad": {
+			"1____": [
+				{
+					"min": 2,
+					"max": 3
+				}
+			],
+			"2": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"3": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"4_": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			],
+			"Maven_": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"map_crimson_viridian_cobalt_jewels_drop_as_currency_%": {
+			"1": [
+				{
+					"min": 15,
+					"max": 25
+				}
+			],
+			"2": [
+				{
+					"min": 16,
+					"max": 25
+				}
+			],
+			"3": [
+				{
+					"min": 26,
+					"max": 35
+				}
+			]
+		},
+		"map_dropped_map_as_random_unique_map_permilliage": {
+			"1": [
+				{
+					"min": 1,
+					"max": 3
+				}
+			],
+			"2": [
+				{
+					"min": 4,
+					"max": 6
+				}
+			],
+			"3": [
+				{
+					"min": 7,
+					"max": 10
+				}
+			],
+			"Maven": [
+				{
+					"min": 25,
+					"max": 30
+				}
+			]
+		},
+		"map_breach_monsters_life_+% map_breach_monsters_damage_+%": {
+			"1_": [
+				{
+					"min": -20,
+					"max": -20
+				},
+				{
+					"min": -20,
+					"max": -20
+				}
+			]
+		},
+		"map_harbinger_lucky_shard_drops": {
+			"1__": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"Maven": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"map_abyss_depths_chance_+%": {
+			"1": [
+				{
+					"min": 10,
+					"max": 20
+				}
+			],
+			"2": [
+				{
+					"min": 21,
+					"max": 30
+				}
+			],
+			"Maven": [
+				{
+					"min": 80,
+					"max": 100
+				}
+			]
+		},
+		"map_red_beast_from_deep_chance_+%": {
+			"WatchstoneDeepBeastChance1": [
+				{
+					"min": 25,
+					"max": 35
+				}
+			],
+			"WatchstoneDeepBeastChance2": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstoneDeepBeastChanceMaven_": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_red_beast_from_wilds_chance_+%": {
+			"WatchstoneWildsBeastChance1": [
+				{
+					"min": 25,
+					"max": 35
+				}
+			],
+			"WatchstoneWildsBeastChance2": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstoneWildsBeastChanceMaven": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_red_beast_from_caverns_chance_+%": {
+			"WatchstoneCavernsBeastChance1": [
+				{
+					"min": 25,
+					"max": 35
+				}
+			],
+			"WatchstoneCavernsBeastChance2": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstoneCavernsBeastChanceMaven_": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_red_beast_from_sands_chance_+%": {
+			"WatchstoneSandsBeastChance1": [
+				{
+					"min": 25,
+					"max": 35
+				}
+			],
+			"WatchstoneSandsBeastChance2": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstoneSandsBeastChanceMaven": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_double_sulphite_mined_chance_%": {
+			"1": [
+				{
+					"min": 2,
+					"max": 3
+				}
+			],
+			"2_": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"3": [
+				{
+					"min": 6,
+					"max": 6
+				}
+			],
+			"Maven_": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			]
+		},
+		"map_blight_chest_duplicate_rewards_chance_permillage": {
+			"1__": [
+				{
+					"min": 10,
+					"max": 20
+				}
+			],
+			"2__": [
+				{
+					"min": 21,
+					"max": 35
+				}
+			],
+			"3": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"Maven": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_metamorph_sample_has_reward_chance_+%": {
+			"1_": [
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"2": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"3__": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"Maven_": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			]
+		},
+		"map_delirium_additional_reward_type_chance_%": {
+			"1": [
+				{
+					"min": 2,
+					"max": 3
+				}
+			],
+			"2": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"3": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"Maven": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			]
+		},
+		"map_delirium_splinter_amount_+%": {
+			"1": [
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
+			"2_": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"3": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"4": [
+				{
+					"min": 7,
+					"max": 8
+				}
+			],
+			"Maven": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			]
+		},
+		"map_delirium_monster_cluster_jewel_drop_chance_permyriad": {
+			"1": [
+				{
+					"min": 500,
+					"max": 1000
+				}
+			],
+			"2": [
+				{
+					"min": 1100,
+					"max": 1500
+				}
+			],
+			"Maven___": [
+				{
+					"min": 3000,
+					"max": 4000
+				}
+			]
+		},
+		"map_harvest_seeds_%_chance_to_grant_additional_craft_permillage": {
+			"1": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"2": [
+				{
+					"min": 16,
+					"max": 25
+				}
+			],
+			"3": [
+				{
+					"min": 26,
+					"max": 40
+				}
+			],
+			"Maven": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_harvest_higher_tier_seed_rolls_+": {
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"Maven": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"map_harvest_boss_encounter_chance_+%": {
+			"1": [
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"2_": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"Maven": [
+				{
+					"min": 30,
+					"max": 40
+				}
+			]
+		},
+		"map_heist_smugglers_cache_encounter_chance_+%": {
+			"1": [
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"2": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"3": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"Maven": [
+				{
+					"min": 40,
+					"max": 50
+				}
+			]
+		},
+		"map_heist_blueprint_drop_chance_+%": {
+			"1": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"3": [
+				{
+					"min": 7,
+					"max": 10
+				}
+			],
+			"Maven": [
+				{
+					"min": 25,
+					"max": 30
+				}
+			]
+		},
+		"map_rogue_markers_stack_size_+%": {
+			"1": [
+				{
+					"min": 5,
+					"max": 15
+				}
+			],
+			"2": [
+				{
+					"min": 16,
+					"max": 25
+				}
+			],
+			"Maven_": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			]
+		},
+		"map_twinned_boss_chance_%": {
+			"1__": [
+				{
+					"min": 5,
+					"max": 7
+				}
+			],
+			"2": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			]
+		},
+		"map_ground_consecrated map_ground_effect_radius map_ground_effect_patches_per_100_tiles": {
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 16,
+					"max": 16
+				},
+				{
+					"min": 20,
+					"max": 20
+				}
+			]
+		},
+		"map_double_conqueror_progress_chance_%": {
+			"1__": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"Maven__": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			]
+		},
+		"map_vaal_side_area_chance_%": {
+			"1": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"2": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"3": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			],
+			"Maven": [
+				{
+					"min": 25,
+					"max": 30
+				}
+			]
+		},
+		"map_ascendancy_trial_chance_%": {
+			"1": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"2_": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			],
+			"Maven_": [
+				{
+					"min": 35,
+					"max": 35
+				}
+			]
+		},
+		"map_+1_item_level_drops_%_chance": {
+			"1_": [
+				{
+					"min": 2,
+					"max": 3
+				}
+			],
+			"2": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"3_": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"Maven__": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			]
+		},
+		"map_boss_chance_to_drop_additional_divination_card_permillage": {
+			"1": [
+				{
+					"min": 100,
+					"max": 150
+				}
+			],
+			"2_": [
+				{
+					"min": 160,
+					"max": 200
+				}
+			],
+			"3": [
+				{
+					"min": 210,
+					"max": 250
+				}
+			],
+			"Maven": [
+				{
+					"min": 500,
+					"max": 600
+				}
+			]
+		},
+		"map_unique_area_level_+": {
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"map_boss_chance_to_drop_random_influenced_item_%": {
+			"1___": [
+				{
+					"min": 10,
+					"max": 15
+				}
+			],
+			"2": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"3": [
+				{
+					"min": 21,
+					"max": 25
+				}
+			],
+			"Maven": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			]
+		},
+		"map_boss_item_rarity_+%": {
+			"1_": [
+				{
+					"min": 1000,
+					"max": 1500
+				}
+			],
+			"2": [
+				{
+					"min": 1501,
+					"max": 2000
+				}
+			],
+			"3": [
+				{
+					"min": 2001,
+					"max": 2500
+				}
+			]
+		},
+		"map_currency_drops_full_stack_permillage_chance": {
+			"1_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"map_rogue_exiles_possessed_%_chance": {
+			"1": [
+				{
+					"min": 10,
+					"max": 15
+				}
+			],
+			"2__": [
+				{
+					"min": 16,
+					"max": 25
+				}
+			],
+			"Maven_": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			]
+		},
+		"map_strongboxes_chance_to_be_rare_+%": {
+			"1": [
+				{
+					"min": 35,
+					"max": 50
+				}
+			],
+			"2": [
+				{
+					"min": 60,
+					"max": 75
+				}
+			],
+			"3": [
+				{
+					"min": 80,
+					"max": 100
+				}
+			],
+			"Maven___": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_beyond_monster_item_quantity_+% map_beyond_monster_damage_+%": {
+			"1": [
+				{
+					"min": 5,
+					"max": 10
+				},
+				{
+					"min": 10,
+					"max": 10
+				}
+			],
+			"2_": [
+				{
+					"min": 11,
+					"max": 15
+				},
+				{
+					"min": 20,
+					"max": 20
+				}
+			],
+			"3": [
+				{
+					"min": 16,
+					"max": 20
+				},
+				{
+					"min": 30,
+					"max": 30
+				}
+			]
+		},
+		"map_perandus_chest_item_quantity_+%": {
+			"1": [
+				{
+					"min": 21,
+					"max": 35
+				}
+			],
+			"2": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"Maven___": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_perandus_hoard_chance_+%": {
+			"WatchstonePerandusHoardChance1": [
+				{
+					"min": 21,
+					"max": 35
+				}
+			],
+			"WatchstonePerandusHoardChance2_": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstonePerandusHoardChanceMaven__": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_perandus_catalogue_chance_+%": {
+			"WatchstonePerandusCatalogueChance1": [
+				{
+					"min": 21,
+					"max": 35
+				}
+			],
+			"WatchstonePerandusCatalogueChance2": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstonePerandusCatalogueChanceMaven": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_perandus_archive_chance_+%": {
+			"WatchstonePerandusArchiveChance1": [
+				{
+					"min": 21,
+					"max": 35
+				}
+			],
+			"WatchstonePerandusArchiveChance2_": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstonePerandusArchiveChanceMaven": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_perandus_coffer_chance_+%": {
+			"WatchstonePerandusCofferChance1": [
+				{
+					"min": 21,
+					"max": 35
+				}
+			],
+			"WatchstonePerandusCofferChance2": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstonePerandusCofferChanceMaven": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_perandus_treasury_chance_+%": {
+			"WatchstonePerandusTreasuryChance1": [
+				{
+					"min": 21,
+					"max": 35
+				}
+			],
+			"WatchstonePerandusTreasuryChance2__": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstonePerandusTreasuryChanceMaven": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_essence_monsters_drop_rare_item_with_random_essence_mod_%_chance": {
+			"1": [
+				{
+					"min": 35,
+					"max": 50
+				}
+			],
+			"Maven_": [
+				{
+					"min": 100,
+					"max": 100
+				}
+			]
+		},
+		"map_magic_items_chance_to_drop_with_fractured_mod_permillage": {
+			"1": [
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
+			"2_": [
+				{
+					"min": 4,
+					"max": 7
+				}
+			],
+			"3__": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			]
+		},
+		"map_regal_to_exalt_%": {
+			"1_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"2": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"3": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"map_regret_to_divine_%": {
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"2": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"3": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"map_transmute_to_alteration_%": {
+			"1_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"2": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"3_": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"map_alchemy_to_chaos_%": {
+			"1": [
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
+			"2_": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"3": [
+				{
+					"min": 5,
+					"max": 5
+				}
+			]
+		},
+		"map_chisel_to_map_%": {
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"map_orb_of_chance_to_unique_item_%": {
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"2": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"3_": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"map_triple_exalt_%": {
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"Maven_": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"map_skill_gem_to_scarab_%": {
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"2__": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"3": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"map_support_gem_to_jewel_%": {
+			"1": [
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
+			"2": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"3": [
+				{
+					"min": 5,
+					"max": 5
+				}
+			]
+		},
+		"map_master_favour_+%": {
+			"1_": [
+				{
+					"min": 10,
+					"max": 15
+				}
+			],
+			"2": [
+				{
+					"min": 16,
+					"max": 25
+				}
+			],
+			"3": [
+				{
+					"min": 26,
+					"max": 40
+				}
+			],
+			"Maven": [
+				{
+					"min": 100,
+					"max": 120
+				}
+			]
+		},
+		"map_number_of_rare_packs_+%": {
+			"Percent1": [
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
+			"Percent2": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"Percent3___": [
+				{
+					"min": 5,
+					"max": 5
+				}
+			],
+			"PercentMaven": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			]
+		},
+		"map_additional_rogue_exile_chance_%": {
+			"1__": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"2__": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"3": [
+				{
+					"min": 21,
+					"max": 25
+				}
+			],
+			"Maven": [
+				{
+					"min": 100,
+					"max": 100
+				}
+			]
+		},
+		"map_additional_shrine_chance_%": {
+			"1": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"2": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"3": [
+				{
+					"min": 21,
+					"max": 25
+				}
+			],
+			"Maven": [
+				{
+					"min": 100,
+					"max": 100
+				}
+			]
+		},
+		"map_strongboxes_chance_to_be_unique_+%": {
+			"1_": [
+				{
+					"min": 35,
+					"max": 50
+				}
+			],
+			"2": [
+				{
+					"min": 60,
+					"max": 75
+				}
+			],
+			"3": [
+				{
+					"min": 80,
+					"max": 100
+				}
+			],
+			"Maven": [
+				{
+					"min": 200,
+					"max": 250
+				}
+			]
+		},
+		"map_possessed_and_touched_monsters_item_quantity_+%": {
+			"1": [
+				{
+					"min": 3,
+					"max": 5
+				}
+			],
+			"2": [
+				{
+					"min": 6,
+					"max": 8
+				}
+			],
+			"Maven": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"map_additional_tormented_spirit_chance_%": {
+			"1": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"2__": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"3": [
+				{
+					"min": 21,
+					"max": 25
+				}
+			],
+			"Maven_": [
+				{
+					"min": 100,
+					"max": 100
+				}
+			]
+		},
+		"map_harbinger_additional_currency_shard_stack_chance_%": {
+			"1": [
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"2": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"Maven": [
+				{
+					"min": 40,
+					"max": 50
+				}
+			]
+		},
+		"map_additional_harbinger_chance_%": {
+			"1": [
+				{
+					"min": 5,
+					"max": 7
+				}
+			],
+			"2": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			],
+			"3": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"Maven_": [
+				{
+					"min": 100,
+					"max": 100
+				}
+			]
+		},
+		"map_additional_invasion_boss_chance_%": {
+			"1___": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"2": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"3____": [
+				{
+					"min": 21,
+					"max": 25
+				}
+			],
+			"Maven_": [
+				{
+					"min": 100,
+					"max": 100
+				}
+			]
+		},
+		"map_beyond_chance_%": {
+			"1_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"Maven": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"map_beyond_portal_spawn_additional_demon_%_chance": {
+			"1": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"Maven": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			]
+		},
+		"map_beyond_monster_experience_+%": {
+			"1_": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"Maven": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"map_breach_monster_granted_experience_+%": {
+			"1": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"Maven_": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"map_abyss_monster_experience_+%": {
+			"1_": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"2_": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"Maven": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"map_abyssal_trove_drop_rare_with_abyss_socket_chance_%": {
+			"1": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"Maven": [
+				{
+					"min": 10,
+					"max": 10
+				}
+			]
+		},
+		"map_blight_encounter_blight_reward_type_chance_+%": {
+			"1__": [
+				{
+					"min": 10,
+					"max": 14
+				}
+			],
+			"2_": [
+				{
+					"min": 15,
+					"max": 20
+				}
+			],
+			"Maven": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			]
+		},
+		"map_metamorphosis_additional_sample_rewards": {
+			"1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"2_": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"Maven___": [
+				{
+					"min": 5,
+					"max": 5
+				}
+			]
+		},
+		"map_metamorphosis_double_reward_chance_%": {
+			"1": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"Maven": [
+				{
+					"min": 5,
+					"max": 5
+				}
+			]
+		},
+		"map_currency_fusing_drops_full_stack_permillage_chance": {
+			"WatchstoneStackFusing1_": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneStackFusing2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"WatchstoneStackFusingMaven_": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			]
+		},
+		"map_currency_chromatic_drops_full_stack_permillage_chance": {
+			"WatchstoneStackChromatic1": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneStackChromatic2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"WatchstoneStackChromaticMaven_": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			]
+		},
+		"map_currency_jeweller_drops_full_stack_permillage_chance": {
+			"WatchstoneStackJeweller1___": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneStackJeweller2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"WatchstoneStackJewellerMaven": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			]
+		},
+		"map_currency_chaos_drops_full_stack_permillage_chance": {
+			"WatchstoneStackChaos1": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"WatchstoneStackChaos2": [
+				{
+					"min": 6,
+					"max": 7
+				}
+			],
+			"WatchstoneStackChaosMaven": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			]
+		},
+		"map_currency_alchemy_drops_full_stack_permillage_chance": {
+			"WatchstoneStackAlchemy1": [
+				{
+					"min": 5,
+					"max": 7
+				}
+			],
+			"WatchstoneStackAlchemy2": [
+				{
+					"min": 8,
+					"max": 12
+				}
+			],
+			"WatchstoneStackAlchemyMaven": [
+				{
+					"min": 25,
+					"max": 30
+				}
+			]
+		},
+		"map_currency_alteration_drops_full_stack_permillage_chance": {
+			"WatchstoneStackAlteration1": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneStackAlteration2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"WatchstoneStackAlterationMaven": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			]
+		},
+		"map_currency_scouring_drops_full_stack_permillage_chance": {
+			"WatchstoneStackScouring1": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"WatchstoneStackScouring2_": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			],
+			"WatchstoneStackScouringMaven___": [
+				{
+					"min": 8,
+					"max": 8
+				}
+			]
+		},
+		"map_currency_chance_drops_full_stack_permillage_chance": {
+			"WatchstoneStackChance1": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneStackChance2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"WatchstoneStackChanceMaven": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			]
+		},
+		"map_currency_chisel_drops_full_stack_permillage_chance": {
+			"WatchstoneStackChisel1": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneStackChisel2__": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"WatchstoneStackChiselMaven": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			]
+		},
+		"map_currency_transumation_drops_full_stack_permillage_chance": {
+			"WatchstoneStackTransmuatation1___": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneStackTransmuatation2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"WatchstoneStackTransmuatationMaven": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			]
+		},
+		"map_currency_whetstone_drops_full_stack_permillage_chance": {
+			"WatchstoneStackWhetstone1": [
+				{
+					"min": 5,
+					"max": 7
+				}
+			],
+			"WatchstoneStackWhetstone2": [
+				{
+					"min": 8,
+					"max": 12
+				}
+			],
+			"WatchstoneStackWhetstoneMaven_": [
+				{
+					"min": 25,
+					"max": 30
+				}
+			]
+		},
+		"map_currency_armourers_drops_full_stack_permillage_chance": {
+			"WatchstoneStackArmourers1_": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"WatchstoneStackArmourers2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"WatchstoneStackArmourersMaven": [
+				{
+					"min": 12,
+					"max": 15
+				}
+			]
+		},
+		"map_currency_gemcutter_stack_6_permillage_chance": {
+			"WatchstoneStackGemcutter1": [
+				{
+					"min": 8,
+					"max": 12
+				}
+			],
+			"WatchstoneStackGemcutter2__": [
+				{
+					"min": 13,
+					"max": 16
+				}
+			],
+			"WatchstoneStackGemcutterMaven": [
+				{
+					"min": 30,
+					"max": 40
+				}
+			]
+		},
+		"map_currency_regal_stack_5_permillage_chance": {
+			"WatchstoneStackRegal1": [
+				{
+					"min": 8,
+					"max": 12
+				}
+			],
+			"WatchstoneStackRegal2___": [
+				{
+					"min": 13,
+					"max": 16
+				}
+			],
+			"WatchstoneStackRegalMaven___": [
+				{
+					"min": 30,
+					"max": 40
+				}
+			]
+		},
+		"map_currency_divine_stack_4_permillage_chance": {
+			"WatchstoneStackDivine1": [
+				{
+					"min": 15,
+					"max": 20
+				}
+			],
+			"WatchstoneStackDivineMaven_": [
+				{
+					"min": 40,
+					"max": 50
+				}
+			]
+		},
+		"map_currency_annulment_stack_3_permillage_chance": {
+			"WatchstoneStackAnnulment1": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			],
+			"WatchstoneStackAnnulmentMaven": [
+				{
+					"min": 60,
+					"max": 70
+				}
+			]
+		},
+		"map_currency_regret_stack_20_permillage_chance": {
+			"WatchstoneStackRegret1": [
+				{
+					"min": 2,
+					"max": 3
+				}
+			],
+			"WatchstoneStackRegret2": [
+				{
+					"min": 4,
+					"max": 5
+				}
+			],
+			"WatchstoneStackRegretMaven_": [
+				{
+					"min": 10,
+					"max": 12
+				}
+			]
+		},
+		"map_currency_blessed_stack_8_permillage_chance": {
+			"WatchstoneStackBlessed1": [
+				{
+					"min": 5,
+					"max": 7
+				}
+			],
+			"WatchstoneStackBlessed2": [
+				{
+					"min": 8,
+					"max": 12
+				}
+			],
+			"WatchstoneStackBlessedMaven": [
+				{
+					"min": 25,
+					"max": 30
+				}
+			]
+		},
+		"map_currency_mirror_stack_2_permillage_chance": {
+			"WatchstoneStackMirror1____": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			],
+			"WatchstoneStackMirrorMaven__": [
+				{
+					"min": 100,
+					"max": 100
+				}
+			]
+		},
+		"map_currency_vaal_stack_7_permillage_chance": {
+			"WatchstoneStackVaal1___": [
+				{
+					"min": 5,
+					"max": 7
+				}
+			],
+			"WatchstoneStackVaal2__": [
+				{
+					"min": 8,
+					"max": 12
+				}
+			],
+			"WatchstoneStackVaalMaven__": [
+				{
+					"min": 30,
+					"max": 40
+				}
+			]
+		},
+		"map_amulet_to_talisman_permillage": {
+			"1": [
+				{
+					"min": 2,
+					"max": 4
+				}
+			],
+			"Maven": [
+				{
+					"min": 10,
+					"max": 10
+				}
+			]
+		},
+		"map_master_mission_niko_chance_+%": {
+			"WatchstoneNikoChance1__": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneNikoChance2_": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneNikoChance3_": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneNikoChance4_": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneNikoChanceMaven": [
+				{
+					"min": 250,
+					"max": 300
+				}
+			]
+		},
+		"map_master_mission_zana_chance_+%": {
+			"WatchstoneZanaChance1_": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneZanaChance2": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneZanaChance3": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneZanaChance4_": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneZanaChanceMaven____": [
+				{
+					"min": 250,
+					"max": 300
+				}
+			]
+		},
+		"map_master_mission_jun_chance_+%": {
+			"WatchstoneJunChance1_": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneJunChance2_": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneJunChance3": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneJunChance4__": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneJunChanceMaven": [
+				{
+					"min": 250,
+					"max": 300
+				}
+			]
+		},
+		"map_master_mission_alva_chance_+%": {
+			"WatchstoneAlvaChance1": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneAlvaChance2": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneAlvaChance3": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneAlvaChance4__": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneAlvaChanceMaven__": [
+				{
+					"min": 250,
+					"max": 300
+				}
+			]
+		},
+		"map_master_mission_einhar_chance_+%": {
+			"WatchstoneEinharChance1": [
+				{
+					"min": 15,
+					"max": 30
+				}
+			],
+			"WatchstoneEinharChance2": [
+				{
+					"min": 31,
+					"max": 45
+				}
+			],
+			"WatchstoneEinharChance3": [
+				{
+					"min": 46,
+					"max": 65
+				}
+			],
+			"WatchstoneEinharChance4": [
+				{
+					"min": 66,
+					"max": 100
+				}
+			],
+			"WatchstoneEinharChanceMaven_": [
+				{
+					"min": 250,
+					"max": 300
+				}
+			]
+		},
+		"map_master_mission_%_additional_chance_on_map_completion": {
+			"1": [
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
+			"2_": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"3_": [
+				{
+					"min": 2,
+					"max": 3
+				}
+			],
+			"Maven": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			]
+		},
+		"map_additional_red_beast_chance_%": {
+			"1": [
+				{
+					"min": 6,
+					"max": 8
+				}
+			],
+			"2_": [
+				{
+					"min": 9,
+					"max": 12
+				}
+			],
+			"3": [
+				{
+					"min": 13,
+					"max": 16
+				}
+			],
+			"Maven": [
+				{
+					"min": 30,
+					"max": 40
+				}
+			]
+		},
+		"map_duplicate_captured_beasts_chance_%": {
+			"1_": [
+				{
+					"min": 4,
+					"max": 6
+				}
+			],
+			"2": [
+				{
+					"min": 7,
+					"max": 10
+				}
+			],
+			"Maven": [
+				{
+					"min": 25,
+					"max": 30
+				}
+			]
+		},
+		"map_red_beasts_are_lucky_chance_%": {
+			"1": [
+				{
+					"min": 25,
+					"max": 35
+				}
+			],
+			"2": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"Maven_____": [
+				{
+					"min": 100,
+					"max": 100
+				}
+			]
+		},
+		"map_red_beast_double_experience_chance_%": {
+			"1___": [
+				{
+					"min": 10,
+					"max": 15
+				}
+			],
+			"2_": [
+				{
+					"min": 16,
+					"max": 20
+				}
+			],
+			"3": [
+				{
+					"min": 21,
+					"max": 25
+				}
+			],
+			"Maven": [
+				{
+					"min": 60,
+					"max": 70
+				}
+			]
+		},
+		"map_incursion_item_quantity_+%": {
+			"1": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"2": [
+				{
+					"min": 7,
+					"max": 8
+				}
+			],
+			"3_": [
+				{
+					"min": 9,
+					"max": 10
+				}
+			],
+			"Maven": [
+				{
+					"min": 25,
+					"max": 30
+				}
+			]
+		},
+		"map_incursion_architect_double_experience_chance_%": {
+			"1_": [
+				{
+					"min": 15,
+					"max": 25
+				}
+			],
+			"2": [
+				{
+					"min": 26,
+					"max": 35
+				}
+			],
+			"3": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"Maven": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_incursion_architects_drop_incursion_rare_chance_%": {
+			"1": [
+				{
+					"min": 6,
+					"max": 8
+				}
+			],
+			"2": [
+				{
+					"min": 9,
+					"max": 12
+				}
+			],
+			"3_": [
+				{
+					"min": 13,
+					"max": 16
+				}
+			],
+			"Maven": [
+				{
+					"min": 30,
+					"max": 40
+				}
+			]
+		},
+		"map_incursion_architects_are_possessed_chance_%": {
+			"1": [
+				{
+					"min": 6,
+					"max": 8
+				}
+			],
+			"2": [
+				{
+					"min": 9,
+					"max": 12
+				}
+			],
+			"3": [
+				{
+					"min": 13,
+					"max": 16
+				}
+			],
+			"Maven": [
+				{
+					"min": 30,
+					"max": 40
+				}
+			]
+		},
+		"map_betrayal_secondary_target_amount_+%": {
+			"1": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"2": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"3__": [
+				{
+					"min": 7,
+					"max": 8
+				}
+			],
+			"Maven__": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"map_betrayal_target_double_experience_chance_%": {
+			"1__": [
+				{
+					"min": 4,
+					"max": 7
+				}
+			],
+			"2": [
+				{
+					"min": 8,
+					"max": 10
+				}
+			],
+			"3": [
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"Maven_": [
+				{
+					"min": 40,
+					"max": 50
+				}
+			]
+		},
+		"map_betrayal_executed_targets_gain_an_additional_rank_chance_%": {
+			"1_": [
+				{
+					"min": 6,
+					"max": 8
+				}
+			],
+			"2_": [
+				{
+					"min": 9,
+					"max": 12
+				}
+			],
+			"3_": [
+				{
+					"min": 13,
+					"max": 16
+				}
+			],
+			"Maven": [
+				{
+					"min": 40,
+					"max": 50
+				}
+			]
+		},
+		"map_betrayal_targets_drop_veiled_item_chance_%": {
+			"1": [
+				{
+					"min": 6,
+					"max": 8
+				}
+			],
+			"2": [
+				{
+					"min": 9,
+					"max": 12
+				}
+			],
+			"3": [
+				{
+					"min": 13,
+					"max": 16
+				}
+			],
+			"Maven____": [
+				{
+					"min": 40,
+					"max": 50
+				}
+			]
+		},
+		"map_sulphite_veins_are_guarded_by_additional_pack_chance_%": {
+			"1__": [
+				{
+					"min": 6,
+					"max": 8
+				}
+			],
+			"2_": [
+				{
+					"min": 9,
+					"max": 12
+				}
+			],
+			"3": [
+				{
+					"min": 13,
+					"max": 16
+				}
+			],
+			"Maven_": [
+				{
+					"min": 40,
+					"max": 50
+				}
+			]
+		},
+		"map_zana_mission_extra_options": {
+			"1_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"2": [
+				{
+					"min": 2,
+					"max": 2
+				}
+			],
+			"Maven": [
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"map_zana_options_quality_+": {
+			"1_": [
+				{
+					"min": 3,
+					"max": 4
+				}
+			],
+			"2___": [
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"Maven": [
+				{
+					"min": 15,
+					"max": 20
+				}
+			]
+		},
+		"map_zana_mission_unique_map_chance_+%": {
+			"WatchstoneZanaUniqueMapChance1": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			],
+			"WatchstoneZanaUniqueMapChance2": [
+				{
+					"min": 26,
+					"max": 35
+				}
+			],
+			"WatchstoneZanaUniqueMapChance3": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstoneZanaUniqueMapChanceMaven_": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_zana_mission_synthesis_map_chance_+%": {
+			"WatchstoneZanaSynthesisMapChance1": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			],
+			"WatchstoneZanaSynthesisMapChance2_": [
+				{
+					"min": 26,
+					"max": 35
+				}
+			],
+			"WatchstoneZanaSynthesisMapChance3_": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstoneZanaSynthesisMapChanceMaven": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_zana_mission_shaper_guardian_map_chance_+%": {
+			"WatchstoneZanaShaperInfluencedMapChance1": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			],
+			"WatchstoneZanaShaperInfluencedMapChance2": [
+				{
+					"min": 26,
+					"max": 35
+				}
+			],
+			"WatchstoneZanaShaperInfluencedMapChance3____": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			]
+		},
+		"map_zana_mission_elder_guardian_map_chance_+%": {
+			"WatchstoneZanaElderInfluencedMapChance1": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			],
+			"WatchstoneZanaElderInfluencedMapChance2": [
+				{
+					"min": 26,
+					"max": 35
+				}
+			],
+			"WatchstoneZanaElderInfluencedMapChance3": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			]
+		},
+		"map_zana_mission_corrupted_8_mod_map_chance_+%": {
+			"WatchstoneZanaCorruptedMapChance1_": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			],
+			"WatchstoneZanaCorruptedMapChance2": [
+				{
+					"min": 26,
+					"max": 35
+				}
+			],
+			"WatchstoneZanaCorruptedMapChance3_": [
+				{
+					"min": 36,
+					"max": 50
+				}
+			],
+			"WatchstoneZanaCorruptedMapChanceMaven": [
+				{
+					"min": 130,
+					"max": 150
+				}
+			]
+		},
+		"map_boss_chance_to_drop_additional_scarab_permillage": {
+			"1_": [
+				{
+					"min": 30,
+					"max": 45
+				}
+			],
+			"2": [
+				{
+					"min": 50,
+					"max": 65
+				}
+			],
+			"3": [
+				{
+					"min": 70,
+					"max": 90
+				}
+			],
+			"Maven": [
+				{
+					"min": 230,
+					"max": 250
+				}
+			]
+		},
+		"map_boss_chance_to_drop_additional_unique_item_permyriad": {
+			"1_": [
+				{
+					"min": 500,
+					"max": 700
+				}
+			],
+			"2": [
+				{
+					"min": 750,
+					"max": 1000
+				}
+			],
+			"3": [
+				{
+					"min": 1100,
+					"max": 1500
+				}
+			],
+			"Maven": [
+				{
+					"min": 3000,
+					"max": 4000
+				}
+			]
+		},
+		"map_boss_chance_to_drop_additional_map_currency_permyriad": {
+			"1": [
+				{
+					"min": 500,
+					"max": 700
+				}
+			],
+			"2": [
+				{
+					"min": 750,
+					"max": 1000
+				}
+			],
+			"3": [
+				{
+					"min": 1100,
+					"max": 1500
+				}
+			],
+			"Maven": [
+				{
+					"min": 3000,
+					"max": 4000
+				}
+			]
+		},
+		"map_boss_chance_to_drop_additional_talisman_permillage": {
+			"1": [
+				{
+					"min": 50,
+					"max": 70
+				}
+			],
+			"2": [
+				{
+					"min": 75,
+					"max": 100
+				}
+			],
+			"3_": [
+				{
+					"min": 110,
+					"max": 150
+				}
+			],
+			"Maven": [
+				{
+					"min": 300,
+					"max": 400
+				}
+			]
+		},
+		"map_boss_chance_to_drop_additional_essence_permillage": {
+			"1": [
+				{
+					"min": 100,
+					"max": 150
+				}
+			],
+			"2": [
+				{
+					"min": 160,
+					"max": 200
+				}
+			],
+			"3": [
+				{
+					"min": 210,
+					"max": 250
+				}
+			],
+			"Maven_": [
+				{
+					"min": 600,
+					"max": 700
+				}
+			]
+		},
+		"map_boss_chance_to_drop_additional_silver_coin_permillage": {
+			"1": [
+				{
+					"min": 100,
+					"max": 150
+				}
+			],
+			"2": [
+				{
+					"min": 160,
+					"max": 200
+				}
+			],
+			"3___": [
+				{
+					"min": 210,
+					"max": 250
+				}
+			],
+			"Maven": [
+				{
+					"min": 600,
+					"max": 700
+				}
+			]
+		},
+		"map_boss_chance_to_drop_additional_map_permillage": {
+			"1": [
+				{
+					"min": 30,
+					"max": 40
+				}
+			],
+			"2_": [
+				{
+					"min": 50,
+					"max": 60
+				}
+			],
+			"3": [
+				{
+					"min": 70,
+					"max": 100
+				}
+			],
+			"Maven_": [
+				{
+					"min": 250,
+					"max": 300
+				}
+			]
+		},
+		"map_boss_chance_to_drop_additional_fragment_permillage": {
+			"1": [
+				{
+					"min": 100,
+					"max": 150
+				}
+			],
+			"2": [
+				{
+					"min": 160,
+					"max": 200
+				}
+			],
+			"3": [
+				{
+					"min": 210,
+					"max": 250
+				}
+			],
+			"Maven": [
+				{
+					"min": 600,
+					"max": 700
+				}
+			]
+		},
+		"map_boss_chance_to_drop_additional_atlas_base_type_permyriad": {
+			"1_": [
+				{
+					"min": 200,
+					"max": 300
+				}
+			],
+			"2_": [
+				{
+					"min": 350,
+					"max": 450
+				}
+			],
+			"3_": [
+				{
+					"min": 500,
+					"max": 600
+				}
+			],
+			"Maven_": [
+				{
+					"min": 1200,
+					"max": 1500
+				}
+			]
+		},
+		"base_resist_all_elements_% local_display_socketed_gems_exposure_on_hit": {
+			"ImplicitR1": [
+				{
+					"min": -10,
+					"max": -10
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"ImplicitR2": [
+				{
+					"min": -10,
+					"max": -10
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"ImplicitR3___": [
+				{
+					"min": -10,
+					"max": -10
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"additional_block_% base_block_%_damage_taken": {
+			"ImplicitR1": [
+				{
+					"min": 4,
+					"max": 5
+				},
+				{
+					"min": 20,
+					"max": 20
+				}
+			],
+			"ImplicitR2__": [
+				{
+					"min": 4,
+					"max": 5
+				},
+				{
+					"min": 20,
+					"max": 20
+				}
+			],
+			"ImplicitR3": [
+				{
+					"min": 4,
+					"max": 5
+				},
+				{
+					"min": 20,
+					"max": 20
+				}
+			]
+		},
+		"movement_skills_cooldown_speed_+% base_movement_velocity_+%": {
+			"ImplicitR1": [
+				{
+					"min": 30,
+					"max": 40
+				},
+				{
+					"min": -10,
+					"max": -10
+				}
+			],
+			"ImplicitR2_": [
+				{
+					"min": 30,
+					"max": 40
+				},
+				{
+					"min": -10,
+					"max": -10
+				}
+			],
+			"ImplicitR3_": [
+				{
+					"min": 30,
+					"max": 40
+				},
+				{
+					"min": -10,
+					"max": -10
+				}
+			]
+		},
+		"boots_implicit_accuracy_rating_+%_final attack_minimum_added_lightning_damage_per_200_accuracy_rating attack_maximum_added_lightning_damage_per_200_accuracy_rating": {
+			"ImplicitR1_": [
+				{
+					"min": -25,
+					"max": -25
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"ImplicitR2_": [
+				{
+					"min": -25,
+					"max": -25
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 5,
+					"max": 6
+				}
+			],
+			"ImplicitR3": [
+				{
+					"min": -25,
+					"max": -25
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 5,
+					"max": 6
+				}
+			]
+		},
+		"base_main_hand_damage_+% base_off_hand_damage_+%": {
+			"1_": [
+				{
+					"min": -25,
+					"max": -25
+				},
+				{
+					"min": 40,
+					"max": 50
+				}
+			],
+			"2": [
+				{
+					"min": -25,
+					"max": -25
+				},
+				{
+					"min": 40,
+					"max": 50
+				}
+			],
+			"3_": [
+				{
+					"min": -25,
+					"max": -25
+				},
+				{
+					"min": 40,
+					"max": 50
+				}
+			]
+		},
+		"chance_to_gain_skill_cost_as_mana_when_paid_% maximum_mana_+%": {
+			"1": [
+				{
+					"min": 25,
+					"max": 30
+				},
+				{
+					"min": -30,
+					"max": -30
+				}
+			],
+			"2": [
+				{
+					"min": 25,
+					"max": 30
+				},
+				{
+					"min": -30,
+					"max": -30
+				}
+			],
+			"3____": [
+				{
+					"min": 25,
+					"max": 30
+				},
+				{
+					"min": -30,
+					"max": -30
+				}
+			]
+		},
+		"empowered_attack_damage_+% warcry_cooldown_modifier_ms": {
+			"1": [
+				{
+					"min": 25,
+					"max": 30
+				},
+				{
+					"min": 2000,
+					"max": 2000
+				}
+			],
+			"2": [
+				{
+					"min": 30,
+					"max": 40
+				},
+				{
+					"min": 2000,
+					"max": 2000
+				}
+			],
+			"3": [
+				{
+					"min": 40,
+					"max": 50
+				},
+				{
+					"min": 2000,
+					"max": 2000
+				}
+			]
+		},
+		"fortify_effect_on_self_+% local_display_self_crushed base_additional_physical_damage_reduction_%": {
+			"1": [
+				{
+					"min": 20,
+					"max": 25
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": -15,
+					"max": -15
+				}
+			],
+			"2_": [
+				{
+					"min": 20,
+					"max": 25
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": -15,
+					"max": -15
+				}
+			],
+			"3_": [
+				{
+					"min": 20,
+					"max": 25
+				},
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": -15,
+					"max": -15
+				}
+			]
+		},
+		"global_minimum_added_cold_damage global_maximum_added_cold_damage base_reduce_enemy_cold_resistance_%": {
+			"1": [
+				{
+					"min": 3,
+					"max": 4
+				},
+				{
+					"min": 5,
+					"max": 6
+				},
+				{
+					"min": -10,
+					"max": -10
+				}
+			],
+			"2": [
+				{
+					"min": 15,
+					"max": 20
+				},
+				{
+					"min": 28,
+					"max": 35
+				},
+				{
+					"min": -10,
+					"max": -10
+				}
+			],
+			"3": [
+				{
+					"min": 75,
+					"max": 85
+				},
+				{
+					"min": 115,
+					"max": 128
+				},
+				{
+					"min": -10,
+					"max": -10
+				}
+			]
+		},
+		"local_socketed_skill_gem_level_+ local_socketed_active_skill_gem_quality_+": {
+			"LocalIncreaseSocketedActiveGemLevelUberMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"SocketedActiveGemLevelInfluenceMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			]
+		},
+		"local_socketed_support_gem_level_+ local_socketed_support_gem_quality_+": {
+			"LocalIncreaseSocketedSupportGemLevelUberMaven___": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"SocketedSupportGemLevelInfluenceMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			]
+		},
+		"physical_damage_taken_%_as_fire fire_damage_taken_goes_to_life_over_4_seconds_%": {
+			"PhysicalDamageTakenAsFirePercentUberMaven": [
+				{
+					"min": 16,
+					"max": 18
+				},
+				{
+					"min": 7,
+					"max": 10
+				}
+			],
+			"PhysTakenAsFireInfluenceMaven": [
+				{
+					"min": 16,
+					"max": 18
+				},
+				{
+					"min": 7,
+					"max": 10
+				}
+			]
+		},
+		"physical_damage_taken_%_as_cold cold_damage_taken_goes_to_life_over_4_seconds_%": {
+			"PhysicalDamageTakenAsColdPercentUberMaven": [
+				{
+					"min": 16,
+					"max": 18
+				},
+				{
+					"min": 7,
+					"max": 10
+				}
+			],
+			"PhysTakenAsColdInfluenceMaven": [
+				{
+					"min": 16,
+					"max": 18
+				},
+				{
+					"min": 7,
+					"max": 10
+				}
+			]
+		},
+		"physical_damage_taken_%_as_lightning lightning_damage_taken_goes_to_life_over_4_seconds_%": {
+			"PhysicalDamageTakenAsLightningPercentUberMaven": [
+				{
+					"min": 16,
+					"max": 18
+				},
+				{
+					"min": 7,
+					"max": 10
+				}
+			],
+			"PhysTakenAsLightningInfluenceMaven": [
+				{
+					"min": 16,
+					"max": 18
+				},
+				{
+					"min": 7,
+					"max": 10
+				}
+			]
+		},
+		"elemental_reflect_damage_taken_and_minion_elemental_reflect_damage_taken_+% elemental_damage_taken_+%": {
+			"ReducedElementalReflectTakenUberMaven_": [
+				{
+					"min": -100,
+					"max": -100
+				},
+				{
+					"min": -5,
+					"max": -3
+				}
+			],
+			"ReflectedElementalDamageInfluenceMaven": [
+				{
+					"min": -100,
+					"max": -100
+				},
+				{
+					"min": -5,
+					"max": -3
+				}
+			]
+		},
+		"physical_reflect_damage_taken_and_minion_physical_reflect_damage_taken_+% physical_damage_taken_+%": {
+			"ReducedPhysicalReflectTakenUberMaven": [
+				{
+					"min": -100,
+					"max": -100
+				},
+				{
+					"min": -5,
+					"max": -3
+				}
+			],
+			"ReflectedPhysicalDamageInfluenceMaven": [
+				{
+					"min": -100,
+					"max": -100
+				},
+				{
+					"min": -5,
+					"max": -3
+				}
+			]
+		},
+		"recover_%_maximum_life_on_kill life_recovery_rate_+%_if_havent_killed_recently": {
+			"UberMaven__": [
+				{
+					"min": 5,
+					"max": 6
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"LifeOnKillPercentInfluenceMaven": [
+				{
+					"min": 5,
+					"max": 6
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			]
+		},
+		"recover_%_maximum_mana_on_kill mana_recovery_rate_+%_if_havent_killed_recently": {
+			"UberMaven_": [
+				{
+					"min": 5,
+					"max": 6
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"ManaOnKillPercentInfluenceMaven": [
+				{
+					"min": 5,
+					"max": 6
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			]
+		},
+		"recover_energy_shield_%_on_kill energy_shield_recovery_rate_+%_if_havent_killed_recently": {
+			"UberMaven": [
+				{
+					"min": 5,
+					"max": 6
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			],
+			"EnergyShieldOnKillPercentInfluenceMaven": [
+				{
+					"min": 5,
+					"max": 6
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			]
+		},
+		"strength_+% local_socketed_strength_gem_level_+": {
+			"UberMaven__": [
+				{
+					"min": 9,
+					"max": 12
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"BodyInfluenceMaven_": [
+				{
+					"min": 9,
+					"max": 12
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"dexterity_+% local_socketed_dexterity_gem_level_+": {
+			"UberMaven": [
+				{
+					"min": 9,
+					"max": 12
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"BodyInfluenceMaven_": [
+				{
+					"min": 9,
+					"max": 12
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"intelligence_+% local_socketed_intelligence_gem_level_+": {
+			"UberMaven__": [
+				{
+					"min": 9,
+					"max": 12
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"BodyInfluenceMaven": [
+				{
+					"min": 9,
+					"max": 12
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"consecrated_ground_while_stationary_radius your_consecrated_ground_effect_lingers_for_ms_after_leaving_the_area": {
+			"InfluenceMaven": [
+				{
+					"min": 18,
+					"max": 18
+				},
+				{
+					"min": 1000,
+					"max": 1000
+				}
+			]
+		},
+		"enemies_explode_for_%_life_as_physical_damage base_skill_area_of_effect_+%": {
+			"HolyPhysicalExplosionInfluenceMaven_": [
+				{
+					"min": 5,
+					"max": 5
+				},
+				{
+					"min": 8,
+					"max": 12
+				}
+			]
+		},
+		"add_power_charge_on_critical_strike_% damage_+%_per_power_charge": {
+			"AddPowerChargeOnCritInfluenceMaven": [
+				{
+					"min": 15,
+					"max": 15
+				},
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"energy_shield_recovery_rate_+% base_energy_shield_regeneration_rate_per_minute": {
+			"RateBodyInfluenceMaven": [
+				{
+					"min": 12,
+					"max": 15
+				},
+				{
+					"min": 3000,
+					"max": 6000
+				}
+			]
+		},
+		"base_resist_all_elements_% additional_maximum_all_elemental_resistances_%": {
+			"InfluenceMaven____": [
+				{
+					"min": 19,
+					"max": 22
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"gain_endurance_charge_per_second_if_have_been_hit_recently area_of_effect_+%_per_endurance_charge": {
+			"InfluenceMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 3,
+					"max": 3
+				}
+			]
+		},
+		"life_recovery_rate_+% life_flask_charges_recovered_per_3_seconds": {
+			"BodyInfluenceMaven": [
+				{
+					"min": 12,
+					"max": 15
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"local_display_socketed_attacks_mana_cost_+ local_display_avoid_interruption_%_while_using_socketed_attack_skills": {
+			"InfluenceMaven": [
+				{
+					"min": -20,
+					"max": -20
+				},
+				{
+					"min": 100,
+					"max": 100
+				}
+			]
+		},
+		"local_display_nearby_enemies_are_blinded cannot_be_blinded": {
+			"InfluenceMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"add_frenzy_charge_on_skill_hit_% movement_velocity_+%_per_frenzy_charge": {
+			"InfluenceMaven": [
+				{
+					"min": 10,
+					"max": 10
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"mana_recovery_rate_+% flask_mana_to_recover_+%": {
+			"BodyInfluenceMaven": [
+				{
+					"min": 12,
+					"max": 15
+				},
+				{
+					"min": 20,
+					"max": 35
+				}
+			]
+		},
+		"physical_damage_taken_%_as_chaos base_maximum_chaos_damage_resistance_%": {
+			"PhysTakenAsChaosInfluenceMaven__": [
+				{
+					"min": 16,
+					"max": 18
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"number_of_additional_curses_allowed mana_reservation_+%_with_curse_skills": {
+			"InfluenceMaven_": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": -10,
+					"max": -10
+				}
+			]
+		},
+		"maximum_mana_+% additive_mana_modifiers_apply_to_damage_at_30%_value": {
+			"MaximumManaUberMaven": [
+				{
+					"min": 12,
+					"max": 15
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"add_power_charge_on_kill_%_chance power_charge_duration_+%": {
+			"ChanceToGainPowerChargeOnKillUberMaven": [
+				{
+					"min": 11,
+					"max": 15
+				},
+				{
+					"min": 50,
+					"max": 50
+				}
+			],
+			"PowerChargeOnKillInfluenceMaven": [
+				{
+					"min": 11,
+					"max": 15
+				},
+				{
+					"min": 50,
+					"max": 50
+				}
+			]
+		},
+		"mana_regeneration_rate_+% mana_regeneration_rate_+%_while_stationary": {
+			"UberMaven": [
+				{
+					"min": 56,
+					"max": 70
+				},
+				{
+					"min": 20,
+					"max": 20
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 56,
+					"max": 70
+				},
+				{
+					"min": 20,
+					"max": 20
+				}
+			]
+		},
+		"base_mana_regeneration_rate_per_minute mana_flasks_gain_X_charges_every_3_seconds": {
+			"AddedUberMaven_": [
+				{
+					"min": 360,
+					"max": 480
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"AddedInfluenceMaven_": [
+				{
+					"min": 360,
+					"max": 480
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"base_spell_block_% base_maximum_spell_block_%": {
+			"AdditionalSpellBlockChanceUberMaven": [
+				{
+					"min": 5,
+					"max": 6
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"SpellBlockPercentInfluenceMaven": [
+				{
+					"min": 5,
+					"max": 6
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"fortify_effect_on_self_+% armour_+_while_you_have_fortify": {
+			"InfluenceMaven_": [
+				{
+					"min": 21,
+					"max": 25
+				},
+				{
+					"min": 500,
+					"max": 500
+				}
+			]
+		},
+		"base_energy_shield_regeneration_rate_per_minute_% energy_shield_recharge_rate_+%": {
+			"EnergyShieldRegenInfluenceMaven_": [
+				{
+					"min": 60,
+					"max": 90
+				},
+				{
+					"min": 15,
+					"max": 25
+				}
+			]
+		},
+		"base_self_ignite_duration_-% damage_+%_if_have_been_ignited_recently": {
+			"ReducedIgniteDurationInfluenceMaven": [
+				{
+					"min": 46,
+					"max": 50
+				},
+				{
+					"min": 36,
+					"max": 50
+				}
+			]
+		},
+		"base_self_freeze_duration_-% damage_taken_+%_if_have_been_frozen_recently": {
+			"InfluenceMaven__": [
+				{
+					"min": 46,
+					"max": 50
+				},
+				{
+					"min": -7,
+					"max": -4
+				}
+			]
+		},
+		"shocked_effect_on_self_+% critical_strike_chance_+%_if_have_been_shocked_recently": {
+			"ReducedInfluenceMaven": [
+				{
+					"min": -50,
+					"max": -46
+				},
+				{
+					"min": 45,
+					"max": 75
+				}
+			]
+		},
+		"max_power_charges gain_maximum_power_charges_on_power_charge_gained_%_chance": {
+			"MaximumPowerChargeInfluenceMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 10,
+					"max": 10
+				}
+			]
+		},
+		"elemental_damage_+% base_penetrate_elemental_resistances_%": {
+			"ElementalDamageInfluenceMaven": [
+				{
+					"min": 19,
+					"max": 22
+				},
+				{
+					"min": 2,
+					"max": 3
+				}
+			]
+		},
+		"warcry_skill_area_of_effect_+% warcry_buff_effect_+%": {
+			"WarcryInfluenceMaven": [
+				{
+					"min": 26,
+					"max": 30
+				},
+				{
+					"min": 15,
+					"max": 15
+				}
+			]
+		},
+		"gain_accuracy_rating_equal_to_strength critical_strike_chance_+%_per_10_strength": {
+			"InfluenceMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"minion_maximum_life_+% minion_life_regeneration_rate_per_minute_%": {
+			"InfluenceMaven": [
+				{
+					"min": 36,
+					"max": 40
+				},
+				{
+					"min": 60,
+					"max": 90
+				}
+			]
+		},
+		"support_anticipation_rapid_fire_count spell_critical_strike_chance_+%_if_removed_maximum_number_of_seals": {
+			"InfluenceMaven___": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 50,
+					"max": 75
+				}
+			]
+		},
+		"base_chance_to_ignite_% faster_burn_%": {
+			"IgniteChanceAndDamageInfluenceMaven": [
+				{
+					"min": 10,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 15
+				}
+			]
+		},
+		"base_chance_to_freeze_% helmet_mod_freeze_as_though_damage_+%_final": {
+			"FreezeChanceAndDurationInfluenceMaven": [
+				{
+					"min": 10,
+					"max": 15
+				},
+				{
+					"min": 30,
+					"max": 50
+				}
+			]
+		},
+		"base_chance_to_shock_% helmet_mod_shock_as_though_damage_+%_final": {
+			"ShockChanceAndEffectInfluenceMaven": [
+				{
+					"min": 10,
+					"max": 15
+				},
+				{
+					"min": 30,
+					"max": 50
+				}
+			]
+		},
+		"gain_single_conflux_for_3_seconds_every_8_seconds ignite_duration_+%": {
+			"IgnitingConfluxInfluenceMaven": [
+				{
+					"min": 3,
+					"max": 3
+				},
+				{
+					"min": 20,
+					"max": 30
+				}
+			]
+		},
+		"gain_single_conflux_for_3_seconds_every_8_seconds chill_duration_+%": {
+			"ChillingConfluxInfluenceMaven_": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 20,
+					"max": 30
+				}
+			]
+		},
+		"gain_single_conflux_for_3_seconds_every_8_seconds shock_duration_+%": {
+			"ShockingConfluxInfluenceMaven_": [
+				{
+					"min": 2,
+					"max": 2
+				},
+				{
+					"min": 20,
+					"max": 30
+				}
+			]
+		},
+		"attack_and_cast_speed_+% chance_to_gain_onslaught_on_kill_%": {
+			"IncreasedAttackAndCastSpeedUberMaven": [
+				{
+					"min": 13,
+					"max": 14
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			]
+		},
+		"local_display_socketed_gems_supported_by_x_mana_leech maximum_mana_leech_rate_+%": {
+			"ByManaLeechUberMaven__": [
+				{
+					"min": 20,
+					"max": 20
+				},
+				{
+					"min": 20,
+					"max": 30
+				}
+			]
+		},
+		"add_frenzy_charge_on_kill_%_chance base_frenzy_charge_duration_+%": {
+			"ChanceToGainFrenzyChargeOnKillUberElderMaven": [
+				{
+					"min": 7,
+					"max": 10
+				},
+				{
+					"min": 50,
+					"max": 50
+				}
+			],
+			"FrenzyChargeOnKillInfluenceMaven": [
+				{
+					"min": 7,
+					"max": 10
+				},
+				{
+					"min": 50,
+					"max": 50
+				}
+			]
+		},
+		"monster_base_block_% maximum_block_%": {
+			"AdditionalBlockChanceUberMaven___": [
+				{
+					"min": 4,
+					"max": 5
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"InfluenceMaven": [
+				{
+					"min": 4,
+					"max": 5
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"base_physical_damage_%_to_convert_to_fire physical_damage_%_to_add_as_fire": {
+			"InfluenceMaven": [
+				{
+					"min": 22,
+					"max": 25
+				},
+				{
+					"min": 3,
+					"max": 5
+				}
+			]
+		},
+		"base_physical_damage_%_to_convert_to_cold physical_damage_%_to_add_as_cold": {
+			"InfluenceMaven": [
+				{
+					"min": 22,
+					"max": 25
+				},
+				{
+					"min": 3,
+					"max": 5
+				}
+			]
+		},
+		"base_physical_damage_%_to_convert_to_lightning physical_damage_%_to_add_as_lightning": {
+			"InfluenceMaven": [
+				{
+					"min": 22,
+					"max": 25
+				},
+				{
+					"min": 3,
+					"max": 5
+				}
+			]
+		},
+		"max_frenzy_charges gain_maximum_frenzy_charges_on_frenzy_charge_gained_%_chance": {
+			"MaximumFrenzyChargeInfluenceMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 10,
+					"max": 10
+				}
+			]
+		},
+		"kill_enemy_on_hit_if_under_10%_life area_of_effect_+%_if_culled_recently": {
+			"InfluenceMaven__": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 15,
+					"max": 25
+				}
+			]
+		},
+		"global_chance_to_blind_on_hit_% damage_+%_vs_blinded_enemies": {
+			"GlobalChanceToInfluenceMaven": [
+				{
+					"min": 12,
+					"max": 15
+				},
+				{
+					"min": 20,
+					"max": 30
+				}
+			]
+		},
+		"chance_to_evade_attacks_% attack_and_cast_speed_+%_if_havent_been_hit_recently": {
+			"InfluenceMaven": [
+				{
+					"min": 2,
+					"max": 4
+				},
+				{
+					"min": 7,
+					"max": 12
+				}
+			]
+		},
+		"attacks_impale_on_hit_%_chance minimum_added_physical_damage_per_impaled_on_enemy maximum_added_physical_damage_per_impaled_on_enemy": {
+			"ChanceToImpaleInfluenceMaven_": [
+				{
+					"min": 12,
+					"max": 15
+				},
+				{
+					"min": 1,
+					"max": 2
+				},
+				{
+					"min": 3,
+					"max": 5
+				}
+			]
+		},
+		"base_all_ailment_duration_+% non_damaging_ailment_effect_+%": {
+			"AilmentDurationInfluenceMaven": [
+				{
+					"min": 13,
+					"max": 15
+				},
+				{
+					"min": 13,
+					"max": 15
+				}
+			]
+		},
+		"mana_gain_per_target attack_speed_+%_while_not_on_low_mana": {
+			"InfluenceMaven": [
+				{
+					"min": 3,
+					"max": 5
+				},
+				{
+					"min": 10,
+					"max": 20
+				}
+			]
+		},
+		"unaffected_by_chill": {
+			"ImmuneToChilledGroundUberMaven": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"UnaffectedByChilledGroundInfluenceMaven": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"unaffected_by_ignite": {
+			"ImmuneToBurningGroundUberMaven_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			],
+			"UnaffectedByBurningGroundInfluenceMaven": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"base_chance_to_dodge_% maximum_dodge_chance_%": {
+			"UberMaven": [
+				{
+					"min": 9,
+					"max": 10
+				},
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
+			"AttacksInfluenceMaven__": [
+				{
+					"min": 9,
+					"max": 10
+				},
+				{
+					"min": 1,
+					"max": 2
+				}
+			]
+		},
+		"base_chance_to_dodge_spells_% maximum_spell_dodge_chance_%": {
+			"ChanceToDodgeSpellsUberMaven_": [
+				{
+					"min": 9,
+					"max": 10
+				},
+				{
+					"min": 1,
+					"max": 2
+				}
+			],
+			"ChanceToDodgeSpellsInfluenceMaven": [
+				{
+					"min": 9,
+					"max": 10
+				},
+				{
+					"min": 1,
+					"max": 2
+				}
+			]
+		},
+		"base_avoid_projectiles_%_chance avoid_projectiles_%_chance_if_taken_projectile_damage_recently": {
+			"UberMaven___": [
+				{
+					"min": 10,
+					"max": 12
+				},
+				{
+					"min": 11,
+					"max": 15
+				}
+			],
+			"AvoidProjectilesInfluenceMaven_": [
+				{
+					"min": 10,
+					"max": 12
+				},
+				{
+					"min": 11,
+					"max": 15
+				}
+			]
+		},
+		"endurance_charge_on_kill_% endurance_charge_duration_+%": {
+			"ChanceToGainEnduranceChargeOnKillUberMaven": [
+				{
+					"min": 7,
+					"max": 10
+				},
+				{
+					"min": 50,
+					"max": 50
+				}
+			],
+			"EnduranceChargeOnKillInfluenceMaven": [
+				{
+					"min": 7,
+					"max": 10
+				},
+				{
+					"min": 50,
+					"max": 50
+				}
+			]
+		},
+		"local_socketed_lightning_gem_level_+ local_socketed_lightning_gem_quality_+": {
+			"SocketedLightningGemLevelInfluenceMaven": [
+				{
+					"min": 2,
+					"max": 2
+				},
+				{
+					"min": 3,
+					"max": 7
+				}
+			]
+		},
+		"local_socketed_fire_gem_level_+ local_socketed_fire_gem_quality_+": {
+			"SocketedFireGemLevelInfluenceMaven": [
+				{
+					"min": 2,
+					"max": 2
+				},
+				{
+					"min": 3,
+					"max": 7
+				}
+			]
+		},
+		"max_endurance_charges gain_maximum_endurance_charges_on_endurance_charge_gained_%_chance": {
+			"MaximumEnduranceChargeInfluenceMaven__": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 10,
+					"max": 10
+				}
+			]
+		},
+		"avoid_fire_damage_% base_fire_damage_resistance_%": {
+			"AvoidFireDamageInfluenceMaven_____": [
+				{
+					"min": 8,
+					"max": 10
+				},
+				{
+					"min": 20,
+					"max": 30
+				}
+			]
+		},
+		"avoid_cold_damage_% base_cold_damage_resistance_%": {
+			"AvoidColdDamageInfluenceMaven_": [
+				{
+					"min": 8,
+					"max": 10
+				},
+				{
+					"min": 20,
+					"max": 30
+				}
+			]
+		},
+		"avoid_lightning_damage_% base_lightning_damage_resistance_%": {
+			"AvoidLightningDamageInfluenceMaven": [
+				{
+					"min": 8,
+					"max": 10
+				},
+				{
+					"min": 20,
+					"max": 30
+				}
+			]
+		},
+		"base_additional_physical_damage_reduction_% physical_damage_reduction_rating_+%": {
+			"AdditionalPhysicalDamageReductionInfluenceMaven": [
+				{
+					"min": 2,
+					"max": 4
+				},
+				{
+					"min": 15,
+					"max": 20
+				}
+			]
+		},
+		"local_socketed_cold_gem_level_+ local_socketed_cold_gem_quality_+": {
+			"SocketedColdGemLevelInfluenceMaven": [
+				{
+					"min": 2,
+					"max": 2
+				},
+				{
+					"min": 3,
+					"max": 7
+				}
+			]
+		},
+		"gain_elusive_on_crit_%_chance elusive_effect_+%": {
+			"InfluenceMaven": [
+				{
+					"min": 11,
+					"max": 20
+				},
+				{
+					"min": 5,
+					"max": 10
+				}
+			]
+		},
+		"chance_to_gain_onslaught_on_kill_% attack_cast_and_movement_speed_+%_during_onslaught": {
+			"OnslaughtOnKillInfluenceMaven": [
+				{
+					"min": 8,
+					"max": 10
+				},
+				{
+					"min": 3,
+					"max": 10
+				}
+			]
+		},
+		"local_socketed_chaos_gem_level_+ local_socketed_chaos_gem_quality_+": {
+			"SocketedChaosGemLevelInfluenceMaven": [
+				{
+					"min": 2,
+					"max": 2
+				},
+				{
+					"min": 3,
+					"max": 7
+				}
+			]
+		},
+		"tailwind_if_have_crit_recently tailwind_effect_on_self_+%": {
+			"InfluenceMaven_": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 10,
+					"max": 25
+				}
+			]
+		},
+		"faster_burn_% ignite_duration_+%": {
+			"FasterIgniteInfluenceMaven": [
+				{
+					"min": 11,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 20
+				}
+			]
+		},
+		"faster_bleed_% base_bleed_duration_+%": {
+			"FasterBleedInfluenceMaven": [
+				{
+					"min": 11,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 20
+				}
+			]
+		},
+		"faster_poison_% base_poison_duration_+%": {
+			"FasterPoisonInfluenceMaven": [
+				{
+					"min": 11,
+					"max": 15
+				},
+				{
+					"min": 10,
+					"max": 20
+				}
+			]
+		},
+		"local_display_grants_skill_unhinge_level": {
+			"GrantsUnhingeUnique__1": [
+				{
+					"min": 20,
+					"max": 20
+				}
+			]
+		},
+		"physical_and_chaos_damage_taken_+%_final_while_not_unhinged": {
+			"PhysicalChaosDamageTakenNotUnhingedUnique__1_": [
+				{
+					"min": -25,
+					"max": -15
+				}
+			]
+		},
+		"regenerate_%_life_over_1_second_when_hit_while_not_unhinged": {
+			"RegenerateLifeNotUnhingedUnique__1": [
+				{
+					"min": 10,
+					"max": 10
+				}
+			]
+		},
+		"critical_strike_chance_+%_final_while_unhinged": {
+			"CriticalStrikeChanceFinalUnhingedUnique__1": [
+				{
+					"min": 40,
+					"max": 60
+				}
+			]
+		},
+		"enemies_explode_on_kill_while_unhinged": {
+			"EnemiesExplodeOnKillUnhingedUnique__1_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"local_display_socketed_gems_curse_auras_also_affect_you": {
+			"Unique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"hit_and_ailment_damage_+%_vs_cursed_enemies": {
+			"HitAndAilmentDamageCursedEnemiesUnique__1": [
+				{
+					"min": 15,
+					"max": 25
+				}
+			]
+		},
+		"scorched_earth_ground_scorch_duration_ms": {
+			"ScorchedGroundWhileMovingUnique__1": [
+				{
+					"min": 4000,
+					"max": 4000
+				}
+			]
+		},
+		"scorch_effect_+%": {
+			"Unique__1": [
+				{
+					"min": 30,
+					"max": 50
+				}
+			]
+		},
+		"scorched_enemies_explode_on_death_for_8%_life_as_fire_degen_chance": {
+			"Unique__1_": [
+				{
+					"min": 30,
+					"max": 40
+				}
+			]
+		},
+		"attack_speed_+%_if_not_gained_frenzy_charge_recently": {
+			"AttackSpeedFrenzyChargeNotGainedUnique__1": [
+				{
+					"min": 20,
+					"max": 25
+				}
+			]
+		},
+		"critical_strike_chance_+%_if_not_gained_power_charge_recently": {
+			"CriticalStrikeChancePowerChargeNotGainedUnique__1": [
+				{
+					"min": 60,
+					"max": 80
+				}
+			]
+		},
+		"frenzy_and_power_charge_add_duration_ms_on_cull": {
+			"ExtendFrenzyPowerChargeDurationCullUnique__1": [
+				{
+					"min": 3000,
+					"max": 3000
+				}
+			]
+		},
+		"life_gained_on_cull": {
+			"Unique__1": [
+				{
+					"min": 120,
+					"max": 150
+				}
+			]
+		},
+		"mana_gained_on_cull": {
+			"Unique__1_": [
+				{
+					"min": 10,
+					"max": 20
+				}
+			]
+		},
+		"gain_brutal_charges_instead_of_endurance_charges": {
+			"GainBrutalChargesInsteadOfEnduranceUnique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"gain_affliction_charges_instead_of_frenzy_charges": {
+			"GainAfflictionChargesInsteadOfFrenzyUnique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"gain_absorption_charges_instead_of_power_charges": {
+			"GainAbsorptionChargesInsteadOfPowerUnique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"maximum_brutal_charges_is_equal_to_maximum_endurance_charges": {
+			"MaximumBrutalChargesEqualsEnduranceUnique__1__": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"maximum_affliction_charges_is_equal_to_maximum_frenzy_charges": {
+			"MaximumAfflictionChargesEqualsFrenzyUnique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"maximum_absorption_charges_is_equal_to_maximum_power_charges": {
+			"MaximumAbsorptionChargesEqualsPowerUnique__1_": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"modifiers_to_minimum_endurance_charges_instead_apply_to_brutal_charges": {
+			"MinimumBrutalChargeModifiersEqualsEnduranceUnique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"modifiers_to_minimum_frenzy_charges_instead_apply_to_affliction_charges": {
+			"MinimumAfflictionChargeModifiersEqualsFrenzyUnique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"modifiers_to_minimum_power_charges_instead_apply_to_absorption_charges": {
+			"MinimumAbsorptionChargeModifiersEqualsPowerUnique__1": [
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"minions_go_crazy_on_crit_ms": {
+			"Unique__1__": [
+				{
+					"min": 5000,
+					"max": 5000
+				}
+			]
+		},
+		"minion_critical_strike_chance_+%_per_maximum_power_charge": {
+			"MaximumPowerChargeUnique__1": [
+				{
+					"min": 50,
+					"max": 50
+				}
+			]
+		},
 		"base_item_found_rarity_+% local_display_item_found_rarity_+%_for_you_and_nearby_allies": {
 			"LocalDisplayYouAndNearbyAlliesHaveIncreasedItemRarityUnique__1": [
 				{
@@ -178315,6 +187309,42 @@
 				{
 					"min": 30,
 					"max": 30
+				}
+			]
+		},
+		"base_actor_scale_+% base_movement_velocity_+% attack_and_cast_speed_+% non_chaos_damage_to_add_as_chaos_damage_% damage_+% display_monster_sirus_influenced": {
+			"": [
+				{
+					"min": 20,
+					"max": 20
+				},
+				{
+					"min": 30,
+					"max": 30
+				},
+				{
+					"min": 30,
+					"max": 30
+				},
+				{
+					"min": 30,
+					"max": 30
+				},
+				{
+					"min": 50,
+					"max": 50
+				},
+				{
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
+		"map_num_extra_blights_": {
+			"": [
+				{
+					"min": 1,
+					"max": 1
 				}
 			]
 		}

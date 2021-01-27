@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.7 (2021-01-27)
+
+- Updated assets to support 3.13.0c
+- Fixed currency exchange rate rounding ([#171](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/171))
+- Fixed an issue with the '10% chance to gain Onslaught for 10 seconds on kill' stat not being recognised ([#172](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/172))
+
 ## 0.7.6 (2021-01-15)
 
 - Updated assets to support 3.13.0 (Ritual League)

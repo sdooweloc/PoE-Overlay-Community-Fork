@@ -135,7 +135,7 @@ export class ItemSearchFiltersTypeService implements ItemSearchFiltersService {
       case ItemCategory.HeistGear:
       case ItemCategory.HeistTool:
       case ItemCategory.HeistCloak:
-      case ItemCategory.HeistUtility:
+      case ItemCategory.HeistBrooch:
       case ItemCategory.HeistMission:
       case ItemCategory.HeistContract:
       case ItemCategory.HeistBlueprint:

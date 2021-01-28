@@ -102,7 +102,7 @@ export enum ItemCategory {
   HeistGear = 'heistequipment.heistweapon',
   HeistTool = 'heistequipment.heisttool',
   HeistCloak = 'heistequipment.heistutility',
-  HeistUtility = 'heistequipment.heistreward',
+  HeistBrooch = 'heistequipment.heistreward',
   HeistMission = 'heistmission',
   HeistContract = 'heistmission.contract',
   HeistBlueprint = 'heistmission.blueprint',

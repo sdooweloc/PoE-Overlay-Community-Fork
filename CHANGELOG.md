@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.7.8 (2021-02-18)
+
+- Added support to show annointment oils (toggleable in the settings) ([#170](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/170))
+- Added support for Maven invitations
+- Fixed the following indistinguishable stats:
+  - Local/global (flat) evation rating
+  - Increased time before lockdown
+  - Local/global % evasion rating
+  - Local/global (flat) energy shield ([#176](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/176))
+  - % of recovery applied instantly ([#175](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/175))
+  - Recover % mana on kill
+  - Trigger level # assassin's mark when you hit a rare or unique enemy
+- Fixed flask parsing (it included unsearchable implicit stats while it shouldn't have)
+- Fixed Watchstone item search filter category (it now takes item rarity into account)
+- Fixed Heist equipment not using their respective categories
+- Fixed EGS client detection
+- Fixed an issue with number parsing related to decimal separators
+
 ## 0.7.7 (2021-01-27)
 
 - Updated assets to support 3.13.0c

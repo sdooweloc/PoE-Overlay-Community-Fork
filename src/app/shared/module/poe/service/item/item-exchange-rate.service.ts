@@ -95,7 +95,7 @@ export class ItemExchangeRateService {
       return false
     }
 
-    const tier = +item.properties?.mapTier?.value
+    const tier = +item.properties?.mapTier?.value?.value
     const filterMapTier = (x: ItemCategoryValue) => {
       if (isNaN(tier) || x.mapTier === undefined) {
         return true

@@ -18,8 +18,8 @@ export class ItemSearchFiltersMapService implements ItemSearchFiltersService {
     const prop = item.properties
     if (prop.mapTier) {
       query.filters.map_filters.filters.map_tier = {
-        min: +prop.mapTier.value,
-        max: +prop.mapTier.value,
+        min: +prop.mapTier.value.value,
+        max: +prop.mapTier.value.value,
       }
     }
 

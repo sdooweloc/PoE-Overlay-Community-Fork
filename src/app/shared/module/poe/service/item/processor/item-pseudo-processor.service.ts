@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core'
 import { ModifierType, PSEUDO_MODIFIERS } from '@shared/module/poe/config/pseudo.config'
-import { Item, ItemStat, StatType } from '@shared/module/poe/type'
+import { Item, ItemRarity, ItemStat, StatType } from '@shared/module/poe/type'
 
 @Injectable({
   providedIn: 'root',
@@ -37,7 +37,11 @@ export class ItemPseudoProcessorService {
             ++count
             values = this.calculateValue(stat, mod.type, values)
 
-            if (stat.type !== StatType.Pseudo && stat.type !== StatType.Fractured && (!item.influences.synthesized || stat.type !== StatType.Implicit)) {
+            if (stat.type !== StatType.Pseudo && // Never remove pseudo stats
+              item.rarity !== ItemRarity.Unique && // Never remove stats from unique items
+              stat.type !== StatType.Fractured && // Never remove fractured stats
+              (!item.influences || !item.influences.synthesized || stat.type !== StatType.Implicit)) // Never remove synthesized implicit stats
+            {
               item.stats = item.stats.filter((y) => y !== stat)
             }
           })

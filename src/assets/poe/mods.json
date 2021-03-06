@@ -59719,8 +59719,8 @@
 					"max": 6
 				},
 				{
-					"min": 30,
-					"max": 30
+					"min": 20,
+					"max": 20
 				}
 			],
 			"Synthesis2": [
@@ -59737,8 +59737,8 @@
 					"max": 6
 				},
 				{
-					"min": 40,
-					"max": 40
+					"min": 30,
+					"max": 30
 				}
 			],
 			"Synthesis3": [
@@ -59755,8 +59755,8 @@
 					"max": 6
 				},
 				{
-					"min": 50,
-					"max": 50
+					"min": 40,
+					"max": 40
 				}
 			]
 		},
@@ -60471,8 +60471,8 @@
 					"max": 6
 				},
 				{
-					"min": -25,
-					"max": -25
+					"min": -20,
+					"max": -20
 				}
 			],
 			"MapMonstersCurseEffectOnSelfFinalSynthesis2_": [
@@ -60489,8 +60489,8 @@
 					"max": 6
 				},
 				{
-					"min": -40,
-					"max": -40
+					"min": -30,
+					"max": -30
 				}
 			],
 			"MapMonstersCurseEffectOnSelfFinalSynthesis3": [
@@ -60507,8 +60507,8 @@
 					"max": 6
 				},
 				{
-					"min": -60,
-					"max": -60
+					"min": -40,
+					"max": -40
 				}
 			]
 		},
@@ -61491,8 +61491,8 @@
 					"max": 6
 				},
 				{
-					"min": 30,
-					"max": 30
+					"min": 20,
+					"max": 20
 				}
 			],
 			"Synthesis2": [
@@ -61509,8 +61509,8 @@
 					"max": 6
 				},
 				{
-					"min": 40,
-					"max": 40
+					"min": 30,
+					"max": 30
 				}
 			],
 			"Synthesis3": [
@@ -61527,8 +61527,8 @@
 					"max": 6
 				},
 				{
-					"min": 50,
-					"max": 50
+					"min": 40,
+					"max": 40
 				}
 			]
 		},
@@ -116573,6 +116573,16 @@
 				{
 					"min": 500,
 					"max": 500
+				}
+			],
+			"StrongboxEnrageEnchantmentMaven": [
+				{
+					"min": 1,
+					"max": 1
+				},
+				{
+					"min": 600,
+					"max": 600
 				}
 			]
 		},

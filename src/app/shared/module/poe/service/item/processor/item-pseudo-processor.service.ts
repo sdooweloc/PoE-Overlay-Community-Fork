@@ -37,7 +37,7 @@ export class ItemPseudoProcessorService {
             ++count
             values = this.calculateValue(stat, mod.type, values)
 
-            if (stat.type !== StatType.Pseudo) {
+            if (stat.type !== StatType.Pseudo && stat.type !== StatType.Fractured && (!item.influences.synthesized || stat.type !== StatType.Implicit)) {
               item.stats = item.stats.filter((y) => y !== stat)
             }
           })

@@ -219,6 +219,8 @@ export interface ItemInfluences {
   elder?: boolean
   redeemer?: boolean
   warlord?: boolean
+  fractured?: boolean
+  synthesized?: boolean
 }
 
 export interface ItemsMap {

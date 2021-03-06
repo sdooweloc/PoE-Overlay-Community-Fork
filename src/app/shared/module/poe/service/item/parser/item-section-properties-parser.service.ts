@@ -53,8 +53,8 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
           props.weaponPhysicalDamage = this.parseValueProperty(line, phrases[0], props.weaponPhysicalDamage)
           props.weaponElementalDamage = this.parseValueProperty(line, phrases[1], props.weaponElementalDamage)
           props.weaponChaosDamage = this.parseValueProperty(line, phrases[2], props.weaponChaosDamage)
-          props.weaponCriticalStrikeChance = this.parseValueProperty(line, phrases[3], props.weaponCriticalStrikeChance)
-          props.weaponAttacksPerSecond = this.parseValueProperty(line, phrases[4], props.weaponAttacksPerSecond)
+          props.weaponCriticalStrikeChance = this.parseValueProperty(line, phrases[3], props.weaponCriticalStrikeChance, 2)
+          props.weaponAttacksPerSecond = this.parseValueProperty(line, phrases[4], props.weaponAttacksPerSecond, 2)
           props.weaponRange = this.parseProperty(line, phrases[5], props.weaponRange)
           props.shieldBlockChance = this.parseValueProperty(line, phrases[6], props.shieldBlockChance)
           props.armourArmour = this.parseValueProperty(line, phrases[7], props.armourArmour)
@@ -97,7 +97,8 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
   private parseValueProperty(
     line: string,
     phrase: string,
-    prop: ItemValueProperty
+    prop: ItemValueProperty,
+    numDecimals: number = 0
   ): ItemValueProperty {
     const [text, augmented] = this.parsePhrase(line, phrase);
     if (!text) {
@@ -108,14 +109,14 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
       const splitted = text.split('/')
       itemValue = {
         text,
-        value: this.parseNumber(splitted[0]),
-        min: this.parseNumber(splitted[0]),
-        max: this.parseNumber(splitted[1]),
+        value: this.parseNumber(splitted[0], numDecimals),
+        min: this.parseNumber(splitted[0], numDecimals),
+        max: this.parseNumber(splitted[1], numDecimals),
       }
     } else {
       itemValue = {
         text,
-        value: this.parseNumber(text),
+        value: this.parseNumber(text, numDecimals),
       }
     }
     const property: ItemValueProperty = {
@@ -125,8 +126,8 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
     return property
   }
 
-  private parseNumber(text: string): number {
-    return +text.split(/[\+%,\. ]+/).join('')
+  private parseNumber(text: string, numDecimals: number): number {
+    return (+text.split(/[\+%,\. ]+/).join('')) / Math.pow(10, numDecimals)
   }
 
   private parsePhrase(line: string, phrase: string): [string, boolean] {

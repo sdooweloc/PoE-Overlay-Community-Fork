@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.10 (2021-03-06)
+
+- Pseudo grouping no longer removes Stats from Unique Items
+- Fixed a parsing error for Non-Influenced items
+
 ## 0.7.9 (2021-03-06)
 
 - Updated assets to support 3.13.1e

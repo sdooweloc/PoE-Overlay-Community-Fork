@@ -29,14 +29,18 @@ export class CurrenciesProvider {
         if (groupId) {
           result = result.filter((group) => group.id === groupId)
         }
-        return [].concat(...result.map((group) => group.entries.map((entry) => {
-          const currency: Currency = {
-            id: entry.id,
-            nameType: entry.text,
-            image: entry.image,
-          }
-          return currency
-        })))
+        return [].concat(
+          ...response.result.map((group) =>
+            group.entries.map((entry) => {
+              const currency: Currency = {
+                id: entry.id,
+                nameType: entry.text,
+                image: entry.image,
+              }
+              return currency
+            })
+          )
+        )
       })
     )
   }

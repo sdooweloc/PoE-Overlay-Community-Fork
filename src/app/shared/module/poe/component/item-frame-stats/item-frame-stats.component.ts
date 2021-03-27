@@ -48,6 +48,6 @@ export class ItemFrameStatsComponent {
   }
 
   public isAnnointmentStat(id: string): boolean {
-    return id == 'mod_granted_passive_hash';
+    return id === 'mod_granted_passive_hash'
   }
 }

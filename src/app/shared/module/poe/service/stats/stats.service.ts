@@ -177,7 +177,7 @@ export class StatsService {
             }
 
             // Check if we're explicitly dealing with maps and map mods
-            if (stat.mod == 'maps' && !options.map) {
+            if (stat.mod === 'maps' && !options.map) {
               continue
             }
 
@@ -210,7 +210,8 @@ export class StatsService {
             let matchedPredicate = predicate
             let matchedValues = test.slice(1).map((x) => ({ text: x }))
 
-            // Check if your predicate uses a single number (e.g. '1 Added Passive Skill is a Jewel Socket' or 'Bow Attacks fire an additional Arrow')
+            // Check if your predicate uses a single number
+            // (e.g. '1 Added Passive Skill is a Jewel Socket' or 'Bow Attacks fire an additional Arrow')
             if (predicate === '1' && stat.option !== true) {
               // Check if the 'next' predicate is an 'any' ('#') number predicate, if it is, then use it accordingly
               const nextIndex = statDescIndex + 1

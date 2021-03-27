@@ -4,7 +4,13 @@ import { SharedModule } from '@shared/shared.module'
 import { BaseItemTypesService } from '../base-item-types/base-item-types.service'
 import { ContextService } from '../context.service'
 import { ItemSearchService } from './item-search.service'
-import { TradeFetchResult, TradeHttpService, TradeOrExchangeSearchResponse, TradeResponse, TradeSearchType } from '@data/poe'
+import {
+  TradeFetchResult,
+  TradeHttpService,
+  TradeOrExchangeSearchResponse,
+  TradeResponse,
+  TradeSearchType,
+} from '@data/poe'
 import { of } from 'rxjs'
 
 describe('ItemSearchService', () => {
@@ -113,20 +119,22 @@ describe('ItemSearchService', () => {
     tradeServiceSpy.fetch.and.returnValue(of(mockFetchResult))
     tradeServiceSpy.getStatic.and.returnValue(of(mockStatic))
 
-    sut.searchOrExchange(requestedItem, { language: Language.English, leagueId: 'Delirium' }).subscribe(
-      (result) => {
-        expect(result.hits.length).toBeGreaterThan(0)
+    sut
+      .searchOrExchange(requestedItem, { language: Language.English, leagueId: 'Delirium' })
+      .subscribe(
+        (result) => {
+          expect(result.hits.length).toBeGreaterThan(0)
 
-        sut.list(result, 2).subscribe(
-          (listings) => {
-            expect(listings.length).toBe(Math.min(result.hits.length, 2))
+          sut.list(result, 2).subscribe(
+            (listings) => {
+              expect(listings.length).toBe(Math.min(result.hits.length, 2))
 
-            done()
-          },
-          (error) => done.fail(error)
-        )
-      },
-      (error) => done.fail(error)
-    )
+              done()
+            },
+            (error) => done.fail(error)
+          )
+        },
+        (error) => done.fail(error)
+      )
   })
 })

@@ -83,6 +83,9 @@ export class EvaluateSearchTableComponent {
   }
 
   public showRatio(row: Row): boolean {
-    return (row.priceDenominator != 1 || row.priceNumerator != row.originalAmount) && Math.floor(row.originalAmount) != row.originalAmount
+    return (
+      (row.priceDenominator !== 1 || row.priceNumerator !== row.originalAmount) &&
+      Math.floor(row.originalAmount) !== row.originalAmount
+    )
   }
 }

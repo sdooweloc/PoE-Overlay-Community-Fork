@@ -50,16 +50,50 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
         case ItemRarity.Rare:
         case ItemRarity.Unique:
         case ItemRarity.NonUnique:
-          props.weaponPhysicalDamage = this.parseValueProperty(line, phrases[0], props.weaponPhysicalDamage)
-          props.weaponElementalDamage = this.parseValueProperty(line, phrases[1], props.weaponElementalDamage)
-          props.weaponChaosDamage = this.parseValueProperty(line, phrases[2], props.weaponChaosDamage)
-          props.weaponCriticalStrikeChance = this.parseValueProperty(line, phrases[3], props.weaponCriticalStrikeChance, 2)
-          props.weaponAttacksPerSecond = this.parseValueProperty(line, phrases[4], props.weaponAttacksPerSecond, 2)
+          props.weaponPhysicalDamage = this.parseValueProperty(
+            line,
+            phrases[0],
+            props.weaponPhysicalDamage
+          )
+          props.weaponElementalDamage = this.parseValueProperty(
+            line,
+            phrases[1],
+            props.weaponElementalDamage
+          )
+          props.weaponChaosDamage = this.parseValueProperty(
+            line,
+            phrases[2],
+            props.weaponChaosDamage
+          )
+          props.weaponCriticalStrikeChance = this.parseValueProperty(
+            line,
+            phrases[3],
+            props.weaponCriticalStrikeChance,
+            2
+          )
+          props.weaponAttacksPerSecond = this.parseValueProperty(
+            line,
+            phrases[4],
+            props.weaponAttacksPerSecond,
+            2
+          )
           props.weaponRange = this.parseProperty(line, phrases[5], props.weaponRange)
-          props.shieldBlockChance = this.parseValueProperty(line, phrases[6], props.shieldBlockChance)
+          props.shieldBlockChance = this.parseValueProperty(
+            line,
+            phrases[6],
+            props.shieldBlockChance
+          )
           props.armourArmour = this.parseValueProperty(line, phrases[7], props.armourArmour)
-          props.armourEvasionRating = this.parseValueProperty(line, phrases[8], props.armourEvasionRating)
-          props.armourEnergyShield = this.parseValueProperty(line, phrases[9], props.armourEnergyShield)
+          props.armourEvasionRating = this.parseValueProperty(
+            line,
+            phrases[8],
+            props.armourEvasionRating
+          )
+          props.armourEnergyShield = this.parseValueProperty(
+            line,
+            phrases[9],
+            props.armourEnergyShield
+          )
           break
       }
       props.stackSize = this.parseValueProperty(line, phrases[10], props.stackSize)
@@ -83,7 +117,7 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
   }
 
   private parseProperty(line: string, phrase: string, prop: ItemProperty): ItemProperty {
-    const [text, augmented] = this.parsePhrase(line, phrase);
+    const [text, augmented] = this.parsePhrase(line, phrase)
     if (!text) {
       return prop
     }
@@ -100,7 +134,7 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
     prop: ItemValueProperty,
     numDecimals: number = 0
   ): ItemValueProperty {
-    const [text, augmented] = this.parsePhrase(line, phrase);
+    const [text, augmented] = this.parsePhrase(line, phrase)
     if (!text) {
       return prop
     }
@@ -127,12 +161,12 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
   }
 
   private parseNumber(text: string, numDecimals: number): number {
-    return (+text.split(/[\+%,\. ]+/).join('')) / Math.pow(10, numDecimals)
+    return +text.split(/[\+%,\. ]+/).join('') / Math.pow(10, numDecimals)
   }
 
   private parsePhrase(line: string, phrase: string): [string, boolean] {
     if (line.indexOf(phrase) !== 0) {
-      return ['', false];
+      return ['', false]
     }
     let text = line.slice(phrase.length)
     const max = this.clientString.translate('ItemDisplaySkillGemMaxLevel').replace('{0}', '')

@@ -30,7 +30,7 @@ export class CurrenciesProvider {
           result = result.filter((group) => group.id === groupId)
         }
         return [].concat(
-          ...response.result.map((group) =>
+          ...result.map((group) =>
             group.entries.map((entry) => {
               const currency: Currency = {
                 id: entry.id,

@@ -131,7 +131,6 @@ export class EvaluateSearchComponent implements OnInit, OnDestroy {
       index = this.currencies.length - 1
     }
 
-
     const search = this.search$.value
     if (search?.searchType === TradeSearchType.BulkExchange) {
       this.clear()

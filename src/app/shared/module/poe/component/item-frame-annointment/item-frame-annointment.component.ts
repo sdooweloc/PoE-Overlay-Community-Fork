@@ -18,11 +18,9 @@ export class ItemFrameAnnointmentComponent {
   @Input()
   public language: Language
 
-  constructor(
-    private readonly annointmentsService: AnnointmentsService,
-  ) { }
+  constructor(private readonly annointmentsService: AnnointmentsService) {}
 
   public getOils(): string[] {
-    return this.annointmentsService.get(this.itemStat.predicate);
+    return this.annointmentsService.get(this.itemStat.predicate)
   }
 }

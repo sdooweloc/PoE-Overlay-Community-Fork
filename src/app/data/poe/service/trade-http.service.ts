@@ -98,7 +98,7 @@ export class TradeHttpService {
     request: TradeSearchRequest | ExchangeSearchRequest,
     language: Language,
     leagueId: string,
-    searchType: TradeSearchType,
+    searchType: TradeSearchType
   ): Observable<TradeOrExchangeSearchResponse> {
     const url = this.getApiUrl(`${searchType}/${encodeURIComponent(leagueId)}`, language)
     return this.limit

@@ -18,9 +18,13 @@ export class ItemSectionFlaskParserService implements ItemSectionParserService {
   public section = ItemSection.Flask
 
   public parse(item: ExportedItem, target: Item): Section {
-    const phrase = new RegExp(`^${this.clientString.translate('ItemDisplayChargesNCharges').replace('{0}', '(\\S+)')}$`)
+    const phrase = new RegExp(
+      `^${this.clientString.translate('ItemDisplayChargesNCharges').replace('{0}', '(\\S+)')}$`
+    )
 
-    const flaskSection = item.sections.find((x) => x.content.split('\n').findIndex(y => phrase.test(y)) !== -1)
+    const flaskSection = item.sections.find(
+      (x) => x.content.split('\n').findIndex((y) => phrase.test(y)) !== -1
+    )
     if (!flaskSection) {
       return null
     }

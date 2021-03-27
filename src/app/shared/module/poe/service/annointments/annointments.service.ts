@@ -5,7 +5,7 @@ import { AnnointmentsProvider } from '../../provider/annointments.provider'
   providedIn: 'root',
 })
 export class AnnointmentsService {
-  constructor(private readonly annointmentsProvider: AnnointmentsProvider) { }
+  constructor(private readonly annointmentsProvider: AnnointmentsProvider) {}
 
   public get(annointmentId: string): string[] {
     const annointmentsMap = this.annointmentsProvider.provide()

@@ -30,7 +30,11 @@ export class CacheService {
     return this.storage.get<CacheEntry<TValue>>(key).pipe(
       flatMap((entry) => {
         const now = Date.now()
-        if (entry && ((entry.expiry === expiry && entry.expired > now) || (entry.expiry !== expiry && entry.creation + expiry > now))) {
+        if (
+          entry &&
+          ((entry.expiry === expiry && entry.expired > now) ||
+            (entry.expiry !== expiry && entry.creation + expiry > now))
+        ) {
           if (slidingExpiry) {
             this.storage.save(key, {
               value: entry.value,

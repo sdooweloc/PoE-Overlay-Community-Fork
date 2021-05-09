@@ -67,6 +67,20 @@ export class EvaluateQueryItemProvider {
       }
     }
 
+    const incursion = item.properties?.incursion
+    if (incursion) {
+      queryItem.properties.incursion = {
+        openRooms: incursion.openRooms.map((room) => {
+          const key = `${room.stat.type}.${room.stat.tradeId}`
+          return settings.evaluateQueryDefaultStats[key] ? room : undefined
+        }),
+        closedRooms: incursion.closedRooms.map((room) => {
+          const key = `${room.stat.type}.${room.stat.tradeId}`
+          return settings.evaluateQueryDefaultStats[key] ? room : undefined
+        }),
+      }
+    }
+
     if (settings.evaluateQueryDefaultAttack) {
       queryItem.damage = item.damage
 

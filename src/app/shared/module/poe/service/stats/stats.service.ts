@@ -141,6 +141,57 @@ export class StatsService {
     return results
   }
 
+  public searchExactInType(text: string, statTypesToSearch: StatType[], language?: Language): ItemStat {
+    language = language || this.context.get().language
+
+    let result: ItemStat
+
+    for (const type of statTypesToSearch) {
+      const stats = this.statsProvider.provide(type)
+      for (const tradeId in stats) {
+        if (!stats.hasOwnProperty(tradeId)) {
+          continue
+        }
+
+        const stat = stats[tradeId]
+        const statDescs = stat.text[language]
+        statDescs.forEach((statDesc, statDescIndex) => {
+          if (result) {
+            return
+          }
+          const predicate = Object.getOwnPropertyNames(statDesc)[0]
+          const regex = statDesc[predicate]
+          if (!regex.length) {
+            return
+          }
+
+          const key = `${type}_${tradeId}_${statDescIndex}`
+          const expr = this.cache[key] || (this.cache[key] = new RegExp(regex, 'm'))
+          const test = expr.exec(text)
+
+          if (!test) {
+            return
+          }
+
+          result = {
+            id: stat.id,
+            mod: stat.mod,
+            option: stat.option,
+            negated: stat.negated,
+            predicateIndex: statDescIndex,
+            predicate: predicate,
+            type,
+            tradeId,
+            values: test.slice(1).map((x) => ({ text: x })),
+            indistinguishable: undefined,
+          }
+        })
+      }
+    }
+
+    return result
+  }
+
   private executeSearch(
     search: StatsSectionsSearch,
     options: StatsSearchOptions,
@@ -162,7 +213,7 @@ export class StatsService {
         statDescs.forEach((statDesc, statDescIndex) => {
           const predicate = Object.getOwnPropertyNames(statDesc)[0]
           const regex = statDesc[predicate]
-          if (regex.length <= 0) {
+          if (!regex.length) {
             return
           }
 

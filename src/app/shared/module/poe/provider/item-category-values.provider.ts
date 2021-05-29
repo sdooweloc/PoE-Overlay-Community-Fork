@@ -55,7 +55,19 @@ export class ItemCategoryValuesProvider {
           return this.fetch(key, () => this.fetchItem(leagueId, ItemOverviewType.UniqueMap))
         } else {
           const key = `${leagueId}_${ItemCategory.Map}`
-          return this.fetch(key, () => this.fetchItem(leagueId, ItemOverviewType.Map))
+          return forkJoin([
+            this.fetch(key, () => this.fetchItem(leagueId, ItemOverviewType.Map)),
+            this.fetch(`${key}_blighted`, () => this.fetchItem(leagueId, ItemOverviewType.BlightedMap)),
+          ]).pipe(
+            map(([maps, blightedMaps]) => {
+              return {
+                values: [
+                  ...maps.values,
+                  ...blightedMaps.values,
+                ],
+              }
+            })
+          )
         }
       }
       case ItemCategory.Prophecy: {

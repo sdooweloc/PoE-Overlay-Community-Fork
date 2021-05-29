@@ -158,6 +158,7 @@ export interface ItemProperties {
   quality?: ItemValueProperty
   qualityType?: ItemQualityType
   gemExperience?: ItemValueProperty
+  areaLevel?: ItemValueProperty
   mapTier?: ItemValueProperty
   mapQuantity?: ItemValueProperty
   mapRarity?: ItemValueProperty
@@ -167,6 +168,7 @@ export interface ItemProperties {
   storedExperience?: ItemValueProperty
   ultimatum?: ItemPropertiesUltimatum
   incursion?: ItemPropertiesIncursion
+  heist?: ItemPropertiesHeist
 }
 
 export interface ItemProperty {
@@ -265,6 +267,39 @@ export interface ItemPropertiesIncursionRoom {
   stat: ItemStat
 }
 
+export interface ItemPropertiesHeist {
+  requiredSkills: HeistSkillLevel[]
+  objectiveName?: string
+  objectiveValue?: HeistObjectiveValue
+  wingsRevealed?: ItemValue,
+  escapeRoutes?: ItemValue,
+  rewardRooms?: ItemValue,
+}
+
+export enum HeistObjectiveValue {
+  Moderate = 1,
+  High = 2,
+  Precious = 3,
+  Priceless = 4,
+}
+
+export enum HeistJob {
+  Lockpicking = 0,
+  BruteForce,
+  Perception,
+  Demolition,
+  CounterThaumaturge,
+  TrapDisarmament,
+  Agility,
+  Deception,
+  Engineering,
+}
+
+export interface HeistSkillLevel {
+  job: HeistJob
+  level: ItemValue
+}
+
 export interface ExportedItem {
   sections: Section[]
 }
@@ -292,6 +327,7 @@ export enum ItemSection {
   Ultimatum,
   Relic,
   Incursion,
+  Heist,
 }
 
 export interface ItemSectionParserService {

@@ -11,6 +11,7 @@ import {
   ItemValue,
 } from '@shared/module/poe/type'
 import { ClientStringService } from '../../client-string/client-string.service'
+import { ItemParserUtils } from './item-parser.utils'
 
 const AUGMENTED_PHRASE = ' (augmented)'
 
@@ -140,30 +141,11 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
     if (!text) {
       return prop
     }
-    let itemValue: ItemValue
-    if (text.indexOf('/') !== -1) {
-      const splitted = text.split('/')
-      itemValue = {
-        text,
-        value: this.parseNumber(splitted[0], numDecimals),
-        min: this.parseNumber(splitted[0], numDecimals),
-        max: this.parseNumber(splitted[1], numDecimals),
-      }
-    } else {
-      itemValue = {
-        text,
-        value: this.parseNumber(text, numDecimals),
-      }
-    }
     const property: ItemValueProperty = {
       augmented,
-      value: itemValue,
+      value: ItemParserUtils.parseItemValue(text, numDecimals),
     }
     return property
-  }
-
-  private parseNumber(text: string, numDecimals: number): number {
-    return +text.split(/[\+%,\. ]+/).join('') / Math.pow(10, numDecimals)
   }
 
   private parsePhrase(line: string, phrase: string): [string, boolean] {

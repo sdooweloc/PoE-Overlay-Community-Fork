@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core'
 import { Query } from '@data/poe'
 import { Item, ItemSearchFiltersService, Language } from '../../../type'
 import { ItemSearchFiltersArmourService } from './item-search-filters-armour.service'
+import { ItemSearchFiltersHeistService } from './item-search-filters-heist.service'
 import { ItemSearchFiltersIncursionService } from './item-search-filters-incursion.service'
 import { ItemSearchFiltersMapService } from './item-search-filters-map.service'
 import { ItemSearchFiltersMiscsService } from './item-search-filters-miscs.service'
@@ -29,6 +30,7 @@ export class ItemSearchQueryService {
     filtersStatsService: ItemSearchFiltersStatsService,
     filtersUltimatumService: ItemSearchFiltersUltimatumService,
     filtersIncursionService: ItemSearchFiltersIncursionService,
+    filtersHeistService: ItemSearchFiltersHeistService,
   ) {
     this.filters = [
       filtersTypeService,
@@ -36,9 +38,10 @@ export class ItemSearchQueryService {
       filtersWeaponService,
       filtersArmourService,
       filtersRequirementsService,
+      filtersMapService,
+      filtersHeistService,
       filtersUltimatumService,
       filtersMiscsService,
-      filtersMapService,
       filtersIncursionService,
       filtersStatsService,
     ]

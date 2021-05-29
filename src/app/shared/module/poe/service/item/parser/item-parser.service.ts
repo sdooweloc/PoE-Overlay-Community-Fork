@@ -1,22 +1,23 @@
 import { Injectable } from '@angular/core'
 import { ExportedItem, Item, ItemSectionParserService, Section } from '../../../type'
 import { ItemSectionCorruptedParserService } from './item-section-corrupted-parser.service'
+import { ItemSectionFlaskParserService } from './item-section-flask-parser.service'
+import { ItemSectionGemExperienceParserService } from './item-section-gem-experience-parser.service'
+import { ItemSectionHeistParserService } from './item-section-heist-parser.service'
+import { ItemSectionIncursionParserService } from './item-section-incursion-parser.service'
 import { ItemSectionInfluencesParserService } from './item-section-influences-parser.service'
 import { ItemSectionItemLevelParserService } from './item-section-item-level-parser.service'
 import { ItemSectionNoteParserService } from './item-section-note-parser.service'
 import { ItemSectionPropertiesParserService } from './item-section-properties-parser.service'
+import { ItemSectionProphecyParserService } from './item-section-prophecy-parser.service'
 import { ItemSectionRarityParserService } from './item-section-rarity-parser.service'
+import { ItemSectionRelicParserService } from './item-section-relic-parser.service'
 import { ItemSectionRequirementsParserService } from './item-section-requirements-parser.service'
 import { ItemSectionSocketsParserService } from './item-section-sockets-parser.service'
 import { ItemSectionStatsParserService } from './item-section-stats-parser.service'
+import { ItemSectionUltimatumParserService } from './item-section-ultimatum-parser.service'
 import { ItemSectionUnidentifiedParserService } from './item-section-unidentified-parser.service'
 import { ItemSectionVeiledParserService } from './item-section-veiled-parser.service'
-import { ItemSectionFlaskParserService } from './item-section-flask-parser.service'
-import { ItemSectionProphecyParserService } from './item-section-prophecy-parser.service'
-import { ItemSectionGemExperienceParserService } from './item-section-gem-experience-parser.service'
-import { ItemSectionUltimatumParserService } from './item-section-ultimatum-parser.service'
-import { ItemSectionRelicParserService } from './item-section-relic-parser.service'
-import { ItemSectionIncursionParserService } from './item-section-incursion-parser.service'
 
 @Injectable({
   providedIn: 'root',
@@ -42,6 +43,7 @@ export class ItemParserService {
     itemSectionUltimatumParserService: ItemSectionUltimatumParserService,
     itemSectionRelicParserService: ItemSectionRelicParserService,
     itemSectionIncursionParserService: ItemSectionIncursionParserService,
+    itemSectionHeistParserService: ItemSectionHeistParserService,
   ) {
     this.parsers = [
       itemSectionRarityParser,
@@ -52,6 +54,7 @@ export class ItemParserService {
       itemSectionUltimatumParserService, // Parse prior to Properties
       itemSectionRelicParserService, // Parse prior to Properties
       itemSectionIncursionParserService, // Parse prior to Properties
+      itemSectionHeistParserService, // Parse prior to Properties
       itemSectionPropertiesParserService,
       itemSectionFlaskParserService, // Properties have to be parsed first in case the Flask Parser contains Quality.
       itemSectionProphecyParserService, // Properties have to be parsed first in case the Prophecy Parser needs to adjust some properties.

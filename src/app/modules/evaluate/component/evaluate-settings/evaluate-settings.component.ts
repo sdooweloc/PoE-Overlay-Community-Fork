@@ -31,6 +31,9 @@ export interface EvaluateUserSettings extends UserSettings {
   evaluateQueryDefaultItemLevel: boolean
   evaluateQueryDefaultLinks: number
   evaluateQueryDefaultUltimatum: boolean
+  evaluateQueryDefaultHeistRequiredLevels: boolean
+  evaluateQueryDefaultHeistContracts: boolean
+  evaluateQueryDefaultHeistBlueprints: boolean
   evaluateQueryDefaultMiscs: boolean
   evaluateQueryDefaultType: boolean
   evaluateQueryDefaultAttack: boolean

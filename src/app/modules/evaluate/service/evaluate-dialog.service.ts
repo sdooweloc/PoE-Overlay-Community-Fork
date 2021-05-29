@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core'
 import { DialogService } from '@app/service/dialog'
 import { Point } from '@app/type'
 import { StatsService } from '@shared/module/poe/service'
-import { Item, Language, StatType } from '@shared/module/poe/type'
+import { Item, ItemCategory, Language, StatType } from '@shared/module/poe/type'
 import { Observable } from 'rxjs'
 import { DialogSpawnPosition } from 'src/app/layout/type'
 import {
@@ -96,6 +96,22 @@ export class EvaluateDialogService {
                 height += DIALOG_LINE_HEIGHT * (incursion.openRooms.length + incursion.closedRooms.length)
                 if (incursion.openRooms.length > 0 && incursion.closedRooms.length > 0) {
                   height += DIALOG_DIVIDER_HEIGHT
+                }
+                break
+              case 'heist':
+                const heist = item.properties.heist
+                height += (DIALOG_LINE_HEIGHT * heist.requiredSkills.length)
+                if (heist.objectiveName) {
+                  height += DIALOG_LINE_HEIGHT
+                }
+                if (heist.wingsRevealed) {
+                  height += DIALOG_LINE_HEIGHT
+                }
+                if (heist.escapeRoutes) {
+                  height += DIALOG_LINE_HEIGHT
+                }
+                if (heist.rewardRooms) {
+                  height += DIALOG_LINE_HEIGHT
                 }
                 break
               default:

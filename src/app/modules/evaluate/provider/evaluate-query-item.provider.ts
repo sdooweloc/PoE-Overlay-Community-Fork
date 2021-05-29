@@ -31,6 +31,9 @@ export class EvaluateQueryItemProvider {
       properties: {
         qualityType: (item.properties || {}).qualityType,
         ultimatum: {},
+        heist: {
+          requiredSkills: []
+        }
       },
       requirements: {},
       sockets: new Array((item.sockets || []).length).fill({}),
@@ -46,6 +49,31 @@ export class EvaluateQueryItemProvider {
       queryItem.sockets = item.sockets
     }
 
+    if (settings.evaluateQueryDefaultUltimatum) {
+      const ultimatum = item.properties?.ultimatum
+      if (ultimatum) {
+        queryItem.properties.ultimatum = ultimatum
+      }
+    }
+
+    const heist = item.properties?.heist
+    if (heist) {
+      const queryHeist = queryItem.properties.heist
+      if (settings.evaluateQueryDefaultHeistRequiredLevels) {
+        queryHeist.requiredSkills.push(...heist.requiredSkills)
+      }
+
+      if (settings.evaluateQueryDefaultHeistContracts) {
+        queryHeist.objectiveValue = heist.objectiveValue
+      }
+
+      if (settings.evaluateQueryDefaultHeistBlueprints) {
+        queryHeist.wingsRevealed = heist.wingsRevealed
+        queryHeist.escapeRoutes = heist.escapeRoutes
+        queryHeist.rewardRooms = heist.rewardRooms
+      }
+    }
+
     if (settings.evaluateQueryDefaultMiscs) {
       const prop = item.properties
       if (prop) {
@@ -54,30 +82,10 @@ export class EvaluateQueryItemProvider {
         queryItem.properties.mapTier = prop.mapTier
         queryItem.properties.durability = prop.durability
         queryItem.properties.storedExperience = prop.storedExperience
+        queryItem.properties.areaLevel = prop.areaLevel
         if (item.rarity === ItemRarity.Gem || prop.qualityType > 0) {
           queryItem.properties.quality = prop.quality
         }
-      }
-    }
-
-    if (settings.evaluateQueryDefaultUltimatum) {
-      const ultimatum = item.properties?.ultimatum
-      if (ultimatum) {
-        queryItem.properties.ultimatum = ultimatum
-      }
-    }
-
-    const incursion = item.properties?.incursion
-    if (incursion) {
-      queryItem.properties.incursion = {
-        openRooms: incursion.openRooms.map((room) => {
-          const key = `${room.stat.type}.${room.stat.tradeId}`
-          return settings.evaluateQueryDefaultStats[key] ? room : undefined
-        }),
-        closedRooms: incursion.closedRooms.map((room) => {
-          const key = `${room.stat.type}.${room.stat.tradeId}`
-          return settings.evaluateQueryDefaultStats[key] ? room : undefined
-        }),
       }
     }
 
@@ -118,6 +126,20 @@ export class EvaluateQueryItemProvider {
         ) {
           queryItem.typeId = queryItem.nameId = undefined
         }
+      }
+    }
+
+    const incursion = item.properties?.incursion
+    if (incursion) {
+      queryItem.properties.incursion = {
+        openRooms: incursion.openRooms.map((room) => {
+          const key = `${room.stat.type}.${room.stat.tradeId}`
+          return settings.evaluateQueryDefaultStats[key] ? room : undefined
+        }),
+        closedRooms: incursion.closedRooms.map((room) => {
+          const key = `${room.stat.type}.${room.stat.tradeId}`
+          return settings.evaluateQueryDefaultStats[key] ? room : undefined
+        }),
       }
     }
 

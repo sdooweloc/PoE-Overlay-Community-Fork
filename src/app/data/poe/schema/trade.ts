@@ -181,9 +181,9 @@ export interface MapFilters {
   map_packsize?: FilterValueOption
   map_iiq?: FilterValueOption
   map_iir?: FilterValueOption
-  map_shaped?: FilterOption
-  map_elder?: FilterOption
+  area_level?: FilterOption
   map_blighted?: FilterOption
+  map_region?: FilterOption
   map_series?: FilterOption
 }
 

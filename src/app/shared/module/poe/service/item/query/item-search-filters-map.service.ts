@@ -40,5 +40,11 @@ export class ItemSearchFiltersMapService implements ItemSearchFiltersService {
         min: prop.mapPacksize.value.value,
       }
     }
+
+    if (item.blighted) {
+      query.filters.map_filters.filters.map_blighted = {
+        option: 'true',
+      }
+    }
   }
 }

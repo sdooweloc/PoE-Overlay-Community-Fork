@@ -141614,6 +141614,18 @@
 					"max": 100
 				}
 			],
+			"CustomLeagueMonsterAreaOfEffect1": [
+				{
+					"min": 35,
+					"max": 35
+				}
+			],
+			"CustomLeagueMonsterAreaOfEffect2": [
+				{
+					"min": 70,
+					"max": 70
+				}
+			],
 			"MapSimulacrumAreaOfEffect1____": [
 				{
 					"min": 40,

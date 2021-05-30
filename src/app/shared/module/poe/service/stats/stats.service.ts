@@ -71,9 +71,10 @@ export class StatsService {
       .slice(1, regex.length - 1)
       .split(VALUE_PLACEHOLDER)
       .map((part) =>
-        part
-          .replace(REVERSE_REGEX, (value) => value.replace('\\', ''))
-          .replace(TYPE_PLACEHOLDER_REGEX, '')
+        part.split("\n").map(p => 
+          p.replace(REVERSE_REGEX, (value) => value.replace('\\', ''))
+            .replace(TYPE_PLACEHOLDER_REGEX, '')
+        ).join("\n")
       )
       .join('#')
   }
@@ -105,9 +106,10 @@ export class StatsService {
       .slice(1, result.length - 1)
       .split(VALUE_PLACEHOLDER)
       .map((part) =>
-        part
-          .replace(REVERSE_REGEX, (value) => value.replace('\\', ''))
-          .replace(TYPE_PLACEHOLDER_REGEX, '')
+        part.split("\n").map(p =>
+          p.replace(REVERSE_REGEX, (value) => value.replace('\\', ''))
+            .replace(TYPE_PLACEHOLDER_REGEX, '')
+        ).join("\n")
       )
   }
 

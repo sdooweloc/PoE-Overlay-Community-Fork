@@ -58,7 +58,8 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
             phrases[0],
             props.weaponPhysicalDamage
           )
-          props.weaponElementalDamage = this.parseValueProperty(
+          // Elemental damage can contain multiple damage values (fire/cold/lightning/etc...)
+          props.weaponElementalDamage = this.parseValueProperties(
             line,
             phrases[1],
             props.weaponElementalDamage
@@ -131,6 +132,28 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
     return property
   }
 
+  private parseValueProperties(
+    line: string,
+    phrase: string,
+    prop: ItemValueProperty[],
+    numDecimals: number = 0
+  ): ItemValueProperty[] {
+    if (line.indexOf(phrase) !== 0) {
+      return prop
+    }
+    return line
+      .slice(phrase.length)
+      .split(',')
+      .map((t) => {
+        const [text, augmented] = this.parseText(t.trim())
+        const property: ItemValueProperty = {
+          augmented,
+          value: ItemParserUtils.parseItemValue(text, numDecimals),
+        }
+        return property
+      })
+  }
+
   private parseValueProperty(
     line: string,
     phrase: string,
@@ -152,11 +175,13 @@ export class ItemSectionPropertiesParserService implements ItemSectionParserServ
     if (line.indexOf(phrase) !== 0) {
       return ['', false]
     }
-    let text = line.slice(phrase.length)
+    return this.parseText(line.slice(phrase.length))
+  }
+
+  private parseText(line: string): [string, boolean] {
     const max = this.clientString.translate('ItemDisplaySkillGemMaxLevel').replace('{0}', '')
-    text = text.replace(max, '')
-    const augmented = text.indexOf(AUGMENTED_PHRASE) !== -1
-    text = text.replace(AUGMENTED_PHRASE, '')
+    const augmented = line.indexOf(AUGMENTED_PHRASE) !== -1
+    const text = line.replace(max, '').replace(AUGMENTED_PHRASE, '')
     return [text, augmented]
   }
 

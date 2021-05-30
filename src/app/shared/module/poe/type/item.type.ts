@@ -143,7 +143,7 @@ export interface ItemSocket {
 
 export interface ItemProperties {
   weaponPhysicalDamage?: ItemValueProperty
-  weaponElementalDamage?: ItemValueProperty
+  weaponElementalDamage?: ItemValueProperty[]
   weaponChaosDamage?: ItemValueProperty
   weaponCriticalStrikeChance?: ItemValueProperty
   weaponAttacksPerSecond?: ItemValueProperty

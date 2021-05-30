@@ -59,7 +59,7 @@ export class ItemSectionStatsParserService implements ItemSectionParserService {
     if (item.properties.weaponPhysicalDamage) {
       options.local_minimum_added_physical_damagelocal_maximum_added_physical_damage = true
     }
-    if (item.properties.weaponElementalDamage) {
+    if (item.properties.weaponElementalDamage && item.properties.weaponElementalDamage.length > 0) {
       options.local_minimum_added_fire_damagelocal_maximum_added_fire_damage = true
       options.local_minimum_added_cold_damagelocal_maximum_added_cold_damage = true
       options.local_minimum_added_lightning_damagelocal_maximum_added_lightning_damage = true
@@ -90,7 +90,7 @@ export class ItemSectionStatsParserService implements ItemSectionParserService {
       item.properties.weaponAttacksPerSecond ||
       item.properties.weaponChaosDamage ||
       item.properties.weaponCriticalStrikeChance ||
-      item.properties.weaponElementalDamage ||
+      (item.properties.weaponElementalDamage && item.properties.weaponElementalDamage.length > 0) ||
       item.properties.weaponPhysicalDamage ||
       item.properties.weaponRange
     ) {

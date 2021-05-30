@@ -14,19 +14,22 @@ export interface StatsSearchOptions {
   monsterSample?: boolean
   ultimatum?: boolean
   map?: boolean
-  base_chance_to_poison_on_hit__?: boolean
-  local_minimum_added_physical_damagelocal_maximum_added_physical_damage?: boolean
-  local_minimum_added_fire_damagelocal_maximum_added_fire_damage?: boolean
-  local_minimum_added_cold_damagelocal_maximum_added_cold_damage?: boolean
-  local_minimum_added_lightning_damagelocal_maximum_added_lightning_damage?: boolean
-  local_minimum_added_chaos_damagelocal_maximum_added_chaos_damage?: boolean
+  // The options below must match the ones used in stats-local.json
+  local_poison_on_hit__?: boolean
+  local_minimum_added_physical_damage_local_maximum_added_physical_damage?: boolean
+  local_minimum_added_fire_damage_local_maximum_added_fire_damage?: boolean
+  local_minimum_added_cold_damage_local_maximum_added_cold_damage?: boolean
+  local_minimum_added_lightning_damage_local_maximum_added_lightning_damage?: boolean
+  local_minimum_added_chaos_damage_local_maximum_added_chaos_damage?: boolean
   local_attack_speed___?: boolean
-  base_physical_damage_reduction_rating?: boolean
+  local_base_physical_damage_reduction_rating?: boolean
   local_physical_damage_reduction_rating___?: boolean
-  base_evasion_rating?: boolean
+  local_base_evasion_rating?: boolean
   local_evasion_rating___?: boolean
-  base_maximum_energy_shield?: boolean
+  local_energy_shield?: boolean
   local_accuracy_rating?: boolean
+  local_mana_leech_from_physical_damage_permyriad?: boolean
+  local_life_leech_from_physical_damage_permyriad?: boolean
 }
 
 interface StatsSectionText {
@@ -236,7 +239,7 @@ export class StatsService {
             }
 
             const getKey = (id: string) => {
-              return id.split(' ').join('').split('%').join('_').split('+').join('_')
+              return id.split(' ').join('_').split('%').join('_').split('+').join('_')
             }
 
             const indistinguishable = indistinguishables[tradeId]

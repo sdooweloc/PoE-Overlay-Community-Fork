@@ -18,8 +18,7 @@ install:
   - npm install
 build_script:
   - echo "* Running Build..."
-  - set NODE_OPTIONS="--max-old-space-size=7168"
-  - sh: npm run electron:windows
+  - ./appveyor-build.sh
 artifacts:
   - path: 'release\*.*'
 test: off

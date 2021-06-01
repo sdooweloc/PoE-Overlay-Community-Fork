@@ -19,9 +19,7 @@ install:
 build_script:
   - echo "* Running Build..."
   - set NODE_OPTIONS="--max-old-space-size=7168"
-  - npm run electron:windows
+  - sh: npm run electron:windows
 artifacts:
   - path: 'release\*.*'
 test: off
-#turn off MSBuild
-#build: off

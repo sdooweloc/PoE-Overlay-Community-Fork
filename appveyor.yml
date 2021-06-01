@@ -18,7 +18,7 @@ install:
   - npm install
 build_script:
   - echo "* Running Build..."
-  - ./appveyor-build.sh
+  - bash appveyor-build.sh
 artifacts:
   - path: 'release\*.*'
 test: off

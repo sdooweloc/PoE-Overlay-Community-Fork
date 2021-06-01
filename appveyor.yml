@@ -24,4 +24,4 @@ artifacts:
   - path: 'release\*.*'
 test: off
 #turn off MSBuild
-build: off
+#build: off

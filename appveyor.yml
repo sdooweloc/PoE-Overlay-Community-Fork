@@ -21,3 +21,6 @@ build_script:
     npm run electron:windows
 artifacts:
 - path: release\*.*
+test: off
+#turn off MSBuild
+build: off

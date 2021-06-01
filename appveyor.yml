@@ -16,11 +16,10 @@ install:
   - npm install npm -g
   - npm install
 build_script:
-- sh: >-
-    export NODE_OPTIONS="--max-old-space-size=7168" #increase to 7gb
-    npm run electron:windows
+  - sh: export NODE_OPTIONS="--max-old-space-size=7168" #increase to 7gb
+  - npm run electron:windows
 artifacts:
-- path: release\*.*
+  - path: 'release\*.*'
 test: off
 #turn off MSBuild
 build: off

@@ -20,4 +20,4 @@ build_script:
     export NODE_OPTIONS="--max-old-space-size=7168" #increase to 7gb
     npm run electron:windows
 artifacts:
-- path: release/*.exe
+- path: release\*.*

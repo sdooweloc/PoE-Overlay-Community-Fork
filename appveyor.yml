@@ -12,11 +12,14 @@ cache:
 init:
   - git config --global core.autocrlf input
 install:
+  - echo "* Running Install..."
   - ps: Install-Product node Current x64
-  - sh: npm install npm -g
-  - sh: npm install
-  - sh: export NODE_OPTIONS="--max-old-space-size=7168"
-  - sh: npm run electron:windows
+  - npm install npm -g
+  - npm install
+build_script:
+  - echo "* Running Build..."
+  - set NODE_OPTIONS="--max-old-space-size=7168"
+  - npm run electron:windows
 artifacts:
   - path: 'release\*.*'
 test: off

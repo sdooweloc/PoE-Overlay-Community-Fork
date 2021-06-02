@@ -21,6 +21,11 @@ install:
   - npm install
   - npm -v
   - npm config get production
+  - ls
+  - cd node_modules
+  - ls
+  - cd .bin
+  - ls
 build_script:
   - echo "* Running Build..."
   - npm run electron:rebuild

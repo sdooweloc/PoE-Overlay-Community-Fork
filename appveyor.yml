@@ -17,8 +17,6 @@ init:
 install:
   - echo "* Running Install..."
   - ps: Install-Product node 12 x64
-  - npm install npm -g
-  - npm install typescript -g
   - npm install
   - npm -v
   - npm bin
@@ -26,6 +24,7 @@ install:
   - npm config get production
 build_script:
   - echo "* Running Build..."
+  - npm run electron:rebuild
   - npm run electron:windows
 artifacts:
   - path: 'release\*.*'

@@ -15,7 +15,7 @@ install:
   - echo "* Running Install..."
   - ps: Install-Product node Current x64
   - npm install npm -g
-  - npm install typescript -g
+  - npm install typescript
   - npm install
 build_script:
   - echo "* Running Build..."

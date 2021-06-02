@@ -14,7 +14,7 @@
     "electron:linux": "npm run build:prod && electron-builder build --linux",
     "electron:local": "npm run build:prod && electron .",
     "electron:rebuild": "npm rebuild --runtime=electron --target=8.2.3 --disturl=https://atom.io/download/atom-shell --abi=76",
-    "electron:serve-tsc": "node_modules/.bin/tsc -p tsconfig.serve.json",
+    "electron:serve-tsc": "./node_modules/.bin/tsc -p tsconfig.serve.json",
     "electron:serve": "wait-on http-get://localhost:4200/ && npm run electron:serve-tsc && electron . --serve",
     "electron:version": "electron -v && electron -a",
     "electron:windows": "npm run build:prod && electron-builder build --windows",

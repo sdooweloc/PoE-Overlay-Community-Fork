@@ -4,7 +4,7 @@ image:
 platform:
   - x64
 environment:
-  - NODE_OPTIONS: --max-old-space-size=7168
+  NODE_OPTIONS: --max-old-space-size=7168
 branches:
   only:
   - master

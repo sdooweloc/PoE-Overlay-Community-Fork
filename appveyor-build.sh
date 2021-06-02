@@ -14,4 +14,4 @@ export NODE_OPTIONS="--max-old-space-size=7168" #increase to 7gb
 #electron:serve-tsc
 #node_modules/.bin/tsc -p tsconfig.serve.json
 
-npm run node_modules/typescript/bin/tsc -p tsconfig.serve.json && ng build -- -c production && electron-builder build --windows
+npm run node_modules\typescript\bin\tsc -p tsconfig.serve.json && ng build -- -c production && electron-builder build --windows

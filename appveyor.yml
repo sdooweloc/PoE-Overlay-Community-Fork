@@ -16,7 +16,6 @@ install:
   - ps: Install-Product node 12 x64
   - npm install npm -g
   - npm install typescript
-  - rm -rf '%USERPROFILE%\.electron-gyp'
   - npm install
   - npm -v
   - npm bin

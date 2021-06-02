@@ -16,7 +16,7 @@ install:
   - ps: Install-Product node Current x64
   - npm install npm -g
   - npm install typescript
-  - rm -rf ~/.node_gyp
+  - rm -rf '%USERPROFILE%\.electron-gyp'
   - npm install
   - npm -v
   - npm bin

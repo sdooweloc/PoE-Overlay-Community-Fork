@@ -23,7 +23,7 @@ install:
 build_script:
   - echo "* Running Build..."
   - npm run electron:rebuild
-  - tsc -p tsconfig.serve.json
+  - ./node_module/.bin/tsc -p tsconfig.serve.json
   - npm run ng build -- -c production
   - npm run electron-builder build --windows
 artifacts:

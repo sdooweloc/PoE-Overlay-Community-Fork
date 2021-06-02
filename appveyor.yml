@@ -5,6 +5,7 @@ platform:
   - x64
 environment:
   NODE_OPTIONS: --max-old-space-size=7168
+  NODE_ENV: development
 branches:
   only:
   - master

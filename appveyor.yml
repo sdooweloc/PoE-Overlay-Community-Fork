@@ -29,7 +29,7 @@ install:
 build_script:
   - echo "* Running Build..."
   - npm run electron:rebuild
-  - npm run electron:windows
+  - 'node_modules/typescript/bin/tsc' -p tsconfig.serve.json && npm run ng build -- -c production && npm run electron-builder build --windows
 artifacts:
   - path: 'release\*.*'
 test: off

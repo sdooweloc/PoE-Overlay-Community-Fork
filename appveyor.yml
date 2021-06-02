@@ -20,16 +20,12 @@ install:
   - npm install npm -g
   - npm install
   - npm -v
-  - npm config get production
-  - ls
-  - cd node_modules
-  - ls
-  - cd .bin
-  - ls
 build_script:
   - echo "* Running Build..."
   - npm run electron:rebuild
-  - 'node_modules/typescript/bin/tsc' -p tsconfig.serve.json && npm run ng build -- -c production && npm run electron-builder build --windows
+  - 'node_modules/typescript/bin/tsc' -p tsconfig.serve.json
+  - npm run ng build -- -c production
+  - npm run electron-builder build --windows
 artifacts:
   - path: 'release\*.*'
 test: off

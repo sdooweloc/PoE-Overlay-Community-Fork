@@ -17,14 +17,14 @@ install:
   - echo "* Running Install..."
   - ps: Install-Product node 12 x64
   - npm install npm -g
-  - npm install typescript
+  - npm install typescript -g
   - npm install
   - npm -v
   - npm bin
   - npm ls --depth=0
 build_script:
   - echo "* Running Build..."
-  - node_modules/typescript/bin/tsc -p tsconfig.serve.json && ng build -- -c production && electron-builder build --windows
+  - tsc -p tsconfig.serve.json && ng build -- -c production && electron-builder build --windows
 artifacts:
   - path: 'release\*.*'
 test: off

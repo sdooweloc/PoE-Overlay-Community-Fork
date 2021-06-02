@@ -13,7 +13,7 @@ init:
   - git config --global core.autocrlf input
 install:
   - echo "* Running Install..."
-  - ps: Install-Product node Current x64
+  - ps: Install-Product node 12 x64
   - npm install npm -g
   - npm install typescript
   - rm -rf '%USERPROFILE%\.electron-gyp'

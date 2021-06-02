@@ -24,7 +24,7 @@ install:
   - npm ls --depth=0
 build_script:
   - echo "* Running Build..."
-  - tsc -p tsconfig.serve.json && ng build -- -c production && electron-builder build --windows
+  - npm run tsc -p tsconfig.serve.json && npm run ng build -- -c production && npm run electron-builder build --windows
 artifacts:
   - path: 'release\*.*'
 test: off

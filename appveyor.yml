@@ -3,6 +3,8 @@ image:
   - Visual Studio 2017
 platform:
   - x64
+environment:
+  - NODE_OPTIONS: --max-old-space-size=7168
 branches:
   only:
   - master
@@ -22,7 +24,7 @@ install:
   - npm ls --depth=0
 build_script:
   - echo "* Running Build..."
-  - bash appveyor-build.sh
+  - npm run electron:windows
 artifacts:
   - path: 'release\*.*'
 test: off

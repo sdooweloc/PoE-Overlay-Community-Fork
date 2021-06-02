@@ -22,9 +22,10 @@ install:
   - npm -v
   - npm bin
   - npm ls --depth=0
+  - npm config get production
 build_script:
   - echo "* Running Build..."
-  - npm run node_modules/.bin/tsc -p tsconfig.serve.json && npm run ng build -- -c production && npm run electron-builder build --windows
+  - npm run electron:windows
 artifacts:
   - path: 'release\*.*'
 test: off

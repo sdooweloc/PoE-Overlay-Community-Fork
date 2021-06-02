@@ -16,7 +16,11 @@ install:
   - ps: Install-Product node Current x64
   - npm install npm -g
   - npm install typescript
+  - rm -rf ~/.node_gyp
   - npm install
+  - npm -v
+  - npm bin
+  - npm ls --depth=0
 build_script:
   - echo "* Running Build..."
   - bash appveyor-build.sh

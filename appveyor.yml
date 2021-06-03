@@ -25,7 +25,7 @@ build_script:
   - echo "* Running Build..."
   - node_modules/.bin/tsc -p tsconfig.serve.json
   - node_modules/.bin/ng build -c production
-  - node_modules/.bin/electron-builder build --windows
+  - node_modules/.bin/electron-builder build --windows --publish never
 artifacts:
   - path: 'release\*.*'
 test: off

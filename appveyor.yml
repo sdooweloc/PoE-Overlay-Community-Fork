@@ -23,8 +23,8 @@ install:
 build_script:
   - echo "* Running Build..."
   - npm run electron:rebuild
-  - echo %APPVEYOR_BUILD_FOLDER%\\node_module\\.bin\\tsc
-  - '%APPVEYOR_BUILD_FOLDER%\\node_module\\.bin\\tsc -p tsconfig.serve.json'
+  - echo %APPVEYOR_BUILD_FOLDER%\node_module\.bin\tsc
+  - '%APPVEYOR_BUILD_FOLDER%\node_module\.bin\tsc -p tsconfig.serve.json'
   - npm run ng build -- -c production
   - npm run electron-builder build --windows
 artifacts:

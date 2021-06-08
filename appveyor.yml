@@ -26,8 +26,10 @@ build_script:
   - node_modules/.bin/tsc -p tsconfig.serve.json
   - node_modules/.bin/ng build -c production
   - node_modules/.bin/electron-builder build --windows --publish never
+  - ps: Compress-Archive -Path release -DestinationPath publish.zip
 artifacts:
   - path: 'release\*.*'
+  - path: 'publish.zip'
 test: off
 deploy:
 - provider: Webhook

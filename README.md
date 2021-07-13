@@ -135,3 +135,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - [PoE TradeMacro](https://github.com/PoE-TradeMacro/POE-TradeMacro) initial inspiration
 - [poe.ninja](https://poe.ninja/) currency values
 - [libggpk](https://github.com/MuxaJIbI4/libggpk) parsing content.ggpk
+- [SignPath.io](https://signpath.io/) for the free code signing  
+<a href="https://signpath.io/" target="_blank"><img src="./img/signpath_logo.png"></a>
+

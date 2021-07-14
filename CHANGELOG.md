@@ -2,7 +2,7 @@
 
 ## 0.8.0 (2021-07-14)
 
-- Added a Trade Compansion feature (inspired by MercuryTrade) ([#200](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/200))
+- Added a Trade Companion feature (inspired by MercuryTrade) ([#200](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/200))
   - Handle incoming & outgoing trades in all supported PoE Languages
   - Grid Overlay to highlight a requested trade item (both normal & quad are available)
 - Added the option to sign-in to your PoE Account which'll allow usage of the following features:

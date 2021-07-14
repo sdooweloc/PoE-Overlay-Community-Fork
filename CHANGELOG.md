@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.8.0 (2021-07-14)
+
+- Added a Trade Compansion feature (inspired by MercuryTrade) ([#200](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/200))
+  - Handle incoming & outgoing trades in all supported PoE Languages
+  - Grid Overlay to highlight a requested trade item (both normal & quad are available)
+- Added the option to sign-in to your PoE Account which'll allow usage of the following features:
+  - Allows pice-checking items in Private Leagues
+  - Allows selecting private leagues from the Leagues drop-down in the settings (to be used as default league for price-checks)
+  - Allows leaving party (leaving is done by kicking yourself, by being signed-in the app can detect your current active character)
+  - Allows for correct Grid Overlay type (normal/quad) selection for incoming trades (the app requests your stash tab data from the PoE API)
+  - Increased price-checks/minute (i.e. less likely to hit the trade site's rate-limit)
+- Added support for multiple monitors (you can now move the price-check window outside of the PoE client bounds, to a secondary monitor if desired)
+- Added support for Blueprints and Heist Contracts ([#219](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/219))
+- Added support for 'splinter' exchange rates ([#216](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/216))
+- Updated assets to support 3.14.2
+- Fixed an issue with Facetor's Lens incorrectly using "Bulk Exchange" evaluation and thus ignoring the "Stored XP" ([#213](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/213))
+- Fixed Breachstones incorrectly showing "no data" as exchange rate error ([#214](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/214))
+- Fixed an issue with Blighted Maps not being classified correctly and incorrectly showing "no data" as exchange rate error ([#218](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/218))
+- Fixed an issue with multi-line cluster jewel stats not showing up ([#220](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/220))
+- Fixed elemental DPS calculation not taking multiple elements into account ([#222](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/222))
+- Partnered with SignPath.io to get the app properly signed (since the previous signing certificate expired)
+
 ## 0.7.14 (2021-05-09)
 
 - Added support for Itemised Incursions (Chronicle of Atzoatl) ([#210](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/210))

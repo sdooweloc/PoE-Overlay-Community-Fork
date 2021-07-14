@@ -13,6 +13,11 @@ body {
 
 .clickable {
   cursor: pointer;
+  pointer-events: all;
+}
+
+.interactable {
+  pointer-events: all;
 }
 
 .mat-snack-bar-container.snack-bar-service {
@@ -96,4 +101,9 @@ mat-card {
   > .mat-progress-bar-buffer {
     background: none;
   }
+}
+
+.mat-tooltip {
+  background-color: rgb(35, 35, 35);
+  font-size: 14px;
 }

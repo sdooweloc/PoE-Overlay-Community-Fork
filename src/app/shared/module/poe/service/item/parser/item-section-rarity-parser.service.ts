@@ -3,13 +3,12 @@ import {
   ExportedItem,
   Item,
   ItemCategory,
+  ItemGemQualityType,
   ItemRarity,
   ItemSection,
   ItemSectionParserService,
   Section,
-  ItemGemQualityType,
 } from '../../../type'
-import { BaseItemCategoriesService } from '../../base-item-categories/base-item-categories.service'
 import { BaseItemTypesService } from '../../base-item-types/base-item-types.service'
 import { ClientStringService } from '../../client-string/client-string.service'
 import { WordService } from '../../word/word.service'
@@ -21,7 +20,6 @@ export class ItemSectionRarityParserService implements ItemSectionParserService 
   constructor(
     private readonly clientString: ClientStringService,
     private readonly baseItemTypesService: BaseItemTypesService,
-    private readonly baseItemCategoriesService: BaseItemCategoriesService,
     private readonly wordService: WordService
   ) {}
 
@@ -33,6 +31,7 @@ export class ItemSectionRarityParserService implements ItemSectionParserService 
 
     const raritySection = item.sections.find((x) => x.content.indexOf(phrase) === 0)
     if (!raritySection) {
+      console.warn('[ItemRarityParser] Failed to find Item Class.')
       return null
     }
 
@@ -44,6 +43,7 @@ export class ItemSectionRarityParserService implements ItemSectionParserService 
 
     const rarity = rarities.find((x) => x.key === rarityValue)
     if (!rarity) {
+      console.warn(`[ItemRarityParser] Failed to find Item Rarity for '${rarityValue}'.`)
       return null
     }
 
@@ -52,15 +52,16 @@ export class ItemSectionRarityParserService implements ItemSectionParserService 
     switch (lines.length) {
       case 3:
         target.type = lines[2].replace(/<<[^>>]*>>/g, '')
-        target.typeId = this.baseItemTypesService.search(target.type)
+        target.typeId = this.baseItemTypesService.searchId(target.type)
         break
       case 4:
         target.name = lines[2].replace(/<<[^>>]*>>/g, '')
         target.nameId = this.wordService.search(target.name)
         target.type = lines[3].replace(/<<[^>>]*>>/g, '')
-        target.typeId = this.baseItemTypesService.search(target.type)
+        target.typeId = this.baseItemTypesService.searchId(target.type)
         break
       default:
+        console.warn(`[ItemRarityParser] Incorrect line count for this section. Expected 3~4, found ${lines.length}`)
         return null
     }
 
@@ -72,10 +73,11 @@ export class ItemSectionRarityParserService implements ItemSectionParserService 
     )
     if (masterMission) {
       target.type += ` (${masterMission.masterName})`
-      target.typeId = this.baseItemTypesService.search(target.type)
+      target.typeId = this.baseItemTypesService.searchId(target.type)
     }
 
     if (!target.typeId) {
+      console.warn(`[ItemRarityParser] Failed to find Base Item Type for '${target.type}'`)
       return null
     }
 
@@ -94,7 +96,7 @@ export class ItemSectionRarityParserService implements ItemSectionParserService 
       (x) => x.content.indexOf(metamorphSamplePhrase) === 0
     )
     if (!metamorphSample) {
-      target.category = this.baseItemCategoriesService.get(target.typeId)
+      target.category = this.baseItemTypesService.get(target.typeId).category
     } else {
       target.category = ItemCategory.MonsterSample
 
@@ -113,6 +115,7 @@ export class ItemSectionRarityParserService implements ItemSectionParserService 
     }
 
     if (!target.category) {
+      console.warn(`[ItemRarityParser] Failed to find Item Category for '${target.type}' (${target.typeId})`)
       return null
     }
 
@@ -136,7 +139,7 @@ export class ItemSectionRarityParserService implements ItemSectionParserService 
         }
 
         const type = section.lines[0]
-        const id = this.baseItemTypesService.search(type)
+        const id = this.baseItemTypesService.searchId(type)
         if (id === undefined || id.indexOf('Vaal') === -1) {
           continue
         }

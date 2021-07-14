@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core'
+import { TradeCompanionModule } from '@modules/trade-companion/trade-companion.module'
 import { SharedModule } from '@shared/shared.module'
 import {
   UserSettingsFeatureContainerComponent,
@@ -20,6 +21,6 @@ import { OverlayComponent, UserSettingsComponent } from './page'
     OverlayComponent,
     UserSettingsComponent,
   ],
-  imports: [SharedModule],
+  imports: [SharedModule, TradeCompanionModule],
 })
 export class LayoutModule {}

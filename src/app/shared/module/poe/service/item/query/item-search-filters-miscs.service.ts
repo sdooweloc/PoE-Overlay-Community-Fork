@@ -1,6 +1,12 @@
 import { Injectable } from '@angular/core'
 import { Query } from '@data/poe'
-import { Item, ItemProperties, ItemSearchFiltersService, Language, StatType } from '@shared/module/poe/type'
+import {
+  Item,
+  ItemProperties,
+  ItemSearchFiltersService,
+  Language,
+  StatType,
+} from '@shared/module/poe/type'
 
 @Injectable({
   providedIn: 'root',
@@ -118,17 +124,17 @@ export class ItemSearchFiltersMiscsService implements ItemSearchFiltersService {
   }
 
   private addPseudoStatToAndGroup(query: Query, statID: string): void {
-    let andStatGroup = query.stats.find((stat) => stat.type == 'and')
+    let andStatGroup = query.stats.find((stat) => stat.type === 'and')
     if (!andStatGroup) {
       andStatGroup = {
         type: 'and',
-        filters: []
+        filters: [],
       }
       query.stats.push(andStatGroup)
     }
     andStatGroup.filters.push({
       disabled: false,
-      id: `${StatType.Pseudo}.${statID}`
+      id: `${StatType.Pseudo}.${statID}`,
     })
   }
 }

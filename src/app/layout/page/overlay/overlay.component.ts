@@ -10,14 +10,19 @@ import { AppService, AppTranslateService, RendererService, WindowService } from 
 import { DialogRefService } from '@app/service/dialog'
 import { ShortcutService } from '@app/service/input'
 import { FEATURE_MODULES } from '@app/token'
-import { AppUpdateState, FeatureModule, VisibleFlag } from '@app/type'
+import { AppUpdateState, FeatureModule, Rectangle, VisibleFlag } from '@app/type'
 import { SnackBarService } from '@shared/module/material/service'
-import { ContextService } from '@shared/module/poe/service'
+import { ContextService, StashService } from '@shared/module/poe/service'
+import { TradeCompanionStashGridService } from '@shared/module/poe/service/trade-companion/trade-companion-stash-grid.service'
 import { Context } from '@shared/module/poe/type'
-import { BehaviorSubject, EMPTY, Observable, timer } from 'rxjs'
+import { BehaviorSubject, EMPTY, forkJoin, Observable, timer } from 'rxjs'
 import { debounce, distinctUntilChanged, flatMap, map, tap } from 'rxjs/operators'
+import { PoEAccountService } from '../../../shared/module/poe/service/account/account.service'
+import { TradeNotificationsService } from '../../../shared/module/poe/service/trade-companion/trade-notifications.service'
 import { UserSettingsService } from '../../service'
 import { UserSettings } from '../../type'
+
+const overlayCompRef = 'overlay-component'
 
 @Component({
   selector: 'app-overlay',
@@ -28,8 +33,9 @@ import { UserSettings } from '../../type'
 export class OverlayComponent implements OnInit, OnDestroy {
   private userSettingsOpen: Observable<void>
 
-  public version$ = new BehaviorSubject<string>('')
-  public displayVersion$ = new BehaviorSubject(true)
+  public readonly version$ = new BehaviorSubject<string>('')
+  public readonly userSettings$ = new BehaviorSubject<UserSettings>(null)
+  public readonly gameOverlayBounds: BehaviorSubject<Rectangle>
 
   constructor(
     @Inject(FEATURE_MODULES)
@@ -42,46 +48,85 @@ export class OverlayComponent implements OnInit, OnDestroy {
     private readonly window: WindowService,
     private readonly renderer: RendererService,
     private readonly shortcut: ShortcutService,
-    private readonly dialogRef: DialogRefService
-  ) {}
+    private readonly dialogRef: DialogRefService,
+    private readonly stashGridService: TradeCompanionStashGridService,
+    private readonly tradeNotificationsService: TradeNotificationsService,
+    private readonly accountService: PoEAccountService,
+    private readonly stashService: StashService,
+  ) {
+    this.gameOverlayBounds = new BehaviorSubject<Rectangle>(this.window.getOffsettedGameBounds())
+    this.window.gameBounds.subscribe((_) => {
+      this.gameOverlayBounds.next(this.window.getOffsettedGameBounds())
+    })
+  }
 
   @HostListener('window:beforeunload', [])
   public onWindowBeforeUnload(): void {
     this.reset()
+    this.window.removeAllListeners()
   }
 
   public ngOnInit(): void {
     this.version$.next(this.app.version())
     this.initSettings()
+    this.window.enableTransparencyMouseFix()
   }
 
   public ngOnDestroy(): void {
+    this.window.disableTransparencyMouseFix(true)
+    this.stashGridService.unregisterEvents()
+    this.tradeNotificationsService.unregisterEvents()
     this.reset()
+  }
+
+  public openUserSettings(): void {
+    if (!this.userSettingsOpen) {
+      this.userSettingsOpen = this.renderer.open('user-settings')
+      this.userSettingsOpen.pipe(flatMap(() => this.userSettingsService.get())).subscribe(
+        (settings) => {
+          this.userSettingsOpen = null
+
+          this.translate.use(settings.uiLanguage)
+          this.window.setZoom(settings.zoom / 100)
+          this.context.update(this.getContext(settings))
+          this.accountService.register(settings).subscribe(() => {
+            this.app.updateAutoDownload(settings.autoDownload)
+            this.register(settings)
+            this.app.triggerVisibleChange()
+          })
+        },
+        () => (this.userSettingsOpen = null)
+      )
+      this.reset()
+    } else {
+      this.renderer.restore('user-settings')
+    }
   }
 
   private initSettings(): void {
     this.userSettingsService.init(this.modules).subscribe((settings) => {
       this.translate.use(settings.uiLanguage)
-      this.displayVersion$.next(settings.displayVersion)
       this.window.setZoom(settings.zoom / 100)
 
       this.context.init(this.getContext(settings)).subscribe(() => {
-        this.registerEvents(settings)
-        this.register(settings)
-        this.registerVisibleChange()
+        this.accountService.register(settings).subscribe(() => {
+          this.registerEvents(settings)
+          this.register(settings)
+          this.registerVisibleChange()
 
-        this.renderer.on('show-user-settings').subscribe(() => {
-          this.openUserSettings()
-        })
-        this.renderer.on('reset-zoom').subscribe(() => {
-          this.userSettingsService
-            .update((x) => {
-              x.zoom = 100
-              return x
-            })
-            .subscribe((x) => {
-              this.window.setZoom(x.zoom / 100)
-            })
+          this.renderer.on('show-user-settings').subscribe(() => {
+            this.openUserSettings()
+          })
+          this.renderer.on('reset-zoom').subscribe(() => {
+            this.userSettingsService
+              .update((x) => {
+                x.zoom = 100
+                return x
+              })
+              .subscribe((x) => {
+                this.window.setZoom(x.zoom / 100)
+              })
+          })
         })
       })
     })
@@ -101,6 +146,9 @@ export class OverlayComponent implements OnInit, OnDestroy {
       }
     })
     this.app.registerEvents(settings.autoDownload)
+    this.window.registerEvents()
+    this.stashGridService.registerEvents()
+    this.tradeNotificationsService.registerEvents()
   }
 
   private registerVisibleChange(): void {
@@ -122,38 +170,20 @@ export class OverlayComponent implements OnInit, OnDestroy {
     this.app.triggerVisibleChange()
   }
 
-  private openUserSettings(): void {
-    if (!this.userSettingsOpen) {
-      this.userSettingsOpen = this.renderer.open('user-settings')
-      this.userSettingsOpen.pipe(flatMap(() => this.userSettingsService.get())).subscribe(
-        (settings) => {
-          this.userSettingsOpen = null
-
-          this.translate.use(settings.uiLanguage)
-          this.window.setZoom(settings.zoom / 100)
-          this.displayVersion$.next(settings.displayVersion)
-          this.context.update(this.getContext(settings))
-
-          this.app.updateAutoDownload(settings.autoDownload)
-          this.register(settings)
-          this.app.triggerVisibleChange()
-        },
-        () => (this.userSettingsOpen = null)
-      )
-      this.reset()
-    }
-  }
-
   private reset(): void {
-    this.window.removeAllListeners()
     this.dialogRef.reset()
-    this.shortcut.reset()
+    this.accountService.unregister()
+    this.stashService.unregister()
+    this.shortcut.removeAllByRef(overlayCompRef)
   }
 
   private register(settings: UserSettings): void {
     this.registerFeatures(settings)
     this.registerSettings(settings)
     this.dialogRef.register()
+    this.stashService.register(settings)
+
+    this.userSettings$.next(settings)
   }
 
   private registerFeatures(settings: UserSettings): void {
@@ -162,7 +192,13 @@ export class OverlayComponent implements OnInit, OnDestroy {
       features.forEach((feature) => {
         if (feature.accelerator) {
           this.shortcut
-            .add(feature.accelerator, !!feature.passive, VisibleFlag.Game, VisibleFlag.Overlay)
+            .add(
+              feature.accelerator,
+              overlayCompRef,
+              !!feature.passive,
+              VisibleFlag.Game,
+              VisibleFlag.Overlay
+            )
             .subscribe(() => {
               mod.run(feature.name, settings)
             })
@@ -174,12 +210,24 @@ export class OverlayComponent implements OnInit, OnDestroy {
   private registerSettings(settings: UserSettings): void {
     if (settings.openUserSettingsKeybinding) {
       this.shortcut
-        .add(settings.openUserSettingsKeybinding, false, VisibleFlag.Game, VisibleFlag.Overlay)
+        .add(
+          settings.openUserSettingsKeybinding,
+          overlayCompRef,
+          false,
+          VisibleFlag.Game,
+          VisibleFlag.Overlay
+        )
         .subscribe(() => this.openUserSettings())
     }
     if (settings.exitAppKeybinding) {
       this.shortcut
-        .add(settings.exitAppKeybinding, false, VisibleFlag.Game, VisibleFlag.Overlay)
+        .add(
+          settings.exitAppKeybinding,
+          overlayCompRef,
+          false,
+          VisibleFlag.Game,
+          VisibleFlag.Overlay
+        )
         .subscribe(() => this.app.quit())
     }
   }

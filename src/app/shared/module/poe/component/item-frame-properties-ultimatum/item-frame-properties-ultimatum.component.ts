@@ -21,11 +21,13 @@ export class ItemFramePropertiesUltimatumComponent {
 
   constructor(
     private readonly ultimatumStringService: UltimatumStringService,
-    private readonly itemService: ItemService,
-  ) { }
+    private readonly itemService: ItemService
+  ) {}
 
   public getChallengeTypeString(): string {
-    return this.ultimatumStringService.getChallengeTypes().find((x) => x.value == this.item.properties.ultimatum.challengeType).key
+    return this.ultimatumStringService
+      .getChallengeTypes()
+      .find((x) => x.value === this.item.properties.ultimatum.challengeType).key
   }
 
   public getSacrificeString(): string {
@@ -43,6 +45,6 @@ export class ItemFramePropertiesUltimatumComponent {
     if (rewardType === UltimatumRewardType.UniqueItem) {
       return this.itemService.getName(ultimatum.rewardUnique, this.language)
     }
-    return this.ultimatumStringService.getRewardTypes().find((x) => x.value == rewardType).key
+    return this.ultimatumStringService.getRewardTypes().find((x) => x.value === rewardType).key
   }
 }

@@ -8,7 +8,7 @@ import {
 } from '@data/poe-ninja'
 import { forkJoin, Observable, of } from 'rxjs'
 import { map } from 'rxjs/operators'
-import { ItemCategory, ItemRarity } from '../type'
+import { CacheExpirationType, ItemCategory, ItemRarity } from '@shared/module/poe/type'
 
 export interface ItemCategoryValue {
   name: string
@@ -30,8 +30,6 @@ export interface ItemCategoryValue {
 export interface ItemCategoryValues {
   values: ItemCategoryValue[]
 }
-
-const CACHE_EXPIRY = 1000 * 60 * 30
 
 @Injectable({
   providedIn: 'root',
@@ -57,14 +55,13 @@ export class ItemCategoryValuesProvider {
           const key = `${leagueId}_${ItemCategory.Map}`
           return forkJoin([
             this.fetch(key, () => this.fetchItem(leagueId, ItemOverviewType.Map)),
-            this.fetch(`${key}_blighted`, () => this.fetchItem(leagueId, ItemOverviewType.BlightedMap)),
+            this.fetch(`${key}_blighted`, () =>
+              this.fetchItem(leagueId, ItemOverviewType.BlightedMap)
+            ),
           ]).pipe(
             map(([maps, blightedMaps]) => {
               return {
-                values: [
-                  ...maps.values,
-                  ...blightedMaps.values,
-                ],
+                values: [...maps.values, ...blightedMaps.values],
               }
             })
           )
@@ -85,8 +82,12 @@ export class ItemCategoryValuesProvider {
           this.fetch(`${key}_essence`, () => this.fetchItem(leagueId, ItemOverviewType.Essence)),
           this.fetch(`${key}_oil`, () => this.fetchItem(leagueId, ItemOverviewType.Oil)),
           this.fetch(`${key}_vial`, () => this.fetchItem(leagueId, ItemOverviewType.Vial)),
-          this.fetch(`${key}_deliriumOrb`, () => this.fetchItem(leagueId, ItemOverviewType.DeliriumOrb)),
-          this.fetch(`${leagueId}_${ItemCategory.MapFragment}`, () => this.fetchCurrency(leagueId, CurrencyOverviewType.Fragment)),
+          this.fetch(`${key}_deliriumOrb`, () =>
+            this.fetchItem(leagueId, ItemOverviewType.DeliriumOrb)
+          ),
+          this.fetch(`${leagueId}_${ItemCategory.MapFragment}`, () =>
+            this.fetchCurrency(leagueId, CurrencyOverviewType.Fragment)
+          ),
         ]).pipe(
           map(([currencies, essences, oil, vial, deliriumOrb, fragments]) => {
             return {
@@ -96,7 +97,7 @@ export class ItemCategoryValuesProvider {
                 ...oil.values,
                 ...vial.values,
                 ...deliriumOrb.values,
-                ...fragments.values
+                ...fragments.values,
               ],
             }
           })
@@ -228,7 +229,7 @@ export class ItemCategoryValuesProvider {
     key: string,
     fetch: () => Observable<ItemCategoryValues>
   ): Observable<ItemCategoryValues> {
-    return this.cache.proxy(`item_category_${key}`, fetch, CACHE_EXPIRY)
+    return this.cache.proxy(`item_category_${key}`, fetch, CacheExpirationType.HalfHour)
   }
 
   private fetchCurrency(

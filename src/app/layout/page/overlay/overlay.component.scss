@@ -1,8 +1,22 @@
 @import './../../../../styles/variables';
 
+::ng-deep {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  body *::-webkit-scrollbar {
+    display: block;
+  }
+}
+
+.game-overlay {
+  position: fixed;
+}
+
 .version {
   color: $yellow;
-  position: fixed;
+  position: absolute;
   bottom: 2px;
   left: 2px;
   font-size: 9px;

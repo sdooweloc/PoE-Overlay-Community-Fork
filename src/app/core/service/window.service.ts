@@ -1,18 +1,47 @@
 import { Injectable, NgZone } from '@angular/core'
 import { ElectronProvider } from '@app/provider'
 import { Rectangle } from '@app/type'
-import { BrowserWindow, Point } from 'electron'
-import { Observable, Subject } from 'rxjs'
+import { BrowserWindow, Point, IpcRenderer, Remote } from 'electron'
+import { Observable, Subject, BehaviorSubject } from 'rxjs'
+import { TransparencyMouseFix } from '../../transparency-mouse-fix'
 
 @Injectable({
   providedIn: 'root',
 })
 export class WindowService {
+  public readonly gameBounds: BehaviorSubject<Rectangle>
+
+  // Don't remove this. We need to keep the instance, but don't actually use it (because all magic happens inside)
+  private transparencyMouseFix: TransparencyMouseFix
+
+  private readonly electronRemote: Remote
+  private readonly ipcRenderer: IpcRenderer
   private readonly window: BrowserWindow
 
   constructor(private readonly ngZone: NgZone, electronProvider: ElectronProvider) {
-    const electron = electronProvider.provideRemote()
-    this.window = electron.getCurrentWindow()
+    this.ipcRenderer = electronProvider.provideIpcRenderer()
+    this.electronRemote = electronProvider.provideRemote()
+    this.window = this.electronRemote.getCurrentWindow()
+    this.gameBounds = new BehaviorSubject<Rectangle>(
+      this.window?.getBounds() ?? { x: 0, y: 0, width: 0, height: 0 }
+    )
+  }
+
+  public registerEvents(): void {
+    this.ipcRenderer.on('game-bounds-change', (_, bounds: Rectangle) => {
+      this.gameBounds.next(bounds)
+    })
+  }
+
+  public enableTransparencyMouseFix(): void {
+    this.transparencyMouseFix = new TransparencyMouseFix(this.electronRemote)
+  }
+
+  public disableTransparencyMouseFix(ignoreMouse = false): void {
+    this.transparencyMouseFix?.dispose()
+    this.transparencyMouseFix = null
+
+    this.window.setIgnoreMouseEvents(ignoreMouse, { forward: ignoreMouse })
   }
 
   public on(event: any): Observable<void> {
@@ -27,9 +56,20 @@ export class WindowService {
     this.window.removeAllListeners()
   }
 
-  public getBounds(): Rectangle {
+  public getWindowBounds(): Rectangle {
     const bounds = this.window.getBounds()
     return bounds
+  }
+
+  public getOffsettedGameBounds(): Rectangle {
+    const bounds = this.window.getBounds()
+    const poeBounds = this.gameBounds.value
+    return {
+      x: poeBounds.x - bounds.x,
+      y: poeBounds.y - bounds.y,
+      width: poeBounds.width,
+      height: poeBounds.height,
+    }
   }
 
   public hide(): void {
@@ -38,6 +78,18 @@ export class WindowService {
 
   public show(): void {
     this.window.show()
+  }
+
+  public focus(): void {
+    this.window.focus()
+  }
+
+  public minimize(): void {
+    this.window.minimize()
+  }
+
+  public restore(): void {
+    this.window.restore()
   }
 
   public close(): void {
@@ -60,7 +112,7 @@ export class WindowService {
     if (focusable) {
       this.window.blur()
     }
-    this.window.setIgnoreMouseEvents(true)
+    this.window.setIgnoreMouseEvents(true, { forward: true })
     if (focusable) {
       this.window.setFocusable(false)
     }
@@ -78,14 +130,15 @@ export class WindowService {
   }
 
   public convertToLocal(point: Point): Point {
-    const bounds = this.window.getBounds()
+    const winBounds = this.window.getBounds()
+    const poeBounds = this.gameBounds.value
     const local = {
       ...point,
     }
-    local.x -= bounds.x
-    local.x = Math.min(Math.max(local.x, 0), bounds.width)
-    local.y -= bounds.y
-    local.y = Math.min(Math.max(local.y, 0), bounds.height)
+    local.x -= winBounds.x - poeBounds.x
+    local.x = Math.min(Math.max(local.x, 0), winBounds.width)
+    local.y -= winBounds.y - poeBounds.y
+    local.y = Math.min(Math.max(local.y, 0), winBounds.height)
     return local
   }
 

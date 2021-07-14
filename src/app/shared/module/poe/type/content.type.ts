@@ -9,8 +9,20 @@ export interface WordMap {
   [id: string]: string
 }
 
-export interface BaseItemTypeMap {
+export interface BaseItemTypeNameMap {
   [id: string]: string
+}
+
+export interface BaseItemTypeMap {
+  [id: string]: BaseItemType
+}
+
+export interface BaseItemType {
+  names?: BaseItemTypeNameMap
+  artName?: string
+  category?: ItemCategory
+  width?: number
+  height?: number
 }
 
 export interface BaseItemTypeCategoryMap {

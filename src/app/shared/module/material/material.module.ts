@@ -15,11 +15,15 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle'
 import { MatSliderModule } from '@angular/material/slider'
 import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { MatTabsModule } from '@angular/material/tabs'
+import { MatTooltipModule } from '@angular/material/tooltip'
 import { TranslateModule } from '@ngx-translate/core'
+import { ColorPickerModule } from 'ngx-color-picker'
 import { AcceleratorComponent } from './component/accelerator/accelerator.component'
-import { SelectListComponent } from './component/select-list/select-list.component'
-import { DragDirective } from './directive/drag.directive'
 import { CardComponent } from './component/card/card.component'
+import { SelectListComponent } from './component/select-list/select-list.component'
+import { AlphaColorDirective } from './directive/alpha-color.directive'
+import { DragDirective } from './directive/drag.directive'
+import { ResizeDragDirective } from './directive/resize-drag.directive'
 
 @NgModule({
   imports: [
@@ -39,9 +43,11 @@ import { CardComponent } from './component/card/card.component'
     MatListModule,
     MatExpansionModule,
     MatProgressBarModule,
+    MatTooltipModule,
 
     // third party
     TranslateModule,
+    ColorPickerModule,
   ],
   exports: [
     CommonModule,
@@ -60,12 +66,24 @@ import { CardComponent } from './component/card/card.component'
     MatListModule,
     MatExpansionModule,
     MatProgressBarModule,
+    MatTooltipModule,
+    // thirt party
+    ColorPickerModule,
     // custom
     AcceleratorComponent,
     SelectListComponent,
     DragDirective,
     CardComponent,
+    ResizeDragDirective,
+    AlphaColorDirective,
   ],
-  declarations: [AcceleratorComponent, SelectListComponent, DragDirective, CardComponent],
+  declarations: [
+    AcceleratorComponent,
+    SelectListComponent,
+    DragDirective,
+    CardComponent,
+    ResizeDragDirective,
+    AlphaColorDirective,
+  ],
 })
 export class MaterialModule {}

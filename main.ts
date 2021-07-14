@@ -2,7 +2,6 @@ import {
   app,
   BrowserWindow,
   dialog,
-  Display,
   ipcMain,
   Menu,
   MenuItem,
@@ -11,6 +10,7 @@ import {
   session,
   systemPreferences,
   Tray,
+  Rectangle,
 } from 'electron'
 import * as path from 'path'
 import * as url from 'url'
@@ -56,6 +56,7 @@ const args = process.argv.slice(1)
 console.info('App args', args)
 
 const serve = args.some((val) => val === '--serve')
+const debug = args.some((val) => val === '--dev')
 
 let win: BrowserWindow = null
 let tray: Tray = null
@@ -78,8 +79,28 @@ function setUserAgent(): void {
 
 /* helper */
 
-function getDisplay(): Display {
-  return screen.getPrimaryDisplay()
+function getBounds(): Rectangle {
+  const displays = screen.getAllDisplays()
+  const primary = screen.getPrimaryDisplay();
+  let bounds = {
+    x: primary.bounds.x,
+    y: primary.bounds.y,
+    width: primary.bounds.width,
+    height: primary.bounds.height,
+  }
+  displays.forEach((display) => {
+    if (display.id !== primary.id) {
+      if (bounds.x !== display.bounds.x) {
+        bounds.x = Math.min(bounds.x, display.bounds.x)
+        bounds.width += display.bounds.width
+      }
+      if (bounds.y !== display.bounds.y) {
+        bounds.y = Math.min(bounds.y, display.bounds.y)
+        bounds.height += display.bounds.height
+      }
+    }
+  });
+  return bounds
 }
 
 function send(channel: string, ...additionalArgs: any[]): void {
@@ -141,14 +162,14 @@ game.register(ipcMain, (poe) => {
       }
 
       if (poe.bounds) {
-        win.setBounds(poe.bounds)
+        send('game-bounds-change', poe.bounds)
       }
     } else {
       win.setAlwaysOnTop(false)
       win.setVisibleOnAllWorkspaces(false)
     }
   }
-})
+}, (logLine: string) => send('game-log-line', logLine))
 
 hook.register(
   ipcMain,
@@ -183,7 +204,7 @@ function showChangelog(): void {
 
 /* main window */
 function createWindow(): BrowserWindow {
-  const { bounds } = getDisplay()
+  const bounds = getBounds()
 
   // Create the browser window.
   win = new BrowserWindow({
@@ -191,6 +212,7 @@ function createWindow(): BrowserWindow {
     height: bounds.height,
     x: bounds.x,
     y: bounds.y,
+    enableLargerThanScreen: true,
     transparent: true,
     frame: false,
     resizable: false,
@@ -204,8 +226,9 @@ function createWindow(): BrowserWindow {
     skipTaskbar: true,
     show: false,
   })
+  win.setSize(bounds.width, bounds.height)    // Explicitly set size after creating the window since some OS'es don't allow an initial size larger than the display's size.
   win.removeMenu()
-  win.setIgnoreMouseEvents(true)
+  win.setIgnoreMouseEvents(true, {forward: true})
 
   if (process.platform !== 'linux') {
     win.setAlwaysOnTop(true, 'pop-up-menu', 1)
@@ -226,6 +249,12 @@ function createWindow(): BrowserWindow {
   win.on('closed', () => {
     win = null
   })
+
+  if (serve) {
+    // Electron bug workaround: this must be triggered after the devtools loaded
+    win.setIgnoreMouseEvents(true, { forward: true })
+  }
+
   return win
 }
 
@@ -238,7 +267,6 @@ ipcMain.on('open-route', (event, route) => {
         width: 1210,
         height: 700,
         frame: false,
-        closable: false,
         resizable: true,
         movable: true,
         webPreferences: {
@@ -252,19 +280,19 @@ ipcMain.on('open-route', (event, route) => {
 
       childs[route].removeMenu()
 
-      childs[route].once('close', () => {
+      childs[route].once('closed', () => {
         childs[route] = null
+        win.moveTop()
         event.reply('open-route-reply', 'close')
       })
 
       loadApp(childs[route], `#/${route}`)
     } else {
+      if (childs[route].isMinimized) {
+        childs[route].restore()
+      }
       childs[route].show()
     }
-
-    childs[route].once('hide', () => {
-      event.reply('open-route-reply', 'hide')
-    })
   } catch (error) {
     event.reply('open-route-reply', error)
   }
@@ -276,6 +304,7 @@ function loadApp(self: BrowserWindow, route: string = ''): void {
       electron: require(`${__dirname}/node_modules/electron`),
     })
     self.loadURL('http://localhost:4200' + route)
+    self.webContents.openDevTools({ mode: 'undocked' })
   } else {
     const appUrl = url.format({
       pathname: path.join(__dirname, 'dist/index.html'),
@@ -283,10 +312,6 @@ function loadApp(self: BrowserWindow, route: string = ''): void {
       slashes: true,
     })
     self.loadURL(appUrl + route)
-  }
-
-  if (serve) {
-    self.webContents.openDevTools({ mode: 'undocked' })
   }
 }
 
@@ -339,6 +364,28 @@ function createTray(): Tray {
       label: 'Ignore Mouse Events',
       type: 'normal',
       click: () => win.setIgnoreMouseEvents(true),
+    })
+  }
+  if (debug || serve) {
+    items.splice(1, 0, {
+      label: 'Open Dev Tools',
+      type: 'normal',
+      click: () => {
+        if (win.webContents.isDevToolsOpened()) {
+          win.webContents.closeDevTools()
+          for (const child in childs) {
+            childs[child].webContents.closeDevTools()
+          }
+        } else {
+          win.webContents.openDevTools({ mode: 'undocked' })
+          for (const child in childs) {
+            childs[child].webContents.openDevTools({ mode: 'undocked' })
+          }
+
+          // Electron bug workaround: this must be triggered after the devtools loaded
+          win.setIgnoreMouseEvents(true, { forward: true })
+        }
+      },
     })
   }
 

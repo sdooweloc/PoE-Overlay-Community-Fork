@@ -1,9 +1,9 @@
-import { HttpClient, HttpErrorResponse, HttpParams, HttpResponse } from '@angular/common/http'
+import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http'
 import { Injectable } from '@angular/core'
 import { BrowserService } from '@app/service'
 import { environment } from '@env/environment'
 import { Language } from '@shared/module/poe/type'
-import { Observable, of, throwError } from 'rxjs'
+import { Observable, of, Subscriber, throwError } from 'rxjs'
 import { delay, flatMap, map, retryWhen } from 'rxjs/operators'
 import {
     ApiCharacterResponse,
@@ -164,21 +164,25 @@ export class PoEHttpService {
       )
   }
 
-  private get(url: string): Observable<HttpResponse<string>> {
+  private get(url: string): Observable<string> {
     if (!environment.production) {
       console.log(`[PoEHttp] Contacting ${url}`)
     }
-    return this.http
-      .get(url, {
+    return new Observable(observer => {
+      this.http.get(url, {
         observe: 'response',
         responseType: 'text',
         withCredentials: true,
-      })
-      .pipe(
+      }).pipe(
         retryWhen((errors) =>
-          errors.pipe(flatMap((response, count) => this.handleError(url, response, count)))
+          errors.pipe(flatMap((response, count) => this.handleError(url, response, count, observer)))
         )
+      ).subscribe(
+        response => observer.next(response.body),
+        error => observer.error(error),
+        () => observer.complete()
       )
+    })
   }
 
   private getAndTransform(url: string): Observable<string> {
@@ -193,8 +197,8 @@ export class PoEHttpService {
     return JSON.parse(result) as TResponse
   }
 
-  private transformResponse(response: HttpResponse<string>): string {
-    return response.body.replace(/\\u[\dA-Fa-f]{4}/g, (match) =>
+  private transformResponse(response: string): string {
+    return response.replace(/\\u[\dA-Fa-f]{4}/g, (match) =>
       String.fromCharCode(parseInt(match.replace(/\\u/g, ''), 16))
     )
   }
@@ -245,7 +249,7 @@ export class PoEHttpService {
     return `${baseUrl}${postfix}`
   }
 
-  private handleError(url: string, response: HttpErrorResponse, count: number): Observable<any> {
+  private handleError(url: string, response: HttpErrorResponse, count: number, observer: Subscriber<string> = undefined): Observable <any> {
     if (count >= RETRY_COUNT) {
       return throwError(response)
     }
@@ -259,6 +263,10 @@ export class PoEHttpService {
         } catch {
           return throwError(response.error)
         }
+      case 401: // Unauthorized
+        observer?.next(response.error)
+        observer?.complete()
+        return of() // End the retry-chain
       case 403:
         if (count >= RETRY_LIMIT_COUNT) {
           return throwError(response)

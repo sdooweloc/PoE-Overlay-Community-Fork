@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.1 (2021-07-15)
+
+- Fixed an issue with 401 'Unauthorized' not being properly handled by the poe-http service causing the app to fail initialization
+
 ## 0.8.0 (2021-07-14)
 
 - Added a Trade Companion feature (inspired by MercuryTrade) ([#200](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/200))

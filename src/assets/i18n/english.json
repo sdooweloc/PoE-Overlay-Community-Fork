@@ -11,6 +11,7 @@
   },
   "bookmark": {
     "add": "Add Bookmark",
+    "add-file": "Add File",
     "external": "External",
     "name": "Bookmark",
     "url": "Url"

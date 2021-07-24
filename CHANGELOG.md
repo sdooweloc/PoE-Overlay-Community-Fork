@@ -1,8 +1,25 @@
 # Changelog
 
-## Next Version (TBD)
+## 0.8.2 (2021-07-23)
 
-- Added support for Invitations to the Map Mod evaluator
+- Updated PoE assets to support 3.15.0
+- Added support for 'Logbook' item category
+- Added support for 'Ward' stat
+- Added support for '@me' and '@last' for the Commands module
+- Improved the Trade Companion:
+  - Added a hideout button to the Trade Notification Panel
+  - Added the option to reverse the Trade Notification Panel's horizontal alignment
+  - Added options to auto-collapse trade notifications
+  - Added 'active trade notification' with highlighting (with customizable border color)
+  - Added optional shortcut keys for all built-in trade notification actions
+  - Added support for shortcuts for the custom trade options/buttons
+  - Made the 'Ask if still interested' message customizable (with '@item' and '@price' placeholders)
+- Improved map mod checking
+  - Slight UI changes
+  - Updated Layout, Encounters and Boss data
+  - Added item drop levels (+ highlighting for them)
+  - Added support for Invitations
+- Improved UI/UX on the Commands tab in the Settings menu
 
 ## 0.8.1 (2021-07-15)
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## next release
+
+- Fixed an issue with (private) league detection in non-latin languages
+
 ## 0.8.2 (2021-07-23)
 
 - Updated PoE assets to support 3.15.0

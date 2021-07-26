@@ -84,7 +84,7 @@ export class TradeCompanionSettingsComponent implements UserSettingsComponent, O
   }
 
   public onResetTradeCompanionBoundsClick(): void {
-    const bounds = this.window.getOffsettedGameBounds()
+    const bounds = this.window.getOffsettedGameBounds(false)
     bounds.width = bounds.height = 0
     this.settings.tradeCompanionBounds = bounds
   }

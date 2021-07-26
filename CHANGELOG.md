@@ -2,6 +2,8 @@
 
 ## next release
 
+- Updated PoE Assets to support 3.15.0b
+- Fixed an issue with the 'reset' window bounds buttons (it now correctly resets to the top-left of the PoE client bounds)
 - Fixed an issue with (private) league detection in non-latin languages
 
 ## 0.8.2 (2021-07-23)

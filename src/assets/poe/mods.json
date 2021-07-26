@@ -157620,8 +157620,8 @@
 					"max": 50
 				},
 				{
-					"min": 8,
-					"max": 12
+					"min": 0,
+					"max": 0
 				}
 			],
 			"JunMaster1": [
@@ -157630,8 +157630,8 @@
 					"max": 50
 				},
 				{
-					"min": 8,
-					"max": 12
+					"min": 0,
+					"max": 0
 				}
 			],
 			"JunMasterVeiled": [
@@ -157668,14 +157668,14 @@
 		"local_flask_critical_strike_chance_+%_during_flask_effect": {
 			"JunMaster21": [
 				{
-					"min": 60,
-					"max": 80
+					"min": 40,
+					"max": 60
 				}
 			],
 			"JunMaster1": [
 				{
-					"min": 60,
-					"max": 80
+					"min": 40,
+					"max": 60
 				}
 			],
 			"JunMasterVeiled_": [

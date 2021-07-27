@@ -75,7 +75,9 @@ export class CommandService {
       if (!activeCharacterName) {
         activeCharacterName = this.accountService.getActiveCharacter()?.name
       }
-      command = command.replace("@me", activeCharacterName)
+      if (activeCharacterName) {
+        command = command.replace("@me", activeCharacterName)
+      }
     }
     return command
   }

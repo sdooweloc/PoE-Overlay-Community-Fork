@@ -1,6 +1,11 @@
 # Changelog
 
-## next release
+## 0.8.4 (2021-07-28)
+
+- Updated PoE Assets to support 3.15.0d
+- Fixed 'invalid indexed type' error when price-checking using the 'any time' setting
+- Fixed an issue with Commands not being executed when not being logged in
+- Updated publisher name in the electron-builder.json config (to fix auto-update issues)
 
 ## 0.8.3 (2021-07-26)
 

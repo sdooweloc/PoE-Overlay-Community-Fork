@@ -2579,10 +2579,6 @@
 					"dropLevel": 1
 				},
 				{
-					"item": "Perfection",
-					"dropLevel": 1
-				},
-				{
 					"item": "The Encroaching Darkness",
 					"dropLevel": 1
 				},
@@ -3391,10 +3387,6 @@
 					"dropLevel": 1
 				},
 				{
-					"item": "Perfection",
-					"dropLevel": 1
-				},
-				{
 					"item": "The Celestial Stone",
 					"dropLevel": 1
 				},
@@ -3871,10 +3863,6 @@
 					"dropLevel": 1
 				},
 				{
-					"item": "Perfection",
-					"dropLevel": 1
-				},
-				{
 					"item": "The Encroaching Darkness",
 					"dropLevel": 1
 				},
@@ -4227,10 +4215,9 @@
 			"layoutRating": "B",
 			"bossRating": "1",
 			"bossCount": 0,
-			"bosses": [
-				"Shock and Horror"
-			],
-			"url": "https://pathofexile.fandom.com/wiki/Oba's_Cursed_Trove"
+			"bosses": [],
+			"url": "https://pathofexile.fandom.com/wiki/Oba's_Cursed_Trove",
+			"layout": "This map is divided into six levels, with the first two using the Submerged Passage tileset, the 3rd and 4th using the Crypt tileset, and the last two the Chamber tileset. In order to proceed to the next level, the player must kill all monsters in the current level. Additionally, monster level increases by 1 each time the player enters a new area. The levels range from the area level of the base map Underground Sea Map (the actual area level depends on it is \"Shaped\" or not due to Watchstone) in the first area to +5 in the last. Each level contains monsters, except for the last room, where the player will find five Strongboxes.\n* Two rare Ornate Strongboxes\n* A unique Jeweller's Strongbox (Oba's Prized Cache)\n* A unique Arcanist's Strongbox (Oba's Riches)\n* A unique Gemcutter's Strongbox (Oba's Glittering Stash)\n\nThe last room contains no map boss, but each strongbox releases several packs of monsters when opened.\n\nThe actual area level depends on map series; the Expedition league map series has T16 Oba's Cursed Trove, thus the last area can reach area level 88, while the other map series has T2 version, thus the last area can reach area level 74 for those versions. The map is one of the two unique maps that can potentially reach 84 (or more) area level without using unique watchstone. The other map is The Coward's Trial\n\nArea becomes fatal after some time: the player is instantly killed if failing to kill all monsters in the first five levels within 9 minutes when alone, or 6 minutes when entering as a group. (The timer starts as soon as you enter the map). Oba will start a countdown 10 seconds before this mod takes effect. The player also receives four warnings at set intervals: \n\n* The Nightmare has your scent. Now it hungers for your flesh. (25%, so at 2:15 / 1:30)\n* Is your cup half empty or half full, Exile? (50%, so at 4:30 / 3:00)\n* Disappointing. It seems corruption will get the better of you after all. (75%, so at 6:45 / 4:30)\n* The corruption is growing. Hurry now, before it consumes you as it did me. (100%, so at 9:00 / 6:00, initiates the 10-second countdown)\n\nAfter killing the last monster, Oba says:\nHaha! You are a mighty adventurer indeed.  Use what I have given you and spread my legacy throughout all of Wraeclast.\n\nThe player is then no longer on the clock and is free to open the strongboxes or backtrack the map at his or her leisure."
 		},
 		"Olmec's Sanctum": {
 			"items": [
@@ -4770,10 +4757,6 @@
 				},
 				{
 					"item": "Lingering Remnants",
-					"dropLevel": 1
-				},
-				{
-					"item": "Perfection",
 					"dropLevel": 1
 				},
 				{

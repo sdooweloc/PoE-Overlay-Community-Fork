@@ -1,8 +1,6 @@
 {
     "productName": "poe-overlay",
-    "publish": {
-        "provider": "github"
-    },
+    "publish": null,
     "directories": {
         "output": "release/"
     },
@@ -20,7 +18,7 @@
         "!node_modules/d3-*/**/*"
     ],
     "win": {
-        "icon": "dist/favicon.ico",
+        "icon": "src/favicon.ico",
         "target": [
             "nsis",
             "portable"
@@ -28,10 +26,10 @@
         "publisherName": [
             "SignPath Foundation"
         ],
-        "signAndEditExecutable": true
+        "signAndEditExecutable": false
     },
     "linux": {
-        "icon": "dist/favicon256x256.png",
+        "icon": "src/favicon256x256.png",
         "target": [
             "deb",
             "AppImage"

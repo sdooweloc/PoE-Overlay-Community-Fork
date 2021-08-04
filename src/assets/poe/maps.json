@@ -3145,6 +3145,10 @@
 				{
 					"item": "The Gambler",
 					"dropLevel": 23
+				},
+				{
+					"item": "The Offspring",
+					"dropLevel": 32
 				}
 			],
 			"layoutRating": "B",

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.5 (2021-08-05)
+
+- Updated PoE Assets to support 3.15.1
+- Added '% increased Movement Speed if you haven't been Hit Recently' to the indistinguishable stats list
+- Added support for the Kakao (Korean) client logs to be read
+
 ## 0.8.4 (2021-07-28)
 
 - Updated PoE Assets to support 3.15.0d

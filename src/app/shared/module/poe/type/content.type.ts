@@ -38,7 +38,7 @@ export interface StatLocalMap {
 }
 
 export interface StatIndistinguishableMap {
-  [id: string]: string
+  [id: string]: string[]
 }
 
 export interface ModValue {

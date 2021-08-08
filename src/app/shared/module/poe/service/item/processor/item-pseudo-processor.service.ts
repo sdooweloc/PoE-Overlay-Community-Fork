@@ -66,7 +66,7 @@ export class ItemPseudoProcessorService {
         negated: false,
         option: false,
         mod: undefined,
-        indistinguishable: undefined,
+        indistinguishables: undefined,
       }
       itemStats.push(itemStat)
       if (values.length > 0 && (!minCount || count >= minCount)) {

@@ -200,7 +200,7 @@ export class StatsService {
             type,
             tradeId,
             values: test.slice(1).map((x) => ({ text: x })),
-            indistinguishable: undefined,
+            indistinguishables: undefined,
           }
         })
       }
@@ -218,7 +218,7 @@ export class StatsService {
     for (const type of search.types) {
       const stats = this.statsProvider.provide(type)
       const locals = this.statsLocalProvider.provide(type)
-      const indistinguishables = this.statsIndistinguishableProvider.provide(type)
+      const indistinguishableStats = this.statsIndistinguishableProvider.provide(type)
       for (const tradeId in stats) {
         if (!stats.hasOwnProperty(tradeId)) {
           continue
@@ -254,10 +254,10 @@ export class StatsService {
               return id.split(' ').join('_').split('%').join('_').split('+').join('_')
             }
 
-            const indistinguishable = indistinguishables[tradeId]
+            const indistinguishables = indistinguishableStats[tradeId]
 
             const localKey = getKey(stat.id || '')
-            if (locals[localKey] && !indistinguishable) {
+            if (locals[localKey] && !indistinguishables) {
               let optId = locals[localKey]
               if (stat.mod === 'local') {
                 // global to local optId
@@ -306,7 +306,7 @@ export class StatsService {
               type,
               tradeId,
               values: matchedValues,
-              indistinguishable,
+              indistinguishables,
             }
             results.push({
               stat: itemStat,

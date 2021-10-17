@@ -168,7 +168,8 @@ export class EvaluateDialogService {
         unique[StatType.Crafted] ||
         unique[StatType.Fractured] ||
         unique[StatType.Monster] ||
-        unique[StatType.Ultimatum]
+        unique[StatType.Ultimatum] ||
+        unique[StatType.Scourge]
       ) {
         height += DIALOG_DIVIDER_HEIGHT
       }

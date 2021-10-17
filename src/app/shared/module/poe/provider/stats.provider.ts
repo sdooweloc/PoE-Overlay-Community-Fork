@@ -10,6 +10,7 @@ import {
   pseudo,
   veiled,
   ultimatum,
+  scourge,
 } from '../../../../../assets/poe/stats.json'
 import { StatMap, StatType } from '../type'
 
@@ -39,6 +40,8 @@ export class StatsProvider {
         return delve
       case StatType.Ultimatum:
         return ultimatum
+      case StatType.Scourge:
+        return scourge
     }
   }
 }

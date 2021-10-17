@@ -44,7 +44,7 @@ interface StatsSectionsSearch {
 
 const REVERSE_REGEX = /\\[.*+?^${}()|[\]\\]/g
 const VALUE_PLACEHOLDER = '(\\S+)'
-const TYPE_PLACEHOLDER_REGEX = / \(implicit\)| \(fractured\)| \(crafted\)| \(enchant\)/
+const TYPE_PLACEHOLDER_REGEX = / \(implicit\)| \(fractured\)| \(crafted\)| \(enchant\)| \(scourge\)/
 
 @Injectable({
   providedIn: 'root',
@@ -348,6 +348,7 @@ export class StatsService {
     const enchantPhrase = ` (${StatType.Enchant})`
     const craftedPhrase = ` (${StatType.Crafted})`
     const fracturedPhrase = ` (${StatType.Fractured})`
+    const scourgePhrase = ` (${StatType.Scourge})`
     const explicitsSearch: StatsSectionsSearch = {
       types: [StatType.Explicit],
       sections: [],
@@ -374,17 +375,24 @@ export class StatsService {
           }
         }
 
-        const hasCrafteds = text.indexOf(craftedPhrase) !== -1
-        if (hasCrafteds) {
+        const hasCrafted = text.indexOf(craftedPhrase) !== -1
+        if (hasCrafted) {
           if (explicitsSearch.types.indexOf(StatType.Crafted) === -1) {
             explicitsSearch.types.push(StatType.Crafted)
           }
         }
 
-        const hasFractureds = text.indexOf(fracturedPhrase) !== -1
-        if (hasFractureds) {
+        const hasFractured = text.indexOf(fracturedPhrase) !== -1
+        if (hasFractured) {
           if (explicitsSearch.types.indexOf(StatType.Fractured) === -1) {
             explicitsSearch.types.push(StatType.Fractured)
+          }
+        }
+
+        const hasScourged = text.indexOf(scourgePhrase) !== -1
+        if (hasScourged) {
+          if (explicitsSearch.types.indexOf(StatType.Scourge) === -1) {
+            explicitsSearch.types.push(StatType.Scourge)
           }
         }
         explicitsSearch.sections.push(section)

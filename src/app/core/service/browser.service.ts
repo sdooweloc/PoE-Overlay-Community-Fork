@@ -75,7 +75,7 @@ export class BrowserService {
         autoHideMenuBar: true,
         width: Math.round(Math.min(height * 1.3, width * 0.7)),
         height: Math.round(height * 0.7),
-        backgroundColor: '#0F0F0F',
+        backgroundColor: url.startsWith('file://') ? '#FCFCFC' : '#0F0F0F',
         show: false,
       })
 

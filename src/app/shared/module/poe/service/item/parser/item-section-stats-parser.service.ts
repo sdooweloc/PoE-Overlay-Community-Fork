@@ -14,7 +14,9 @@ import { StatsSearchOptions, StatsService } from '../../stats/stats.service'
   providedIn: 'root',
 })
 export class ItemSectionStatsParserService implements ItemSectionParserService {
-  constructor(private readonly statsService: StatsService) {}
+  constructor(
+    private readonly statsService: StatsService,
+  ) { }
 
   public optional = true
   public section = ItemSection.Stats

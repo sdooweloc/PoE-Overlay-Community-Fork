@@ -35,10 +35,9 @@
       <div class="purpel">
         <ng-container *ngTemplateOutlet="statQuery; context: { stat: stat }"></ng-container>
       </div>
-      <app-item-frame-separator [item]="item"
-                                *ngIf="last && (groups.fractured || groups.explicit || groups.monster || groups.ultimatum || groups.crafted)">
-      </app-item-frame-separator>
     </ng-container>
+    <app-item-frame-separator [item]="item" *ngIf="groups.fractured || groups.explicit || groups.monster || groups.ultimatum || groups.crafted || groups.pseudo">
+    </app-item-frame-separator>
   </ng-container>
   <ng-container *ngIf="groups.fractured">
     <ng-container *ngFor="let stat of groups.fractured">
@@ -76,7 +75,7 @@
     </ng-container>
   </ng-container>
   <ng-container *ngIf="groups.fractured || groups.explicit || groups.monster || groups.ultimatum || groups.crafted">
-    <app-item-frame-separator [item]="item" *ngIf="groups.pseudo"> </app-item-frame-separator>
+    <app-item-frame-separator [item]="item" *ngIf="groups.pseudo"></app-item-frame-separator>
   </ng-container>
   <ng-container *ngIf="groups.pseudo">
     <ng-container *ngFor="let stat of groups.pseudo">

@@ -44,7 +44,8 @@ interface StatsSectionsSearch {
 
 const REVERSE_REGEX = /\\[.*+?^${}()|[\]\\]/g
 const VALUE_PLACEHOLDER = '(\\S+)'
-const TYPE_PLACEHOLDER_REGEX = / \(implicit\)| \(fractured\)| \(crafted\)| \(enchant\)/
+const TYPE_PLACEHOLDER_REGEX = / \(implicit\)| \(fractured\)| \(crafted\)| \(enchant\)| \(scourge\)/
+const SCOURGE_PLACEHOLDER_REGEX = / \(scourge\)$/
 
 @Injectable({
   providedIn: 'root',
@@ -140,9 +141,13 @@ export class StatsService {
     language = language || this.context.get().language
     options = options || {}
 
-    const { implicitsSearch, explicitsSearch } = this.buildSearch(texts, options)
+    const { scourgedSearch, implicitsSearch, explicitsSearch } = this.buildSearch(texts, options)
 
     const results: StatsSearchResult[] = []
+    if (scourgedSearch.sections.length > 0) {
+      this.executeSearch(scourgedSearch, options, language, results)
+    }
+
     if (implicitsSearch.sections.length > 0) {
       this.executeSearch(implicitsSearch, options, language, results)
     }
@@ -218,7 +223,7 @@ export class StatsService {
     for (const type of search.types) {
       const stats = this.statsProvider.provide(type)
       const locals = this.statsLocalProvider.provide(type)
-      const indistinguishableStats = this.statsIndistinguishableProvider.provide(type)
+      const indistinguishableStats = this.statsIndistinguishableProvider.provide(type) || {}
       for (const tradeId in stats) {
         if (!stats.hasOwnProperty(tradeId)) {
           continue
@@ -337,12 +342,18 @@ export class StatsService {
     texts: string[],
     options?: StatsSearchOptions
   ): {
+    scourgedSearch: StatsSectionsSearch
     implicitsSearch: StatsSectionsSearch
     explicitsSearch: StatsSectionsSearch
   } {
     const implicitPhrase = ` (${StatType.Implicit})`
     const implicitsSearch: StatsSectionsSearch = {
       types: [StatType.Implicit],
+      sections: [],
+    }
+    const scourgePhrase = ` (${StatType.Scourge})`
+    const scourgedSearch: StatsSectionsSearch = {
+      types: [StatType.Scourge],
       sections: [],
     }
     const enchantPhrase = ` (${StatType.Enchant})`
@@ -359,37 +370,46 @@ export class StatsService {
       explicitsSearch.types.push(StatType.Ultimatum)
     }
     texts.forEach((text, index) => {
-      const section: StatsSectionText = {
-        index,
-        text,
-      }
-      if (text.indexOf(implicitPhrase) !== -1) {
-        // implicits have there own section
-        implicitsSearch.sections.push(section)
+      if (text.indexOf(scourgePhrase) !== -1) {
+        // scourge stats have there own section
+        scourgedSearch.sections.push({
+          index: index,
+          text: text.split('\n').map(x => x.replace(SCOURGE_PLACEHOLDER_REGEX, '')).join('\n')
+        })
       } else {
-        const hasEnchants = text.indexOf(enchantPhrase) !== -1
-        if (hasEnchants) {
-          if (explicitsSearch.types.indexOf(StatType.Enchant) === -1) {
-            explicitsSearch.types.push(StatType.Enchant)
-          }
+        const section: StatsSectionText = {
+          index,
+          text,
         }
+        if (text.indexOf(implicitPhrase) !== -1) {
+          // implicits have there own section
+          implicitsSearch.sections.push(section)
+        } else {
+          const hasEnchants = text.indexOf(enchantPhrase) !== -1
+          if (hasEnchants) {
+            if (explicitsSearch.types.indexOf(StatType.Enchant) === -1) {
+              explicitsSearch.types.push(StatType.Enchant)
+            }
+          }
 
-        const hasCrafteds = text.indexOf(craftedPhrase) !== -1
-        if (hasCrafteds) {
-          if (explicitsSearch.types.indexOf(StatType.Crafted) === -1) {
-            explicitsSearch.types.push(StatType.Crafted)
+          const hasCrafted = text.indexOf(craftedPhrase) !== -1
+          if (hasCrafted) {
+            if (explicitsSearch.types.indexOf(StatType.Crafted) === -1) {
+              explicitsSearch.types.push(StatType.Crafted)
+            }
           }
-        }
 
-        const hasFractureds = text.indexOf(fracturedPhrase) !== -1
-        if (hasFractureds) {
-          if (explicitsSearch.types.indexOf(StatType.Fractured) === -1) {
-            explicitsSearch.types.push(StatType.Fractured)
+          const hasFractured = text.indexOf(fracturedPhrase) !== -1
+          if (hasFractured) {
+            if (explicitsSearch.types.indexOf(StatType.Fractured) === -1) {
+              explicitsSearch.types.push(StatType.Fractured)
+            }
           }
+
+          explicitsSearch.sections.push(section)
         }
-        explicitsSearch.sections.push(section)
       }
     })
-    return { implicitsSearch, explicitsSearch }
+    return { scourgedSearch, implicitsSearch, explicitsSearch }
   }
 }

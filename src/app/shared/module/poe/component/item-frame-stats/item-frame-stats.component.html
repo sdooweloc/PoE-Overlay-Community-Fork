@@ -9,13 +9,24 @@
       <app-item-frame-separator [item]="item"
                                 *ngIf="
           last &&
-          (groups.implicit ||
+          (groups.scourge ||
+            groups.implicit ||
             groups.fractured ||
             groups.explicit ||
             groups.monster ||
             groups.ultimatum ||
             groups.crafted)
         ">
+      </app-item-frame-separator>
+    </ng-container>
+  </ng-container>
+  <ng-container *ngIf="groups.scourge">
+    <ng-container *ngFor="let stat of groups.scourge; let last = last">
+      <div class="scourge">
+        <ng-container *ngTemplateOutlet="statQuery; context: { stat: stat }"></ng-container>
+      </div>
+      <app-item-frame-separator [item]="item"
+                                *ngIf="last && (groups.implicit || groups.fractured || groups.explicit || groups.monster || groups.ultimatum || groups.crafted)">
       </app-item-frame-separator>
     </ng-container>
   </ng-container>

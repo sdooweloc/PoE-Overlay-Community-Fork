@@ -207,10 +207,10 @@ export class ItemFrameValueComponent implements OnInit {
     }
 
     // reset to infinite
-    if (this.value.min > this.default.min) {
+    if (Math.abs(this.value.min) > Math.abs(this.default.min)) {
       this.value.min = undefined
     }
-    if (this.value.max < this.default.max) {
+    if (Math.abs(this.value.max) < Math.abs(this.default.max)) {
       this.value.max = undefined
     }
 

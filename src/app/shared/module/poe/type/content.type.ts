@@ -19,7 +19,7 @@ export interface BaseItemTypeMap {
 
 export interface BaseItemType {
   names?: BaseItemTypeNameMap
-  artName?: string
+  image?: string
   category?: ItemCategory
   width?: number
   height?: number

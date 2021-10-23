@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.8.6 (2021-10-23)
+
+- Added support for Scourge stats
+- Added support for Logbook faction pseudo-stats
+- Added support for Artifacts exchange rates
+- Added rate-limit checks to more of the poe-api calls
+- Updated PoE Assets to support 3.16.0 (scourge league)
+- Changed image urls for trade companion bulk-exchange item images
+- Changed browser window background when viewing bookmarked local files to improve text readability
+- Updated the wiki url to poewiki.net (instead of fandom)
+- Updated the trade regexes to support Korean whispers
+
 ## 0.8.5 (2021-08-05)
 
 - Updated PoE Assets to support 3.15.1

@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core'
 import {
   crafted,
-  delve,
   enchant,
   explicit,
   fractured,
@@ -36,8 +35,6 @@ export class StatsProvider {
         return veiled
       case StatType.Monster:
         return monster
-      case StatType.Delve:
-        return delve
       case StatType.Ultimatum:
         return ultimatum
       case StatType.Scourge:

@@ -160,6 +160,9 @@ export class EvaluateDialogService {
       if (unique[StatType.Enchant]) {
         height += DIALOG_DIVIDER_HEIGHT
       }
+      if (unique[StatType.Scourge]) {
+        height += DIALOG_DIVIDER_HEIGHT
+      }
       if (unique[StatType.Implicit]) {
         height += DIALOG_DIVIDER_HEIGHT
       }
@@ -168,8 +171,7 @@ export class EvaluateDialogService {
         unique[StatType.Crafted] ||
         unique[StatType.Fractured] ||
         unique[StatType.Monster] ||
-        unique[StatType.Ultimatum] ||
-        unique[StatType.Scourge]
+        unique[StatType.Ultimatum]
       ) {
         height += DIALOG_DIVIDER_HEIGHT
       }

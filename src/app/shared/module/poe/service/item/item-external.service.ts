@@ -108,7 +108,7 @@ export class ItemExternalService {
   public getWikiUrl(item: Item): string {
     const { nameId, typeId } = item
     const search = this.getIdentifier(nameId, typeId)
-    const url = `${environment.wiki.baseUrl}/index.php?search=${encodeURIComponent(search)}`
+    const url = `${environment.wiki.baseUrl}/w/index.php?search=${encodeURIComponent(search)}`
     return url
   }
 

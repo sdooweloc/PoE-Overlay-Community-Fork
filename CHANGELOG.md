@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.7 (2021-10-23)
+
+- Fixed wiki search url
+
 ## 0.8.6 (2021-10-23)
 
 - Added support for Scourge stats

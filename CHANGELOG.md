@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.8 (2021-10-25)
+
+- Updated PoE Assets to support 3.16.0 (Hotfix 4)
+- Fixed a login issue related to changes in the default cookie same-site behaviour
+
 ## 0.8.7 (2021-10-23)
 
 - Fixed wiki search url

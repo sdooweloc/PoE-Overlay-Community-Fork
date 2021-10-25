@@ -133206,13 +133206,15 @@
 				}
 			]
 		},
-		"critical_strikes_deal_no_damage": {
+		"spell_damage_+%_if_have_crit_recently": {
 			"Unique__2": [
 				{
 					"min": 120,
 					"max": 150
 				}
-			],
+			]
+		},
+		"critical_strikes_deal_no_damage": {
 			"Unique__1": [
 				{
 					"min": 1,

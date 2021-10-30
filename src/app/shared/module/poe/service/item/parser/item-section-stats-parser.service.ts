@@ -76,6 +76,10 @@ export class ItemSectionStatsParserService implements ItemSectionParserService {
       options.local_attack_speed___ = true
     }
 
+    if (item.properties.weaponCriticalStrikeChance) {
+      options.local_critical_strike_chance___ = true
+    }
+
     if (item.properties.armourEvasionRating) {
       options.local_base_evasion_rating = true
       options.local_evasion_rating___ = true

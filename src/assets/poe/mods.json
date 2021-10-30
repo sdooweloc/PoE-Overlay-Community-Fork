@@ -43284,6 +43284,12 @@
 					"min": 100,
 					"max": 100
 				}
+			],
+			"MonsterExperienceRoyaleBoss_": [
+				{
+					"min": 2000,
+					"max": 2000
+				}
 			]
 		},
 		"monster_life_+%_final_from_rarity gain_x_vaal_souls_at_2%_life_thresholds": {
@@ -46500,7 +46506,7 @@
 			"2": [
 				{
 					"min": -19,
-					"max": 17
+					"max": -17
 				}
 			],
 			"3__": [
@@ -116636,12 +116642,6 @@
 					"min": -25,
 					"max": -20
 				}
-			],
-			"GraceReservationEfficiencyInfluence1": [
-				{
-					"min": 40,
-					"max": 50
-				}
 			]
 		},
 		"grace_mana_reservation_efficiency_+%": {
@@ -116661,6 +116661,12 @@
 				{
 					"min": 20,
 					"max": 20
+				}
+			],
+			"GraceReservationEfficiencyInfluence1": [
+				{
+					"min": 40,
+					"max": 50
 				}
 			]
 		},
@@ -116739,12 +116745,6 @@
 					"max": -20
 				}
 			],
-			"HatredReservationEfficiencyInfluence1": [
-				{
-					"min": 40,
-					"max": 50
-				}
-			],
 			"Unique__1": [
 				{
 					"min": -50,
@@ -116763,6 +116763,12 @@
 				{
 					"min": 30,
 					"max": 30
+				}
+			],
+			"HatredReservationEfficiencyInfluence1": [
+				{
+					"min": 40,
+					"max": 50
 				}
 			],
 			"HatredManaReservationEfficiencyUnique__1__": [
@@ -118498,12 +118504,6 @@
 					"min": -30,
 					"max": -25
 				}
-			],
-			"PurityOfIceReservationEfficiencyInfluence1": [
-				{
-					"min": 50,
-					"max": 60
-				}
 			]
 		},
 		"purity_of_ice_mana_reservation_efficiency_+%": {
@@ -118529,6 +118529,12 @@
 				{
 					"min": 60,
 					"max": 80
+				}
+			],
+			"PurityOfIceReservationEfficiencyInfluence1": [
+				{
+					"min": 50,
+					"max": 60
 				}
 			]
 		},
@@ -213081,8 +213087,8 @@
 		"map_hellscape_rare_monster_drop_additional_basic_currency_item": {
 			"": [
 				{
-					"min": 1,
-					"max": 1
+					"min": 2,
+					"max": 2
 				}
 			]
 		},
@@ -213543,8 +213549,8 @@
 		"map_hellscape_monster_damage_taken_+%_final": {
 			"": [
 				{
-					"min": -15,
-					"max": -15
+					"min": -9,
+					"max": -9
 				}
 			]
 		},

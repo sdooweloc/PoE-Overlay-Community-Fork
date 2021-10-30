@@ -41,7 +41,8 @@ export class ItemQualityProcessorService {
         stats,
         'local_evasion_rating_+%',
         'local_armour_and_evasion_+%',
-        'local_armour_and_evasion_and_energy_shield_+%'
+        'local_armour_and_evasion_and_energy_shield_+%',
+        'local_evasion_and_energy_shield_+%',
       )
       this.calculateQualityTier(
         armourEvasionRating,
@@ -58,7 +59,8 @@ export class ItemQualityProcessorService {
         stats,
         'local_energy_shield_+%',
         'local_armour_and_energy_shield_+%',
-        'local_armour_and_evasion_and_energy_shield_+%'
+        'local_armour_and_evasion_and_energy_shield_+%',
+        'local_evasion_and_energy_shield_+%',
       )
       this.calculateQualityTier(
         armourEnergyShield,

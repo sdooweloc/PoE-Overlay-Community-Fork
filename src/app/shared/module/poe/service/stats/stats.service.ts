@@ -30,6 +30,7 @@ export interface StatsSearchOptions {
   local_accuracy_rating?: boolean
   local_mana_leech_from_physical_damage_permyriad?: boolean
   local_life_leech_from_physical_damage_permyriad?: boolean
+  local_critical_strike_chance___?: boolean
 }
 
 interface StatsSectionText {

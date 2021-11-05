@@ -157915,8 +157915,8 @@
 					"max": 45
 				},
 				{
-					"min": 600,
-					"max": 600
+					"min": 300,
+					"max": 300
 				}
 			]
 		},
@@ -214264,11 +214264,15 @@
 				}
 			]
 		},
-		"map_hellscape_gimmick_shift_on_killing_rare_unique_kills_drain_resource": {
+		"map_hellscape_gimmick_shift_on_killing_rare_unique_kills_drain_resource map_hellscape_blood_gained_+%_final": {
 			"ShiftOnDefeatingRareUniqueEnemy": [
 				{
 					"min": 1,
 					"max": 1
+				},
+				{
+					"min": 50,
+					"max": 50
 				}
 			]
 		},

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.8.9 (2021-11-07)
+
+- Updated PoE Assets to support 3.16.0d
+- Fixed snackbar warning showing its localization key rather than the translated localization when attempting to leave a party without having a selected character
+- Added rounding to 1 decimal to the quality processor's min, max and normalized values
+- Added 'local evasion & es +%' to the evasion, and energy shield calculations in the quality processor
+- Added support for 'local crit chance' on weapons that have crit chance
+
 ## 0.8.8 (2021-10-25)
 
 - Updated PoE Assets to support 3.16.0 (Hotfix 4)

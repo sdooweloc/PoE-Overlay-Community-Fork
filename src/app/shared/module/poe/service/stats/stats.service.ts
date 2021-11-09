@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core'
 import { StatsLocalProvider } from '../../provider/stats-local.provider'
 import { StatsIndistinguishableProvider } from '../../provider/stats-indistinguishable.provider'
 import { StatsProvider } from '../../provider/stats.provider'
-import { ItemStat, Language, Stat, StatType } from '../../type'
+import { ItemStat, Language, Stat, StatGenType, StatType } from '../../type'
 import { ContextService } from '../context.service'
+import { ClientStringService } from '../client-string/client-string.service'
 
 export interface StatsSearchResult {
   stat: ItemStat
@@ -60,7 +61,8 @@ export class StatsService {
     private readonly context: ContextService,
     private readonly statsProvider: StatsProvider,
     private readonly statsLocalProvider: StatsLocalProvider,
-    private readonly statsIndistinguishableProvider: StatsIndistinguishableProvider
+    private readonly statsIndistinguishableProvider: StatsIndistinguishableProvider,
+    private readonly clientStringService: ClientStringService,
   ) {}
 
   public translate(stat: Stat, statDescIndex: number, language?: Language): string {
@@ -201,6 +203,7 @@ export class StatsService {
             mod: stat.mod,
             option: stat.option,
             negated: stat.negated,
+            genType: stat.genType,
             predicateIndex: statDescIndex,
             predicate,
             type,
@@ -227,6 +230,12 @@ export class StatsService {
       // Ignore anything after the special hyphen (e.g. ' — Unscalable Value')
       section.text = section.text.split('\n').map(x => x.split(' — ')[0]).join('\n')
     }
+
+    // Compose Stat Gen Type Regexes
+    const prefixRegex = `^\{ ${this.clientStringService.translate('ModDescriptionLinePrefix', language).replace('{0}', '.*')}`
+    const craftedPrefixRegex = `^\{ ${this.clientStringService.translate('ModDescriptionLineCraftedPrefix', language).replace('{0}', '.*')}`
+    const suffixRegex = `^\{ ${this.clientStringService.translate('ModDescriptionLineSuffix', language).replace('{0}', '.*')}`
+    const craftedSuffixRegex = `^\{ ${this.clientStringService.translate('ModDescriptionLineCraftedSuffix', language).replace('{0}', '.*')}`
 
     // Perform the search
     for (const type of search.types) {
@@ -312,11 +321,27 @@ export class StatsService {
               }
             }
 
+            // Determine the Stat Gen Type based on the previous line (which contains advanced mod info)
+            let genType = StatGenType.Unknown
+            const lines = section.text.split('\n')
+            const lineIdx = lines.indexOf(matchedText.split('\n')[0])
+            const prevLine = lineIdx > 0 ? lines[lineIdx - 1] : undefined
+            if (prevLine) {
+              if (prevLine.match(prefixRegex) || prevLine.match(craftedPrefixRegex)) {
+                section.text = section.text.replace(prevLine, '')
+                genType = StatGenType.Prefix
+              } else if (prevLine.match(suffixRegex) || prevLine.match(craftedSuffixRegex)) {
+                section.text = section.text.replace(prevLine, '')
+                genType = StatGenType.Suffix
+              }
+            }
+
             const itemStat: ItemStat = {
               id: stat.id,
               mod: stat.mod,
               option: stat.option,
               negated: stat.negated,
+              genType: genType,
               predicateIndex: matchedIndex,
               predicate: matchedPredicate,
               type,

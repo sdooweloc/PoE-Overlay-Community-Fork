@@ -8,6 +8,7 @@ import {
   Output,
 } from '@angular/core'
 import { BehaviorSubject, Subject } from 'rxjs'
+import { ItemParserUtils } from '../../service/item/parser/item-parser.utils'
 import { ItemValue } from '../../type'
 import { ItemFrameQueryComponent } from '../item-frame-query/item-frame-query.component'
 import { ItemFrameComponent } from '../item-frame/item-frame.component'
@@ -233,7 +234,7 @@ export class ItemFrameValueComponent implements OnInit {
 
   private init(): void {
     this.disabled = this.query.disabled
-    this.parsed = this.value.value ?? this.parseValue(this.value.text)
+    this.parsed = this.value.value ?? ItemParserUtils.parseNumberSimple(this.value.text)
     this.value.min = this.parsed
     this.value.max = this.parsed
     this.default = { ...this.value }
@@ -271,9 +272,5 @@ export class ItemFrameValueComponent implements OnInit {
   private emitChange(): void {
     this.valueChange.emit(this.value)
     this.query.checkChange()
-  }
-
-  private parseValue(text: string): number {
-    return +text.replace('%', '')
   }
 }

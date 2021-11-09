@@ -55,7 +55,7 @@ export class ItemPseudoProcessorService {
       } else if (pseudo.prop) {
         const prop = pseudo.prop(item)
         if (prop !== undefined) {
-          values.push(this.parseValue(prop))
+          values.push(ItemParserUtils.parseNumberSimple(prop))
         }
       }
 
@@ -89,7 +89,7 @@ export class ItemPseudoProcessorService {
         return current
       }
 
-      const parsed = this.parseValue(itemValue.text)
+      const parsed = ItemParserUtils.parseNumberSimple(itemValue.text)
       const negate = !stat.negated && stat.predicate[0] === 'N' ? -1 : 1
 
       const value = parsed * negate
@@ -107,9 +107,5 @@ export class ItemPseudoProcessorService {
       }
       return current + value
     })
-  }
-
-  private parseValue(text: string): number {
-    return +text.replace('%', '')
   }
 }

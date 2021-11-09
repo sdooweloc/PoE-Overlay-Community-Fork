@@ -72,7 +72,7 @@
 
 <app-card [title]="'evaluate.layout' | translate">
   <div class="row">
-    <div class="col">
+    <div class="col-6">
       <mat-form-field>
         <mat-label>{{ 'evaluate.result-view' | translate }}</mat-label>
         <mat-select [(value)]="settings.evaluateResultView">
@@ -81,6 +81,20 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
+    </div>
+    <div class="col-3">
+      <mat-slide-toggle [checked]="settings.evaluateShowPricePrediction"
+                        (change)="settings.evaluateShowPricePrediction = $event.checked"
+                        matTooltip="{{ 'evaluate.show-price-prediction-tooltip' | translate }}">
+        {{ 'evaluate.show-price-prediction' | translate }}
+      </mat-slide-toggle>
+    </div>
+    <div class="col-3">
+      <mat-slide-toggle [checked]="settings.evaluateShowExchangeRate"
+                        (change)="settings.evaluateShowExchangeRate = $event.checked"
+                        matTooltip="{{ 'evaluate.show-exchange-rate-tooltip' | translate }}">
+        {{ 'evaluate.show-exchange-rate' | translate }}
+      </mat-slide-toggle>
     </div>
   </div>
 </app-card>

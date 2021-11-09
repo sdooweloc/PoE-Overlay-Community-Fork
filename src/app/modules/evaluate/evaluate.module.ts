@@ -86,6 +86,8 @@ export class EvaluateModule implements FeatureModule {
       evaluateBrowserAlwaysExternal: false,
       evaluateShowAnnointmentOils: true,
       evaluateCopyAdvancedItemText: true,
+      evaluateShowPricePrediction: true,
+      evaluateShowExchangeRate: true,
     }
     return {
       name: 'evaluate.name',

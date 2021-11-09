@@ -25,7 +25,7 @@ export class EvaluateService {
   ) {}
 
   public evaluate(settings: EvaluateUserSettings, language?: Language): Observable<void> {
-    return this.item.copy().pipe(
+    return this.item.copy(settings.evaluateCopyAdvancedItemText).pipe(
       tap(({ item }) =>
         this.processor.process(item, {
           normalizeQuality: settings.evaluateQueryNormalizeQuality,

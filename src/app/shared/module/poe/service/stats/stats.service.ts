@@ -221,6 +221,14 @@ export class StatsService {
     language: Language,
     results: StatsSearchResult[]
   ): void {
+    // Sanitize sections (i.e. remove some advanced mod stuff we currently don't use at all)
+    for (let index = search.sections.length - 1; index >= 0; --index) {
+      const section = search.sections[index]
+      // Ignore anything after the special hyphen (e.g. ' — Unscalable Value')
+      section.text = section.text.split('\n').map(x => x.split(' — ')[0]).join('\n')
+    }
+
+    // Perform the search
     for (const type of search.types) {
       const stats = this.statsProvider.provide(type)
       const locals = this.statsLocalProvider.provide(type)
@@ -283,7 +291,9 @@ export class StatsService {
             let matchedText = sectionText
             let matchedIndex = statDescIndex
             let matchedPredicate = predicate
-            let matchedValues = test.slice(1).map((x) => ({ text: x }))
+
+            // Strip advanced mod values (located within brackets after the actual value) by splitting on the opening-bracket and taking the first element only
+            let matchedValues = test.slice(1).map((x) => ({ text: x.split('(')[0] }))
 
             // Check if your predicate uses a single number
             // (e.g. '1 Added Passive Skill is a Jewel Socket' or 'Bow Attacks fire an additional Arrow')
@@ -328,6 +338,9 @@ export class StatsService {
             }
             if (section.text.trim().length === 0) {
               search.sections.splice(index, 1)
+            } else {
+              // A stat was succesfully found & added, but the same stat might occur more than once in the same section -> increased index to search this section again.
+              index++
             }
           }
         })

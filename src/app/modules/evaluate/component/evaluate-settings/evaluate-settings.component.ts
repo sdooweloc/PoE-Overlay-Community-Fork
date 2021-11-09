@@ -53,6 +53,7 @@ export interface EvaluateUserSettings extends UserSettings {
   evaluatePricing: EvaluatePricing
   evaluateBrowserAlwaysExternal: boolean
   evaluateShowAnnointmentOils: boolean
+  evaluateCopyAdvancedItemText: boolean
 }
 
 export const EVALUATE_QUERY_DEBOUNCE_TIME_MAX = 100

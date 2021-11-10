@@ -43,6 +43,7 @@ export interface EvaluateUserSettings extends UserSettings {
   evaluatePropertyMaxRange: number
   evaluateQueryDefaultStats: any
   evaluateQueryDefaultStatsUnique: boolean
+  evaluateQueryDefaultStatsEnchants: boolean
   evaluateQueryOnline: boolean
   evaluateQueryIndexedRange: ItemSearchIndexed
   evaluateModifierMinRange: number

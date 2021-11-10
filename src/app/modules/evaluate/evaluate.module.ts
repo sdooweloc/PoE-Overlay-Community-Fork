@@ -72,6 +72,7 @@ export class EvaluateModule implements FeatureModule {
         'implicit.stat_3624393862': true, // Guardian occupied maps
       },
       evaluateQueryDefaultStatsUnique: true,
+      evaluateQueryDefaultStatsEnchants: true,
       evaluateQueryIndexedRange: ItemSearchIndexed.UpTo3DaysAgo,
       evaluateQueryOnline: true,
       evaluateQueryDebounceTime: 10,

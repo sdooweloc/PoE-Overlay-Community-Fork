@@ -44,6 +44,7 @@ export interface EvaluateUserSettings extends UserSettings {
   evaluateQueryDefaultStats: any
   evaluateQueryDefaultStatsUnique: boolean
   evaluateQueryDefaultStatsEnchants: boolean
+  evaluateQueryPostProcessClusterJewels: boolean
   evaluateQueryOnline: boolean
   evaluateQueryIndexedRange: ItemSearchIndexed
   evaluateModifierMinRange: number

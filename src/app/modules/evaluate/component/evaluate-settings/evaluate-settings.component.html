@@ -365,6 +365,14 @@
             </mat-slide-toggle>
           </div>
 
+          <div class="toggle">
+            <mat-slide-toggle [checked]="settings.evaluateQueryPostProcessClusterJewels"
+                              (change)="settings.evaluateQueryPostProcessClusterJewels = $event.checked"
+                              matTooltip="{{ 'evaluate.stats-pp-cluster-jewels-tooltip' | translate }}">
+              {{ 'evaluate.stats-pp-cluster-jewels' | translate }}
+            </mat-slide-toggle>
+          </div>
+
           <app-select-list [items]="stats$ | async" [itemFilter]="itemPredicate" (itemsChange)="onStatsChange($event)">
             <ng-template let-item>
               <span class="stat" [title]="item.text">

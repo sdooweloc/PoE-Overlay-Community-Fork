@@ -234,12 +234,13 @@ export class ItemFrameValueComponent implements OnInit {
 
   private init(): void {
     this.disabled = this.query.disabled
+    const predeterminedValues = this.value.value && this.value.min && this.value.max
     this.parsed = this.value.value ?? ItemParserUtils.parseNumberSimple(this.value.text)
-    this.value.min = this.parsed
-    this.value.max = this.parsed
+    this.value.min = this.value.min || this.parsed
+    this.value.max = this.value.max || this.parsed
     this.default = { ...this.value }
 
-    if (this.disabled) {
+    if (this.disabled || predeterminedValues) {
       return
     }
 

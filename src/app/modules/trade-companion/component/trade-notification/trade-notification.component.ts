@@ -226,16 +226,8 @@ export class TradeNotificationComponent implements OnInit, OnDestroy, OnChanges 
 
   public askStillInterestedClick(): void {
     this.buttonClickAudioClip?.play()
-    let item: string
-    if (this.notification.itemLocation) {
-      item = this.notification.item as string
-    } else {
-      const currencyAmount = this.notification.item as CurrencyAmount
-      item = `${currencyAmount.amount} ${currencyAmount.currency.nameType}`
-    }
-    const command = `@${this.notification.playerName} ${this.settings.askIfStillInterestedMessage}`
     this.commandService.command(
-      command.replace('@item', item).replace('@price', `${this.notification.price.amount} ${this.notification.price.currency.nameType}`),
+      `@${this.notification.playerName} ${this.replacePlaceholders(this.settings.askIfStillInterestedMessage)}`,
       this.settings
     )
   }
@@ -247,7 +239,10 @@ export class TradeNotificationComponent implements OnInit, OnDestroy, OnChanges 
 
   public tradeOptionClick(tradeOption: TradeCompanionButtonOption): void {
     this.buttonClickAudioClip?.play()
-    this.commandService.command(`@${this.notification.playerName} ${tradeOption.whisperMessage}`, this.settings)
+    this.commandService.command(
+      `@${this.notification.playerName} ${this.replacePlaceholders(tradeOption.whisperMessage)}`,
+      this.settings
+    )
     if (tradeOption.kickAfterWhisper) {
       timer(550).subscribe(() => {
         switch (this.notification.type) {
@@ -315,5 +310,16 @@ export class TradeNotificationComponent implements OnInit, OnDestroy, OnChanges 
           })
       })
     }
+  }
+
+  private replacePlaceholders(command: string): string {
+    let item: string
+    if (this.notification.itemLocation) {
+      item = this.notification.item as string
+    } else {
+      const currencyAmount = this.notification.item as CurrencyAmount
+      item = `${currencyAmount.amount} ${currencyAmount.currency.nameType}`
+    }
+    return command.replace('@item', item).replace('@price', `${this.notification.price.amount} ${this.notification.price.currency.nameType}`)
   }
 }

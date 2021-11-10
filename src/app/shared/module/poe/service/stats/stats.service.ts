@@ -203,7 +203,6 @@ export class StatsService {
             mod: stat.mod,
             option: stat.option,
             negated: stat.negated,
-            genType: stat.genType,
             predicateIndex: statDescIndex,
             predicate,
             type,

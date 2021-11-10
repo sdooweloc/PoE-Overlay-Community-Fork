@@ -365,7 +365,7 @@
             </mat-slide-toggle>
           </div>
 
-          <app-select-list [items]="stats$ | async" (itemsChange)="onStatsChange($event)">
+          <app-select-list [items]="stats$ | async" [itemFilter]="itemPredicate" (itemsChange)="onStatsChange($event)">
             <ng-template let-item>
               <span class="stat" [title]="item.text">
                 <span [class]="'type ' + item.type"> {{ item.type }} </span>

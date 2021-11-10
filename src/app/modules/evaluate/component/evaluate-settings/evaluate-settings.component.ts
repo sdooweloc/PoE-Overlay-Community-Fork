@@ -156,6 +156,12 @@ export class EvaluateSettingsComponent implements UserSettingsComponent {
     this.snackbar.success('stats were imported successfully.')
   }
 
+  public itemPredicate(item: SelectListItem, filterValue: string): boolean {
+    const statItem = item as StatSelectListItem
+    const itemValue = `${statItem.type.toLowerCase()} ${statItem.text.toLowerCase()}`
+    return itemValue.indexOf(filterValue) !== -1
+  }
+
   private updateStats(): void {
     const items: StatSelectListItem[] = []
 

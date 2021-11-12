@@ -23,7 +23,7 @@
     "ng:lint": "ng lint --fix",
     "ng:serve": "ng serve",
     "ng:test": "ng test",
-    "ng:test:ci": "export NODE_OPTIONS=--max-old-space-size=7168 && ng test --karma-config=karma-ci.conf.js",
+    "ng:test:ci": "set NODE_OPTIONS=--max-old-space-size=7168 && ng test --karma-config=karma-ci.conf.js",
     "postinstall": "npm run ng:cc && npm run electron:deps",
     "start": "npm-run-all -p ng:serve electron:serve"
   },

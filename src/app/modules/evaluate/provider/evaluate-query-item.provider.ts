@@ -24,6 +24,7 @@ export class EvaluateQueryItemProvider {
       unidentified: item.unidentified,
       veiled: item.veiled,
       blighted: item.blighted,
+      blightRavaged: item.blightRavaged,
       relic: item.relic,
       influences: item.influences || {},
       damage: {},

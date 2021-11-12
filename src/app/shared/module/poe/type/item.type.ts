@@ -15,6 +15,7 @@ export interface Item {
   unidentified?: boolean
   veiled?: boolean
   blighted?: boolean
+  blightRavaged?: boolean
   relic?: boolean
   damage?: ItemWeaponDamage
   sockets?: ItemSocket[]

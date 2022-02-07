@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.8.10 (2022-02-07)
+
+- Updated PoE Assets to support 3.17.0 (Archnemesis League)
+- Added support to toggle on/off Advanced Mod copying when price-checking an item
+- Added support for pre- and suffix detection when using Advanced Mod copying
+- Added support for 'empty pre/suffix' and 'crafted' pseudo-modifiers when using Advanced Mod copying
+- Added support to toggle on/off Price Predictions (provided by poeprices.info) and/or Price Exchange Rates (privided by poe.ninja)
+- Added support for '@price' and '@item' special keywords to the customizable button messages of the Trade Companion
+- Added support to toggle on/off auto-selection of Enchants
+- Added support for stat type (e.g. 'Crafted', 'Enchant', 'Pseudo', etc...) searching in the Evaluate Setting's stats list
+- Added support to toggle on/off processing of cluster jewels to auto fill '# of notables' and 'item level' ranges based on threshold values
+- Added support for Blight-Ravaged maps when price-checking
+- Added support to explicitly restrict item searching to Fractured and Synthesised items
+- Changed visualisation of Fractured modifiers: they're now colored like fractured stats
+- Changed 'total resistance' pseudo mod: it now occurs even if either elemental of chaos resistance is present
+- Fixed an issue with certain price predictions (provided by poeprices.info) causing 'invalid data' errors
+
 ## 0.8.9 (2021-11-07)
 
 - Updated PoE Assets to support 3.16.0d

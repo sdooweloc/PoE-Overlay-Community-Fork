@@ -129,9 +129,9 @@ export class ItemSearchFiltersMiscsService implements ItemSearchFiltersService {
         option: `${influences.fractured}`,
       }
     }
-    if (influences.synthesized) {
+    if (influences.synthesised) {
       query.filters.misc_filters.filters.synthesised_item = {
-        option: `${influences.synthesized}`,
+        option: `${influences.synthesised}`,
       }
     }
   }

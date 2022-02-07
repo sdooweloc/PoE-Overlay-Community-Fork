@@ -44,7 +44,7 @@ export class EvaluateQueryItemProvider {
     // Deselect fractured & synthesized to avoid narrowing the query item too much
     if (queryItem.influences) {
       queryItem.influences.fractured = undefined
-      queryItem.influences.synthesized = undefined
+      queryItem.influences.synthesised = undefined
     }
 
     if (settings.evaluateQueryDefaultItemLevel) {

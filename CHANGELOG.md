@@ -129,8 +129,8 @@
 
 - Updated assets to support 3.13.1e
   - This fixed certain watchstone modifiers not being found/parsed when evaluating the item
-- Added support to detect Fractured and Synthesized item 'influences'
-- Pseudo grouping no longer removes Fractured or Synthesized Implicits stats
+- Added support to detect Fractured and Synthesised item 'influences'
+- Pseudo grouping no longer removes Fractured or Synthesised Implicits stats
 - Fixed 'Map Tier' not being taken into account when evaluating the item or retrieving the item exchange rate
 - Fixed Critical Strike Chance and Attacks Per Second decimal parsing ([#185](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/185))
 

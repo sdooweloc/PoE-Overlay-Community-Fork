@@ -226,8 +226,18 @@ export class StatsService {
     // Sanitize sections (i.e. remove some advanced mod stuff we currently don't use at all)
     for (let index = search.sections.length - 1; index >= 0; --index) {
       const section = search.sections[index]
-      // Ignore anything after the special hyphen (e.g. ' — Unscalable Value')
-      section.text = section.text.split('\n').map(x => x.split(' — ')[0]).join('\n')
+      // Ignore anything between the special hyphen and the first open-bracket (or the rest of the text if no bracket exists) [e.g. ' — Unscalable Value' or ' — Unscalable Value (implicit)']
+      section.text = section.text.split('\n').map(x => {
+        const splitted = x.split(' — ')
+        let statText = splitted[0]
+        const unscalableText = splitted[1]
+        if (unscalableText.indexOf('(') !== -1) {
+          // Extract the text found in brackets at the end of the unscalable text and append it (including brackets) to the stat text
+          const splitted2 = unscalableText.split('(')
+          statText += '(' + splitted2[1]
+        }
+        return statText
+      }).join('\n')
     }
 
     // Compose Stat Gen Type Regexes

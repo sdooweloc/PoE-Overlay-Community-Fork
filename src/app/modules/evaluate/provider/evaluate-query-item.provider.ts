@@ -41,7 +41,7 @@ export class EvaluateQueryItemProvider {
     })
     const queryItem = this.copy(defaultItem)
 
-    // Deselect fractured & synthesized to avoid narrowing the query item too much
+    // Deselect fractured & synthesised to avoid narrowing the query item too much
     if (queryItem.influences) {
       queryItem.influences.fractured = undefined
       queryItem.influences.synthesised = undefined

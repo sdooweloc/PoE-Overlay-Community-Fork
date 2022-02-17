@@ -231,7 +231,7 @@ export class StatsService {
         const splitted = x.split(' — ')
         let statText = splitted[0]
         const unscalableText = splitted[1]
-        if (unscalableText.indexOf('(') !== -1) {
+        if (unscalableText && unscalableText.indexOf('(') !== -1) {
           // Extract the text found in brackets at the end of the unscalable text and append it (including brackets) to the stat text
           const splitted2 = unscalableText.split('(')
           statText += '(' + splitted2[1]

@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.8.11 (2022-02-19)
+
+- Updated PoE Assets to support 3.17.1
+  - Added support for the new influence stats that have 'in your presence' in their stat name
+  - Fixed an issue with certain 'option' stats (e.g. 'Area contains Strongboxes') which also adds support for the Forbidden Flame/Flesh jewels
+- Added identical stat merging when using the advanced-mod-copy feature (this fixes normal & hybdrid mods being shown separately instead of being added up together)
+- Added the Korean and Chinese PoE URLs to the list of 'cookie sharing urls' (this should fix not being able to login in PoE Overlay CF using either websites) ([#273](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/273))
+- Changed the default querying of unique items so it now excludes the implicit for non-corrupted uniques
+- Fixed parsing of some implicit/crafted/enchanted stats that are marked with 'unscalable value' ([#276](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/276))
+
 ## 0.8.10 (2022-02-07)
 
 - Updated PoE Assets to support 3.17.0 (Archnemesis League)
@@ -7,7 +17,7 @@
 - Added support for pre- and suffix detection when using Advanced Mod copying
 - Added support for 'empty pre/suffix' and 'crafted' pseudo-modifiers when using Advanced Mod copying
 - Added support to toggle on/off Price Predictions (provided by poeprices.info) and/or Price Exchange Rates (privided by poe.ninja)
-- Added support for '@price' and '@item' special keywords to the customizable button messages of the Trade Companion
+- Added support for `@price` and `@item` special keywords to the customizable button messages of the Trade Companion
 - Added support to toggle on/off auto-selection of Enchants
 - Added support for stat type (e.g. 'Crafted', 'Enchant', 'Pseudo', etc...) searching in the Evaluate Setting's stats list
 - Added support to toggle on/off processing of cluster jewels to auto fill '# of notables' and 'item level' ranges based on threshold values
@@ -70,7 +80,7 @@
 - Updated PoE assets to support 3.15.0
 - Added support for 'Logbook' item category
 - Added support for 'Ward' stat
-- Added support for '@me' and '@last' for the Commands module
+- Added support for `@me` and `@last` for the Commands module
 - Improved the Trade Companion:
   - Added a hideout button to the Trade Notification Panel
   - Added the option to reverse the Trade Notification Panel's horizontal alignment
@@ -78,7 +88,7 @@
   - Added 'active trade notification' with highlighting (with customizable border color)
   - Added optional shortcut keys for all built-in trade notification actions
   - Added support for shortcuts for the custom trade options/buttons
-  - Made the 'Ask if still interested' message customizable (with '@item' and '@price' placeholders)
+  - Made the 'Ask if still interested' message customizable (with `@item` and `@price` placeholders)
 - Improved map mod checking
   - Slight UI changes
   - Updated Layout, Encounters and Boss data

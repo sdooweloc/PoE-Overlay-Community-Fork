@@ -27640,37 +27640,37 @@
 					"max": 22
 				}
 			],
-			"UniqueBootsDex6": [
+			"TrapThrowSpeedUniqueBootsDex6": [
 				{
 					"min": 14,
 					"max": 18
 				}
 			],
-			"Unique__1_": [
+			"TrapThrowSpeedUnique__1_": [
 				{
 					"min": -30,
 					"max": -20
 				}
 			],
-			"MonsterSideAreaBoss": [
+			"MonsterTrapThrowSpeedSideAreaBoss": [
 				{
 					"min": 10,
 					"max": 10
 				}
 			],
-			"BloodlineBloodElemental": [
+			"BloodlineBloodElementalTrapThrowSpeed": [
 				{
 					"min": 40,
 					"max": 40
 				}
 			],
-			"DarkExile": [
+			"DarkExileTrapThrowSpeed": [
 				{
 					"min": 15,
 					"max": 15
 				}
 			],
-			"ProphecyBoss": [
+			"ProphecyBossTrapThrowSpeed": [
 				{
 					"min": -50,
 					"max": -50
@@ -27688,43 +27688,43 @@
 					"max": 8
 				}
 			],
-			"JunMaster21": [
+			"JunMaster2TrapThrowSpeed1": [
 				{
 					"min": 7,
 					"max": 8
 				}
 			],
-			"JunMaster22_": [
+			"JunMaster2TrapThrowSpeed2_": [
 				{
 					"min": 9,
 					"max": 10
 				}
 			],
-			"JunMaster23": [
+			"JunMaster2TrapThrowSpeed3": [
 				{
 					"min": 11,
 					"max": 12
 				}
 			],
-			"JunMaster1": [
+			"JunMasterTrapThrowSpeed1": [
 				{
 					"min": 7,
 					"max": 8
 				}
 			],
-			"JunMaster2": [
+			"JunMasterTrapThrowSpeed2": [
 				{
 					"min": 9,
 					"max": 10
 				}
 			],
-			"JunMaster3": [
+			"JunMasterTrapThrowSpeed3": [
 				{
 					"min": 11,
 					"max": 12
 				}
 			],
-			"JunMasterVeiled_": [
+			"JunMasterVeiledTrapThrowSpeed_": [
 				{
 					"min": 14,
 					"max": 16
@@ -27808,37 +27808,37 @@
 					"max": 15
 				}
 			],
-			"EldritchImplicit1": [
+			"TrapThrowSpeedEldritchImplicit1": [
 				{
 					"min": 8,
 					"max": 8
 				}
 			],
-			"EldritchImplicit2": [
+			"TrapThrowSpeedEldritchImplicit2": [
 				{
 					"min": 9,
 					"max": 9
 				}
 			],
-			"EldritchImplicit3": [
+			"TrapThrowSpeedEldritchImplicit3": [
 				{
 					"min": 10,
 					"max": 10
 				}
 			],
-			"EldritchImplicit4": [
+			"TrapThrowSpeedEldritchImplicit4": [
 				{
 					"min": 11,
 					"max": 11
 				}
 			],
-			"EldritchImplicit5": [
+			"TrapThrowSpeedEldritchImplicit5": [
 				{
 					"min": 12,
 					"max": 12
 				}
 			],
-			"EldritchImplicit6": [
+			"TrapThrowSpeedEldritchImplicit6": [
 				{
 					"min": 13,
 					"max": 13
@@ -42340,6 +42340,12 @@
 					"max": 4
 				}
 			],
+			"ImplicitQuiver3New": [
+				{
+					"min": 6,
+					"max": 8
+				}
+			],
 			"ImplicitQuiver8": [
 				{
 					"min": 3,
@@ -42616,12 +42622,6 @@
 				{
 					"min": 46,
 					"max": 46
-				}
-			],
-			"ImplicitQuiver3New": [
-				{
-					"min": 6,
-					"max": 8
 				}
 			],
 			"UniqueSceptre2": [
@@ -92296,16 +92296,16 @@
 		"number_of_additional_projectiles number_of_chains projectile_chain_from_terrain_chance_% projectile_damage_+%_max_as_distance_travelled_increases": {
 			"Bombardier___": [
 				{
-					"min": 5,
-					"max": 5
+					"min": 3,
+					"max": 3
 				},
 				{
 					"min": 2,
 					"max": 2
 				},
 				{
-					"min": 100,
-					"max": 100
+					"min": 30,
+					"max": 30
 				},
 				{
 					"min": 80,
@@ -97435,42 +97435,6 @@
 					"min": 41,
 					"max": 50
 				}
-			],
-			"EldritchImplicit1": [
-				{
-					"min": 200,
-					"max": 200
-				}
-			],
-			"EldritchImplicit2": [
-				{
-					"min": 300,
-					"max": 300
-				}
-			],
-			"EldritchImplicit3": [
-				{
-					"min": 400,
-					"max": 400
-				}
-			],
-			"EldritchImplicit4": [
-				{
-					"min": 500,
-					"max": 500
-				}
-			],
-			"EldritchImplicit5": [
-				{
-					"min": 600,
-					"max": 600
-				}
-			],
-			"EldritchImplicit6": [
-				{
-					"min": 700,
-					"max": 700
-				}
 			]
 		},
 		"old_do_not_use_base_life_leech_from_cold_damage_permyriad": {
@@ -97577,42 +97541,6 @@
 					"min": 41,
 					"max": 50
 				}
-			],
-			"EldritchImplicit1": [
-				{
-					"min": 200,
-					"max": 200
-				}
-			],
-			"EldritchImplicit2": [
-				{
-					"min": 300,
-					"max": 300
-				}
-			],
-			"EldritchImplicit3": [
-				{
-					"min": 400,
-					"max": 400
-				}
-			],
-			"EldritchImplicit4": [
-				{
-					"min": 500,
-					"max": 500
-				}
-			],
-			"EldritchImplicit5": [
-				{
-					"min": 600,
-					"max": 600
-				}
-			],
-			"EldritchImplicit6": [
-				{
-					"min": 700,
-					"max": 700
-				}
 			]
 		},
 		"old_do_not_use_base_life_leech_from_lightning_damage_permyriad": {
@@ -97713,42 +97641,6 @@
 					"min": 41,
 					"max": 50
 				}
-			],
-			"EldritchImplicit1": [
-				{
-					"min": 200,
-					"max": 200
-				}
-			],
-			"EldritchImplicit2": [
-				{
-					"min": 300,
-					"max": 300
-				}
-			],
-			"EldritchImplicit3": [
-				{
-					"min": 400,
-					"max": 400
-				}
-			],
-			"EldritchImplicit4": [
-				{
-					"min": 500,
-					"max": 500
-				}
-			],
-			"EldritchImplicit5": [
-				{
-					"min": 600,
-					"max": 600
-				}
-			],
-			"EldritchImplicit6": [
-				{
-					"min": 700,
-					"max": 700
-				}
 			]
 		},
 		"old_do_not_use_base_life_leech_from_physical_damage_permyriad": {
@@ -97818,42 +97710,6 @@
 				{
 					"min": 41,
 					"max": 50
-				}
-			],
-			"EldritchImplicit1": [
-				{
-					"min": 200,
-					"max": 200
-				}
-			],
-			"EldritchImplicit2": [
-				{
-					"min": 300,
-					"max": 300
-				}
-			],
-			"EldritchImplicit3": [
-				{
-					"min": 400,
-					"max": 400
-				}
-			],
-			"EldritchImplicit4": [
-				{
-					"min": 500,
-					"max": 500
-				}
-			],
-			"EldritchImplicit5": [
-				{
-					"min": 600,
-					"max": 600
-				}
-			],
-			"EldritchImplicit6": [
-				{
-					"min": 700,
-					"max": 700
 				}
 			]
 		},
@@ -104668,42 +104524,6 @@
 				{
 					"min": 41,
 					"max": 50
-				}
-			],
-			"EldritchImplicit1": [
-				{
-					"min": 200,
-					"max": 200
-				}
-			],
-			"EldritchImplicit2": [
-				{
-					"min": 300,
-					"max": 300
-				}
-			],
-			"EldritchImplicit3": [
-				{
-					"min": 400,
-					"max": 400
-				}
-			],
-			"EldritchImplicit4": [
-				{
-					"min": 500,
-					"max": 500
-				}
-			],
-			"EldritchImplicit5": [
-				{
-					"min": 600,
-					"max": 600
-				}
-			],
-			"EldritchImplicit6": [
-				{
-					"min": 700,
-					"max": 700
 				}
 			]
 		},
@@ -111538,38 +111358,38 @@
 			],
 			"ActionSpeedImplicitEldritchImplicit1": [
 				{
-					"min": 5,
-					"max": 5
+					"min": -4,
+					"max": -4
 				}
 			],
 			"ActionSpeedImplicitEldritchImplicit2": [
 				{
-					"min": 5,
-					"max": 5
+					"min": -4,
+					"max": -4
 				}
 			],
 			"ActionSpeedImplicitEldritchImplicit3": [
 				{
-					"min": 5,
-					"max": 5
+					"min": -5,
+					"max": -5
 				}
 			],
 			"ActionSpeedImplicitEldritchImplicit4": [
 				{
-					"min": 5,
-					"max": 5
+					"min": -5,
+					"max": -5
 				}
 			],
 			"ActionSpeedImplicitEldritchImplicit5": [
 				{
-					"min": 6,
-					"max": 6
+					"min": -6,
+					"max": -6
 				}
 			],
 			"ActionSpeedImplicitEldritchImplicit6": [
 				{
-					"min": 6,
-					"max": 6
+					"min": -6,
+					"max": -6
 				}
 			]
 		},
@@ -231141,7 +230961,45 @@
 				}
 			]
 		},
-		"base_life_leech_from_fire_damage_permyriad local_influence_mod_requires_unique_monster_presence": {
+		"horrible_ugly_life_leech_from_fire_damage_perhundredthousand": {
+			"EldritchImplicit1": [
+				{
+					"min": 200,
+					"max": 200
+				}
+			],
+			"EldritchImplicit2": [
+				{
+					"min": 300,
+					"max": 300
+				}
+			],
+			"EldritchImplicit3": [
+				{
+					"min": 400,
+					"max": 400
+				}
+			],
+			"EldritchImplicit4": [
+				{
+					"min": 500,
+					"max": 500
+				}
+			],
+			"EldritchImplicit5": [
+				{
+					"min": 600,
+					"max": 600
+				}
+			],
+			"EldritchImplicit6": [
+				{
+					"min": 700,
+					"max": 700
+				}
+			]
+		},
+		"horrible_ugly_life_leech_from_fire_damage_perhundredthousand local_influence_mod_requires_unique_monster_presence": {
 			"EldritchImplicitUniquePresence1": [
 				{
 					"min": 400,
@@ -231203,7 +231061,7 @@
 				}
 			]
 		},
-		"base_life_leech_from_fire_damage_permyriad local_influence_mod_requires_celestial_boss_presence": {
+		"horrible_ugly_life_leech_from_fire_damage_perhundredthousand local_influence_mod_requires_celestial_boss_presence": {
 			"EldritchImplicitPinnaclePresence1": [
 				{
 					"min": 600,
@@ -231265,7 +231123,45 @@
 				}
 			]
 		},
-		"base_life_leech_from_cold_damage_permyriad local_influence_mod_requires_unique_monster_presence": {
+		"horrible_ugly_life_leech_from_cold_damage_perhundredthousand": {
+			"EldritchImplicit1": [
+				{
+					"min": 200,
+					"max": 200
+				}
+			],
+			"EldritchImplicit2": [
+				{
+					"min": 300,
+					"max": 300
+				}
+			],
+			"EldritchImplicit3": [
+				{
+					"min": 400,
+					"max": 400
+				}
+			],
+			"EldritchImplicit4": [
+				{
+					"min": 500,
+					"max": 500
+				}
+			],
+			"EldritchImplicit5": [
+				{
+					"min": 600,
+					"max": 600
+				}
+			],
+			"EldritchImplicit6": [
+				{
+					"min": 700,
+					"max": 700
+				}
+			]
+		},
+		"horrible_ugly_life_leech_from_cold_damage_perhundredthousand local_influence_mod_requires_unique_monster_presence": {
 			"EldritchImplicitUniquePresence1": [
 				{
 					"min": 400,
@@ -231327,7 +231223,7 @@
 				}
 			]
 		},
-		"base_life_leech_from_cold_damage_permyriad local_influence_mod_requires_celestial_boss_presence": {
+		"horrible_ugly_life_leech_from_cold_damage_perhundredthousand local_influence_mod_requires_celestial_boss_presence": {
 			"EldritchImplicitPinnaclePresence1": [
 				{
 					"min": 600,
@@ -231389,7 +231285,45 @@
 				}
 			]
 		},
-		"base_life_leech_from_lightning_damage_permyriad local_influence_mod_requires_unique_monster_presence": {
+		"horrible_ugly_life_leech_from_lightning_damage_perhundredthousand": {
+			"EldritchImplicit1": [
+				{
+					"min": 200,
+					"max": 200
+				}
+			],
+			"EldritchImplicit2": [
+				{
+					"min": 300,
+					"max": 300
+				}
+			],
+			"EldritchImplicit3": [
+				{
+					"min": 400,
+					"max": 400
+				}
+			],
+			"EldritchImplicit4": [
+				{
+					"min": 500,
+					"max": 500
+				}
+			],
+			"EldritchImplicit5": [
+				{
+					"min": 600,
+					"max": 600
+				}
+			],
+			"EldritchImplicit6": [
+				{
+					"min": 700,
+					"max": 700
+				}
+			]
+		},
+		"horrible_ugly_life_leech_from_lightning_damage_perhundredthousand local_influence_mod_requires_unique_monster_presence": {
 			"EldritchImplicitUniquePresence1": [
 				{
 					"min": 400,
@@ -231451,7 +231385,7 @@
 				}
 			]
 		},
-		"base_life_leech_from_lightning_damage_permyriad local_influence_mod_requires_celestial_boss_presence": {
+		"horrible_ugly_life_leech_from_lightning_damage_perhundredthousand local_influence_mod_requires_celestial_boss_presence": {
 			"EldritchImplicitPinnaclePresence1": [
 				{
 					"min": 600,
@@ -231513,7 +231447,45 @@
 				}
 			]
 		},
-		"base_life_leech_from_physical_damage_permyriad local_influence_mod_requires_unique_monster_presence": {
+		"horrible_ugly_life_leech_from_physical_damage_perhundredthousand": {
+			"EldritchImplicit1": [
+				{
+					"min": 200,
+					"max": 200
+				}
+			],
+			"EldritchImplicit2": [
+				{
+					"min": 300,
+					"max": 300
+				}
+			],
+			"EldritchImplicit3": [
+				{
+					"min": 400,
+					"max": 400
+				}
+			],
+			"EldritchImplicit4": [
+				{
+					"min": 500,
+					"max": 500
+				}
+			],
+			"EldritchImplicit5": [
+				{
+					"min": 600,
+					"max": 600
+				}
+			],
+			"EldritchImplicit6": [
+				{
+					"min": 700,
+					"max": 700
+				}
+			]
+		},
+		"horrible_ugly_life_leech_from_physical_damage_perhundredthousand local_influence_mod_requires_unique_monster_presence": {
 			"EldritchImplicitUniquePresence1": [
 				{
 					"min": 400,
@@ -231575,7 +231547,7 @@
 				}
 			]
 		},
-		"base_life_leech_from_physical_damage_permyriad local_influence_mod_requires_celestial_boss_presence": {
+		"horrible_ugly_life_leech_from_physical_damage_perhundredthousand local_influence_mod_requires_celestial_boss_presence": {
 			"EldritchImplicitPinnaclePresence1": [
 				{
 					"min": 600,
@@ -231637,7 +231609,45 @@
 				}
 			]
 		},
-		"base_life_leech_from_chaos_damage_permyriad local_influence_mod_requires_unique_monster_presence": {
+		"horrible_ugly_life_leech_from_chaos_damage_perhundredthousand": {
+			"EldritchImplicit1": [
+				{
+					"min": 200,
+					"max": 200
+				}
+			],
+			"EldritchImplicit2": [
+				{
+					"min": 300,
+					"max": 300
+				}
+			],
+			"EldritchImplicit3": [
+				{
+					"min": 400,
+					"max": 400
+				}
+			],
+			"EldritchImplicit4": [
+				{
+					"min": 500,
+					"max": 500
+				}
+			],
+			"EldritchImplicit5": [
+				{
+					"min": 600,
+					"max": 600
+				}
+			],
+			"EldritchImplicit6": [
+				{
+					"min": 700,
+					"max": 700
+				}
+			]
+		},
+		"horrible_ugly_life_leech_from_chaos_damage_perhundredthousand local_influence_mod_requires_unique_monster_presence": {
 			"EldritchImplicitUniquePresence1": [
 				{
 					"min": 400,
@@ -231699,7 +231709,7 @@
 				}
 			]
 		},
-		"base_life_leech_from_chaos_damage_permyriad local_influence_mod_requires_celestial_boss_presence": {
+		"horrible_ugly_life_leech_from_chaos_damage_perhundredthousand local_influence_mod_requires_celestial_boss_presence": {
 			"EldritchImplicitPinnaclePresence1": [
 				{
 					"min": 600,
@@ -240678,8 +240688,8 @@
 		"action_speed_-% local_influence_mod_requires_unique_monster_presence": {
 			"ActionSpeedImplicitEldritchImplicitUniquePresence1": [
 				{
-					"min": 6,
-					"max": 6
+					"min": -5,
+					"max": -5
 				},
 				{
 					"min": 1,
@@ -240688,8 +240698,8 @@
 			],
 			"ActionSpeedImplicitEldritchImplicitUniquePresence2": [
 				{
-					"min": 6,
-					"max": 6
+					"min": -5,
+					"max": -5
 				},
 				{
 					"min": 1,
@@ -240698,8 +240708,8 @@
 			],
 			"ActionSpeedImplicitEldritchImplicitUniquePresence3": [
 				{
-					"min": 6,
-					"max": 6
+					"min": -6,
+					"max": -6
 				},
 				{
 					"min": 1,
@@ -240708,8 +240718,8 @@
 			],
 			"ActionSpeedImplicitEldritchImplicitUniquePresence4": [
 				{
-					"min": 6,
-					"max": 6
+					"min": -6,
+					"max": -6
 				},
 				{
 					"min": 1,
@@ -240718,8 +240728,8 @@
 			],
 			"ActionSpeedImplicitEldritchImplicitUniquePresence5": [
 				{
-					"min": 7,
-					"max": 7
+					"min": -7,
+					"max": -7
 				},
 				{
 					"min": 1,
@@ -240728,8 +240738,8 @@
 			],
 			"ActionSpeedImplicitEldritchImplicitUniquePresence6": [
 				{
-					"min": 7,
-					"max": 7
+					"min": -7,
+					"max": -7
 				},
 				{
 					"min": 1,
@@ -240740,8 +240750,8 @@
 		"action_speed_-% local_influence_mod_requires_celestial_boss_presence": {
 			"ActionSpeedImplicitEldritchImplicitPinnaclePresence1": [
 				{
-					"min": 7,
-					"max": 7
+					"min": -6,
+					"max": -6
 				},
 				{
 					"min": 1,
@@ -240750,8 +240760,8 @@
 			],
 			"ActionSpeedImplicitEldritchImplicitPinnaclePresence2": [
 				{
-					"min": 7,
-					"max": 7
+					"min": -6,
+					"max": -6
 				},
 				{
 					"min": 1,
@@ -240760,8 +240770,8 @@
 			],
 			"ActionSpeedImplicitEldritchImplicitPinnaclePresence3": [
 				{
-					"min": 7,
-					"max": 7
+					"min": -7,
+					"max": -7
 				},
 				{
 					"min": 1,
@@ -240770,8 +240780,8 @@
 			],
 			"ActionSpeedImplicitEldritchImplicitPinnaclePresence4": [
 				{
-					"min": 7,
-					"max": 7
+					"min": -7,
+					"max": -7
 				},
 				{
 					"min": 1,
@@ -240780,8 +240790,8 @@
 			],
 			"ActionSpeedImplicitEldritchImplicitPinnaclePresence5": [
 				{
-					"min": 8,
-					"max": 8
+					"min": -8,
+					"max": -8
 				},
 				{
 					"min": 1,
@@ -240790,8 +240800,8 @@
 			],
 			"ActionSpeedImplicitEldritchImplicitPinnaclePresence6": [
 				{
-					"min": 8,
-					"max": 8
+					"min": -8,
+					"max": -8
 				},
 				{
 					"min": 1,

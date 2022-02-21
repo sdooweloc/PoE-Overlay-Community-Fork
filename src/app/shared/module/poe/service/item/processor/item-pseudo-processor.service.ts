@@ -202,7 +202,7 @@ export class ItemPseudoProcessorService {
   private groupIdenticalMods(item: Item): void {
     const itemStats = [...item.stats]
     itemStats.forEach(stat => {
-      const identicalStats = itemStats.filter(x => x.tradeId == stat.tradeId)
+      const identicalStats = itemStats.filter(x => x.tradeId == stat.tradeId && x.type == stat.type)
       if (identicalStats.length <= 1) return
       let values = []
       let count = 0

@@ -1,11 +1,15 @@
 # Changelog
 
+## 0.8.12 (2022-02-21)
+
+- Fixed identical stat grouping causing stats of different types being merged together unintentionally
+
 ## 0.8.11 (2022-02-19)
 
 - Updated PoE Assets to support 3.17.1
   - Added support for the new influence stats that have 'in your presence' in their stat name
   - Fixed an issue with certain 'option' stats (e.g. 'Area contains Strongboxes') which also adds support for the Forbidden Flame/Flesh jewels
-- Added identical stat merging when using the advanced-mod-copy feature (this fixes normal & hybdrid mods being shown separately instead of being added up together)
+- Added identical stat merging when using the advanced-mod-copy feature (this fixes normal & hybrid mods being shown separately instead of being added up together)
 - Added the Korean and Chinese PoE URLs to the list of 'cookie sharing urls' (this should fix not being able to login in PoE Overlay CF using either websites) ([#273](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/273))
 - Changed the default querying of unique items so it now excludes the implicit for non-corrupted uniques
 - Fixed parsing of some implicit/crafted/enchanted stats that are marked with 'unscalable value' ([#276](https://github.com/PoE-Overlay-Community/PoE-Overlay-Community-Fork/issues/276))

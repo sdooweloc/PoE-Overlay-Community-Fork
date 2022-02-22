@@ -234,7 +234,7 @@ export class StatsService {
         if (unscalableText && unscalableText.indexOf('(') !== -1) {
           // Extract the text found in brackets at the end of the unscalable text and append it (including brackets) to the stat text
           const splitted2 = unscalableText.split('(')
-          statText += '(' + splitted2[1]
+          statText += ' (' + splitted2[1]
         }
         return statText
       }).join('\n')

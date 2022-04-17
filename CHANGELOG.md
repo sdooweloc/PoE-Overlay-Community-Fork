@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.13 (2022-04-17)
+
+- Updated PoE Assets to support 3.17.3b
+- Fixed (another) parsing issue with 'unscalable value' stats
+
 ## 0.8.12 (2022-02-21)
 
 - Fixed identical stat grouping causing stats of different types being merged together unintentionally

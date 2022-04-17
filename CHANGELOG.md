@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.14 (2022-04-17)
+
+- Added Japanese to the language list
+  - This fixes the non-responsive v0.8.13
+
 ## 0.8.13 (2022-04-17)
 
 - Updated PoE Assets to support 3.17.3b

@@ -1,3 +1,4 @@
+import { exec } from 'child_process'
 import { Rectangle } from 'electron'
 import { addon, windowManager } from 'node-window-manager'
 import activeWin from 'active-win'
@@ -12,6 +13,21 @@ export interface Window {
 
 // macos only - probably not needed for now
 windowManager.requestAccessibility()
+
+function focusPoE(id: number): void {
+  console.log('Bringing to top : ' + id)
+  exec("wmctrl -i -a " + id,  (error, stdout, stderr) => {
+    if (error) {
+      console.log(`error: ${error.message}`);
+      return;
+    }
+    if (stderr) {
+      console.log(`stderr: ${stderr}`);
+      return;
+    }
+    console.log(`stdout: ${stdout}`);
+  })
+}
 
 export async function getActiveWindow(): Promise<Window> {
   try {
@@ -34,7 +50,7 @@ export async function getActiveWindow(): Promise<Window> {
       path = active.owner.path
       bounds = () => active.bounds
       title = () => active.title
-      bringToTop = undefined
+      bringToTop = () => focusPoE(active.id)
     } else {
       active = windowManager.getActiveWindow()
 

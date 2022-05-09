@@ -6,10 +6,15 @@ import { GameLogService } from '../../../core/service/game-log.service'
 import { UserSettings } from '../../../layout/type'
 import { TradeRegexesProvider } from '../../../shared/module/poe/provider/trade-regexes.provider'
 import { PoEAccountService } from '../../../shared/module/poe/service/account/account.service'
+import { GameService } from '../../../core/service/game.service'
 
 interface Command {
   text: string
   send: boolean
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 @Injectable({
@@ -24,6 +29,7 @@ export class CommandService {
     private readonly clipboard: ClipboardService,
     private readonly keyboard: KeyboardService,
     private readonly accountService: PoEAccountService,
+    private readonly gameService: GameService,
     gameLogService: GameLogService,
     tradeRegexesProvirder: TradeRegexesProvider
   ) {
@@ -42,26 +48,29 @@ export class CommandService {
     this.command$
       .pipe(
         throttleTime(350),
-        map((command) => {
+        map(async (command) => {
           const text = this.clipboard.readText()
           this.clipboard.writeText(command.text)
+          await sleep(75)
           this.keyboard.setKeyboardDelay(5)
           this.keyboard.keyTap(KeyCode.VK_RETURN)
           this.keyboard.keyTap(KeyCode.VK_KEY_V, ['control'])
           if (command.send) {
+            await sleep(75)
             this.keyboard.keyTap(KeyCode.VK_RETURN)
           }
           return text
         }),
         delay(200),
-        tap((text) => {
-          this.clipboard.writeText(text)
+        tap(async (text) => {
+          this.clipboard.writeText(await text)
         })
       )
       .subscribe()
   }
 
   public command(command: string, userSettings: UserSettings, preProcessCommand = false, send = true): void {
+    this.gameService.focus()
     if (preProcessCommand) {
       command = this.preProcessCharacterNameCommand(command, userSettings)
       command = this.preProcessLastWhispererCommand(command)

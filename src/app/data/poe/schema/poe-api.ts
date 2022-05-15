@@ -254,6 +254,7 @@ export interface ReqFilters {
   str?: FilterValueOption
   dex?: FilterValueOption
   int?: FilterValueOption
+  class?: FilterOption
 }
 
 export interface MapFilters {
@@ -292,6 +293,14 @@ export interface UltimatumFilters {
   ultimatum_reward?: FilterOption
   ultimatum_input?: FilterOption
   ultimatum_output?: FilterOption
+}
+
+export interface SentinelFilters {
+  sentinel_duration?: FilterValueOption
+  sentinel_empowerment_limit?: FilterValueOption
+  sentinel_empowerment?: FilterValueOption
+  sentinel_durability?: FilterValueOption
+  sentinel_max_durability?: FilterValueOption
 }
 
 export interface MiscFilters {
@@ -334,6 +343,7 @@ export interface Filters {
   map_filters?: FilterGroup<MapFilters>
   heist_filters?: FilterGroup<HeistFilters>
   ultimatum_filters?: FilterGroup<UltimatumFilters>
+  sentinel_filters?: FilterGroup<SentinelFilters>
   misc_filters?: FilterGroup<MiscFilters>
   trade_filters?: TradeFilterGroup
 }

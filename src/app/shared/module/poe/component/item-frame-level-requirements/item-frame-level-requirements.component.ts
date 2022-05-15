@@ -22,7 +22,7 @@ export class ItemFrameLevelRequirementsComponent {
     private readonly clientString: ClientStringService,
   ) { }
 
-  private getCharacterClassString(): string {
+  public getCharacterClassString(): string {
     switch (this.item.requirements.class) {
       case CharacterClass.Marauder:
         return this.clientString.translate('CharacterName0')

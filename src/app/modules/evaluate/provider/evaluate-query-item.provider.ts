@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core'
 import { ItemSocketService } from '@shared/module/poe/service/item/item-socket.service'
 import { Item, ItemCategory, ItemRarity, ItemStat, StatType } from '@shared/module/poe/type'
+import { language } from 'custom-electron-titlebar/lib/common/platform'
+import { ModIconsService } from '../../../shared/module/poe/service/mod-icons/mod-icons.service'
 import { EvaluateUserSettings } from '../component/evaluate-settings/evaluate-settings.component'
 
 export interface EvaluateQueryItemResult {
@@ -12,7 +14,10 @@ export interface EvaluateQueryItemResult {
   providedIn: 'root',
 })
 export class EvaluateQueryItemProvider {
-  constructor(private readonly itemSocketService: ItemSocketService) {}
+  constructor(
+    private readonly itemSocketService: ItemSocketService,
+    private readonly modIconService: ModIconsService,
+  ) { }
 
   public provide(item: Item, settings: EvaluateUserSettings): EvaluateQueryItemResult {
     const defaultItem: Item = this.copy({
@@ -180,7 +185,9 @@ export class EvaluateQueryItemProvider {
         queryItem.stats = item.stats.map((stat) => (item.corrupted || item.unmodifiable || !this.isRelatedToAnImplicitStat(stat)) ? stat : undefined)
       } else {
         queryItem.stats = item.stats.map((stat) => {
-          if (stat.type === StatType.Enchant && settings.evaluateQueryDefaultStatsEnchants) {
+          // Auto-select enchanted stats or stats with a mod icon
+          if ((stat.type === StatType.Enchant && settings.evaluateQueryDefaultStatsEnchants) ||
+            (settings.evaluateQueryDefaultStatsModIcon && this.modIconService.get(stat.modName))) {
             return stat
           }
           const key = `${stat.type}.${stat.tradeId}`

@@ -77,6 +77,7 @@ export class EvaluateModule implements FeatureModule {
       },
       evaluateQueryDefaultStatsUnique: true,
       evaluateQueryDefaultStatsEnchants: true,
+      evaluateQueryDefaultStatsModIcon: true,
       evaluateQueryPostProcessClusterJewels: true,
       evaluateQueryIndexedRange: ItemSearchIndexed.UpTo3DaysAgo,
       evaluateQueryOnline: true,

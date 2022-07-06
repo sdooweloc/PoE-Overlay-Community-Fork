@@ -383,13 +383,18 @@
                               matTooltip="{{ 'evaluate.stats-enchants-check-all-tooltip' | translate }}">
               {{ 'evaluate.stats-enchants-check-all' | translate }}
             </mat-slide-toggle>
-            <mat-slide-toggle [checked]="settings.evaluateShowAnnointmentOils"
-                              (change)="settings.evaluateShowAnnointmentOils = $event.checked">
-              {{ 'evaluate.stats-show-annointment-oils' | translate }}
+            <mat-slide-toggle [checked]="settings.evaluateQueryDefaultStatsModIcon"
+                              (change)="settings.evaluateQueryDefaultStatsModIcon = $event.checked"
+                              matTooltip="{{ 'evaluate.stats-mod-icon-check-all-tooltip' | translate }}">
+              {{ 'evaluate.stats-mod-icon-check-all' | translate }}
             </mat-slide-toggle>
           </div>
 
           <div class="toggle">
+            <mat-slide-toggle [checked]="settings.evaluateShowAnnointmentOils"
+                              (change)="settings.evaluateShowAnnointmentOils = $event.checked">
+              {{ 'evaluate.stats-show-annointment-oils' | translate }}
+            </mat-slide-toggle>
             <mat-slide-toggle [checked]="settings.evaluateQueryPostProcessClusterJewels"
                               (change)="settings.evaluateQueryPostProcessClusterJewels = $event.checked"
                               matTooltip="{{ 'evaluate.stats-pp-cluster-jewels-tooltip' | translate }}">

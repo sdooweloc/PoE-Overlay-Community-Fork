@@ -254,6 +254,7 @@ export interface ReqFilters {
   str?: FilterValueOption
   dex?: FilterValueOption
   int?: FilterValueOption
+  class?: FilterOption
 }
 
 export interface MapFilters {
@@ -292,6 +293,14 @@ export interface UltimatumFilters {
   ultimatum_reward?: FilterOption
   ultimatum_input?: FilterOption
   ultimatum_output?: FilterOption
+}
+
+export interface SentinelFilters {
+  sentinel_duration?: FilterValueOption
+  sentinel_empowerment_limit?: FilterValueOption
+  sentinel_empowerment?: FilterValueOption
+  sentinel_durability?: FilterValueOption
+  sentinel_max_durability?: FilterValueOption
 }
 
 export interface MiscFilters {
@@ -334,6 +343,7 @@ export interface Filters {
   map_filters?: FilterGroup<MapFilters>
   heist_filters?: FilterGroup<HeistFilters>
   ultimatum_filters?: FilterGroup<UltimatumFilters>
+  sentinel_filters?: FilterGroup<SentinelFilters>
   misc_filters?: FilterGroup<MiscFilters>
   trade_filters?: TradeFilterGroup
 }
@@ -351,10 +361,15 @@ export interface FilterOptionDiscriminator extends FilterOption {
   discriminator?: string
 }
 
-interface Exchange {
+export interface Exchange {
   status?: FilterOption
   want?: string[]
   have?: string[]
+}
+
+export enum ExchangeEngine {
+  Legacy = 'legacy',// Note: no longer supported by GGG since 17/05/2022
+  New = 'new'
 }
 
 export interface Sort {
@@ -366,16 +381,26 @@ export interface TradeSearchRequest {
   sort: Sort
 }
 
-export interface TradeOrExchangeSearchResponse extends TradeResponse<string> {
+export interface SearchResponse {
   searchType: TradeSearchType
   id: string
   url: string
   total: number
 }
 
+export interface TradeSearchResponse extends SearchResponse {
+  result: string[]
+}
+
+export interface ExchangeSearchResponse extends SearchResponse {
+  result: {
+    [key: string]: ExchangeFetchResult
+  }
+}
+
 export interface ExchangeSearchRequest {
   exchange: Exchange
-  sort: Sort
+  engine: ExchangeEngine
 }
 
 export interface TradeFetchResultPrice {
@@ -402,6 +427,32 @@ export interface TradeFetchResult {
   id: string
   listing: TradeFetchResultListing
   item: TradeFetchResultItem
+}
+
+export interface ExchangeResultItem {
+  currency: string
+  amount: number
+}
+
+export interface ExchangeResultItemStock extends ExchangeResultItem {
+  id: string
+  stock: number
+}
+
+export interface ExchangeResultOffer {
+  exchange: ExchangeResultItem
+  item: ExchangeResultItemStock
+}
+
+export interface ExchangeResultListing {
+  indexed: string
+  account: TradeFetchResultAccount
+  offers: ExchangeResultOffer[]
+}
+
+export interface ExchangeFetchResult {
+  id: string
+  listing: ExchangeResultListing
 }
 
 export enum TradeSearchType {

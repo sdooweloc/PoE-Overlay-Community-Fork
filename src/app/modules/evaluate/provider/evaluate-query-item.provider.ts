@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core'
 import { ItemSocketService } from '@shared/module/poe/service/item/item-socket.service'
-import { Item, ItemCategory, ItemRarity, StatType } from '@shared/module/poe/type'
+import { Item, ItemCategory, ItemRarity, ItemStat, StatType } from '@shared/module/poe/type'
+import { language } from 'custom-electron-titlebar/lib/common/platform'
+import { ModIconsService } from '../../../shared/module/poe/service/mod-icons/mod-icons.service'
 import { EvaluateUserSettings } from '../component/evaluate-settings/evaluate-settings.component'
 
 export interface EvaluateQueryItemResult {
@@ -12,7 +14,10 @@ export interface EvaluateQueryItemResult {
   providedIn: 'root',
 })
 export class EvaluateQueryItemProvider {
-  constructor(private readonly itemSocketService: ItemSocketService) {}
+  constructor(
+    private readonly itemSocketService: ItemSocketService,
+    private readonly modIconService: ModIconsService,
+  ) { }
 
   public provide(item: Item, settings: EvaluateUserSettings): EvaluateQueryItemResult {
     const defaultItem: Item = this.copy({
@@ -21,6 +26,7 @@ export class EvaluateQueryItemProvider {
       category: item.category,
       rarity: item.rarity,
       corrupted: item.corrupted,
+      unmodifiable: item.unmodifiable,
       unidentified: item.unidentified,
       veiled: item.veiled,
       blighted: item.blighted,
@@ -35,6 +41,7 @@ export class EvaluateQueryItemProvider {
         heist: {
           requiredSkills: [],
         },
+        sentinel: {},
       },
       requirements: {},
       sockets: new Array((item.sockets || []).length).fill({}),
@@ -47,7 +54,7 @@ export class EvaluateQueryItemProvider {
       queryItem.influences.synthesised = undefined
     }
 
-    if (settings.evaluateQueryDefaultItemLevel) {
+    if (settings.evaluateQueryDefaultItemLevel && queryItem.rarity !== ItemRarity.Unique && queryItem.rarity !== ItemRarity.UniqueRelic) {
       queryItem.level = item.level
     }
 
@@ -81,6 +88,24 @@ export class EvaluateQueryItemProvider {
       }
     }
 
+    const sentinel = item.properties?.sentinel
+    if (sentinel) {
+      const querySentinel = queryItem.properties.sentinel
+      if (settings.evaluateQueryDefaultSentinelCharges) {
+        querySentinel.durability = sentinel.durability
+        querySentinel.maxDurability = sentinel.maxDurability
+      }
+      if (settings.evaluateQueryDefaultSentinelDuration) {
+        querySentinel.duration = sentinel.duration
+      }
+      if (settings.evaluateQueryDefaultSentinelEnemies) {
+        querySentinel.enemiesEmpowered = sentinel.enemiesEmpowered
+      }
+      if (settings.evaluateQueryDefaultSentinelEmpowerment) {
+        querySentinel.empowerment = sentinel.empowerment
+      }
+    }
+
     if (settings.evaluateQueryDefaultMiscs) {
       const prop = item.properties
       if (prop) {
@@ -96,7 +121,7 @@ export class EvaluateQueryItemProvider {
       }
     }
 
-    if (settings.evaluateQueryDefaultAttack) {
+    if (settings.evaluateQueryDefaultAttack && queryItem.rarity !== ItemRarity.Unique && queryItem.rarity !== ItemRarity.UniqueRelic) {
       queryItem.damage = item.damage
 
       const prop = item.properties
@@ -108,7 +133,7 @@ export class EvaluateQueryItemProvider {
       }
     }
 
-    if (settings.evaluateQueryDefaultDefense) {
+    if (settings.evaluateQueryDefaultDefense && queryItem.rarity !== ItemRarity.Unique && queryItem.rarity !== ItemRarity.UniqueRelic) {
       const prop = item.properties
       if (prop) {
         if (item.category.startsWith(ItemCategory.Armour)) {
@@ -156,11 +181,13 @@ export class EvaluateQueryItemProvider {
         (item.rarity === ItemRarity.Unique || item.rarity === ItemRarity.UniqueRelic) &&
         settings.evaluateQueryDefaultStatsUnique
       ) {
-        // Select all stats if it's corrupted, otherwise exclude implicit stats
-        queryItem.stats = item.stats.filter((stat) => item.corrupted || stat.type !== StatType.Implicit)
+        // Select all stats if it's corrupted or unmodifiable, otherwise exclude implicit stats
+        queryItem.stats = item.stats.map((stat) => (item.corrupted || item.unmodifiable || !this.isRelatedToAnImplicitStat(stat)) ? stat : undefined)
       } else {
         queryItem.stats = item.stats.map((stat) => {
-          if (stat.type === StatType.Enchant && settings.evaluateQueryDefaultStatsEnchants) {
+          // Auto-select enchanted stats or stats with a mod icon
+          if ((stat.type === StatType.Enchant && settings.evaluateQueryDefaultStatsEnchants) ||
+            (settings.evaluateQueryDefaultStatsModIcon && this.modIconService.get(stat.modName))) {
             return stat
           }
           const key = `${stat.type}.${stat.tradeId}`
@@ -177,5 +204,9 @@ export class EvaluateQueryItemProvider {
 
   private copy(item: Item): Item {
     return JSON.parse(JSON.stringify(item))
+  }
+
+  private isRelatedToAnImplicitStat(stat: ItemStat): boolean {
+    return stat.type === StatType.Implicit || (stat.relatedStats?.some(s => this.isRelatedToAnImplicitStat(s)) ?? false)
   }
 }

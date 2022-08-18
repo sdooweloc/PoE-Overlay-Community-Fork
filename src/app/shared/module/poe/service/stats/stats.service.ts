@@ -235,8 +235,11 @@ export class StatsService {
     for (let index = search.sections.length - 1; index >= 0; --index) {
       const section = search.sections[index]
       // Ignore anything between the special hyphen and the first open-bracket (or the rest of the text if no bracket exists) [e.g. ' — Unscalable Value' or ' — Unscalable Value (implicit)']
-      section.text = section.text.split('\n').map(x => {
-        const splitted = x.split(' — ')
+      section.text = section.text.split('\n').map(statLine => {
+        if (statLine.startsWith('{')) {
+          return statLine
+        }
+        const splitted = statLine.split(' — ')
         let statText = splitted[0]
         const unscalableText = splitted[1]
         if (unscalableText && unscalableText.indexOf('(') !== -1) {
@@ -306,14 +309,12 @@ export class StatsService {
               const isLocalOption = locals[localKey].startsWith('local_')
               const localOptId = isLocalOption ? optId : locals[optId]
               let globalOptId = locals[localOptId]
-              // Only change global to local optId when the global optId doesn't exist as an option
-              if (Object.getOwnPropertyNames(options).findIndex(x => x == globalOptId) === -1) {
-                globalOptId = localOptId
-              }
 
+              // Global vs Local stat approach:
+              //   All stats are considered global, unless marked as local in the options and the global isn't present or marked false
               if (
                 (isLocalStat && !options[localOptId]) ||
-                (!isLocalStat && !options[globalOptId])
+                (!isLocalStat && !options[globalOptId] && options[localOptId])
               ) {
                 return
               }
@@ -379,17 +380,32 @@ export class StatsService {
 
           // Determine the Stat Gen Type based on the previous line (which contains advanced mod info)
           let genType = StatGenType.Unknown
+          let modName: string = undefined
           const lines = section.text.split('\n')
           const lineIdx = lines.indexOf(matchedText.split('\n')[0])
-          const prevLine = lineIdx > 0 ? lines[lineIdx - 1] : undefined
-          if (prevLine) {
+          let prevLineIdx = lineIdx - 1
+          while (prevLineIdx >= 0) {
+            const prevLine = lines[prevLineIdx]
+            if (prevLine.length === 0) {
+              prevLineIdx--
+              continue
+            }
+
+            // Determine the Stat Gen Type
             if (prevLine.match(prefixRegex) || prevLine.match(craftedPrefixRegex)) {
-              section.text = section.text.replace(prevLine, '')
               genType = StatGenType.Prefix
             } else if (prevLine.match(suffixRegex) || prevLine.match(craftedSuffixRegex)) {
-              section.text = section.text.replace(prevLine, '')
               genType = StatGenType.Suffix
             }
+
+            // Determine the Mod Name
+            const modNameSplit = prevLine.split("\"")
+            if (modNameSplit.length >= 3) {
+              modName = modNameSplit[1]
+            }
+
+            // Found the info -> break out of the loop
+            break
           }
 
           const itemStat: ItemStat = {
@@ -397,13 +413,14 @@ export class StatsService {
             mod: stat.mod,
             option: stat.option,
             negated: stat.negated,
-            genType: genType,
+            genType,
             predicateIndex: matchedIndex,
             predicate: matchedPredicate,
             type,
             tradeId,
             values: matchedValues,
             indistinguishables,
+            modName,
           }
           results.push({
             stat: itemStat,

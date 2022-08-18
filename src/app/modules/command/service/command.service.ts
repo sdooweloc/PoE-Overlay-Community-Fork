@@ -51,12 +51,12 @@ export class CommandService {
         map(async (command) => {
           const text = this.clipboard.readText()
           this.clipboard.writeText(command.text)
-          await sleep(75)
+          await sleep(100)
           this.keyboard.setKeyboardDelay(5)
           this.keyboard.keyTap(KeyCode.VK_RETURN)
           this.keyboard.keyTap(KeyCode.VK_KEY_V, ['control'])
           if (command.send) {
-            await sleep(75)
+            await sleep(200)
             this.keyboard.keyTap(KeyCode.VK_RETURN)
           }
           return text

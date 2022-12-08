@@ -42,7 +42,7 @@ export class EvaluateModule implements FeatureModule {
   public getSettings(): UserSettingsFeature {
     const defaultSettings: EvaluateUserSettings = {
       evaluateCurrencyOriginal: true,
-      evaluateCurrencyIds: ['chaos', 'exa'],
+      evaluateCurrencyIds: ['chaos', 'divine'],
       evaluateResultView: EvaluateResultView.List,
       evaluateQueryDefaultItemLevel: true,
       evaluateQueryDefaultLinks: 5,
@@ -50,10 +50,6 @@ export class EvaluateModule implements FeatureModule {
       evaluateQueryDefaultHeistRequiredLevels: true,
       evaluateQueryDefaultHeistContracts: false,
       evaluateQueryDefaultHeistBlueprints: false,
-      evaluateQueryDefaultSentinelCharges: false,
-      evaluateQueryDefaultSentinelDuration: false,
-      evaluateQueryDefaultSentinelEnemies: false,
-      evaluateQueryDefaultSentinelEmpowerment: false,
       evaluateQueryDefaultMiscs: true,
       evaluateQueryDefaultType: false,
       evaluateQueryDefaultAttack: true,
